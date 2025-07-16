@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas Lab</title>
+  <link rel="icon" type="image/png" href="images/logo_head.png">
+  <!-- Google Font for a clean, slightly artistic vibe -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Canvas Lab Logo" class="logo" style="width: 100px; height: 100px;"/>
+      <!-- <img src="images/logo.png" alt="Canvas Lab Logo" class="logo"/> -->
+      
+      <!-- Desktop Navigation -->
+      <ul class="desktop-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#people">People</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#join">Join Us</a></li>
+      </ul>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <img src="images/runi_logo.svg" alt="Reichman University Logo" class="runi-logo" style="width: 100px; height: 100px;" />
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose">×</button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#people">People</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#join">Join Us</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section id="about">
+      <img src="images/logo.png" alt="Canvas Lab Large Logo" style="max-width: 500px; display: block; margin: 0 auto 20px;" />
+      <p>
+        Welcome to the <strong>Canvas Lab</strong>, a research group at Reichman University working at the intersection of <em>Computer Vision</em>, <em>Computer Graphics</em>, and <em>Generative AI</em>. Our work spans generative models for art and photography, multimodal systems combining vision and language, 3D graphics for editing and gaming, and innovative tools that push the boundaries of human–machine creativity. We aim to advance both practical applications and computational approaches that empower creators and intelligent systems alike.
+      </p>
+      <h2 style="margin-top: 60px;">Latent News</h2>
+      <ul class="news-list" style="list-style: disc; padding-left: 20px;">
+        <li class="news-item" data-expandable="true">
+          <div class="news-title">We just launched our lab website – welcome!</div>
+          <div class="news-content">
+            <p>After months of development, we're excited to announce the launch of our new Canvas Lab website. This platform will serve as a hub for our research activities, publications, and team updates. The site features our latest projects in computer vision, graphics, and generative AI, and will be regularly updated with new content and discoveries.</p>
+            <p>We've designed the site to be both informative for the research community and accessible to those interested in learning more about our work at the intersection of creativity and technology.</p>
+          </div>
+        </li>
+        <li class="news-item" data-expandable="true">
+          <div class="news-title">Our paper on Conditional Balance was presented at CVPR 2025!</div>
+          <div class="news-content">
+            <p>We're thrilled to share that our research on "Conditional Balance: A Novel Approach to Generative Model Stability" has been accepted and presented at the Computer Vision and Pattern Recognition (CVPR) 2025 conference.</p>
+            <p>This work introduces a new method for improving the stability and quality of generative models by implementing conditional balance mechanisms. The paper demonstrates significant improvements in image generation quality and model convergence rates across multiple benchmark datasets.</p>
+            <p>The presentation was well-received by the community, sparking interesting discussions about future directions in generative AI research.</p>
+          </div>
+        </li>
+        <!-- Add more news items here over time -->
+      </ul>
+
+      <h2 style="margin-top: 60px;">Recent Publications</h2>
+      <ul class="news-list" style="list-style: disc; padding-left: 20px;">
+        <li class="news-item" data-expandable="true">
+          <div class="news-title">We just launched our lab website – welcome!</div>
+          <div class="news-content">
+            <p>After months of development, we're excited to announce the launch of our new Canvas Lab website. This platform will serve as a hub for our research activities, publications, and team updates. The site features our latest projects in computer vision, graphics, and generative AI, and will be regularly updated with new content and discoveries.</p>
+            <p>We've designed the site to be both informative for the research community and accessible to those interested in learning more about our work at the intersection of creativity and technology.</p>
+          </div>
+        </li>
+        <li class="news-item" data-expandable="true">
+          <div class="news-title">Our paper on Conditional Balance was presented at CVPR 2025!</div>
+          <div class="news-content">
+            <p>We're thrilled to share that our research on "Conditional Balance: A Novel Approach to Generative Model Stability" has been accepted and presented at the Computer Vision and Pattern Recognition (CVPR) 2025 conference.</p>
+            <p>This work introduces a new method for improving the stability and quality of generative models by implementing conditional balance mechanisms. The paper demonstrates significant improvements in image generation quality and model convergence rates across multiple benchmark datasets.</p>
+            <p>The presentation was well-received by the community, sparking interesting discussions about future directions in generative AI research.</p>
+          </div>
+        </li>
+        <!-- Add more news items here over time -->
+      </ul>
+    </section>
+
+    <section id="research">
+      <h1>Research</h1>
+      <p style="text-align: center; margin-bottom: 40px; font-size: 18px; color: #666;">
+        Explore our cutting-edge research through visual examples of our work in computer vision, graphics, and generative AI.
+      </p>
+      
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/showcase/generative_art.jpg" alt="Generative Art Example" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>Generative Art & Photography</h3>
+            <p>We develop novel generative models that create stunning visual art and photography. Our research focuses on improving the quality, diversity, and controllability of AI-generated images, enabling artists to explore new creative possibilities through human-AI collaboration.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <img src="images/showcase/multimodal_ai.jpg" alt="Multimodal AI System" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>Multimodal Vision-Language Systems</h3>
+            <p>Our multimodal systems bridge the gap between visual understanding and natural language processing. These tools can analyze images, generate descriptive text, and respond to complex queries that require both visual and linguistic reasoning.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <img src="images/showcase/3d_graphics.jpg" alt="3D Graphics and Editing" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>3D Graphics & Interactive Editing</h3>
+            <p>We create innovative 3D graphics tools for content creation, editing, and interactive experiences. Our work includes neural rendering techniques, 3D scene understanding, and real-time graphics applications for gaming and virtual environments.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <img src="images/showcase/computational_photography.jpg" alt="Computational Photography" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>Computational Photography</h3>
+            <p>Our computational photography research transforms how we capture, process, and enhance images. We develop algorithms that can improve image quality, enable new photographic techniques, and create tools that extend the capabilities of traditional cameras.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <img src="images/showcase/neural_rendering.jpg" alt="Neural Rendering" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>Neural Rendering & 3D Content Creation</h3>
+            <p>We pioneer neural rendering techniques that can generate photorealistic 3D content from various inputs. Our methods enable efficient creation of 3D models, textures, and animations, revolutionizing content production for media and entertainment.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <img src="images/showcase/creative_tools.jpg" alt="Creative AI Tools" class="showcase-image" />
+          <div class="showcase-description">
+            <h3>AI-Powered Creative Tools</h3>
+            <p>We design intelligent creative tools that augment human creativity rather than replace it. These systems understand artistic intent, provide intelligent suggestions, and enable new forms of creative expression through seamless human-AI collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="people">
+      <h1 style="margin-bottom: 40px;"">Faculty</h1>
+      <div class="leaders-container">
+        <div class="leader">
+          <img src="images/people/ariel_shamir.jpg" alt="Ariel Shamir" />
+          <p><strong>Prof. Ariel Shamir</strong><br>Prof. Ariel Shamir's research focuses on computational photography, image and video synthesis, and machine creativity.</p>
+          <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Website</a>
+        </div>
+        <div class="leader">
+          <img src="images/people/ohad_fried.jpg" alt="Ohad Fried" />
+          <p><strong>Prof. Ohad Fried</strong><br>Prof. Ohad Fried is a computer scientist specializing in computer graphics, computer vision, and generative AI. He co-leads the CANVAS Lab, where his research focuses on creating intuitive, AI-driven tools for visual media editing and synthesis.</p>
+          <a href="https://www.ohadf.com/" target="_blank">Website</a>
+        </div>
+        <div class="leader">
+          <img src="images/people/toky.jpg" alt="Third Leader" />
+          <p><strong>Prof. Yacov Hel-Or</strong><br>Prof. Yacov Hel‑Or is Dean of the Efi Arazi School of Computer Science at Reichman University, where he leads research in computer vision, image processing and deep learning.</p>
+          <a href="https://example.com/sarah" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 60px;">Students & Alumni</h2>
+      <div class="people-tabs">
+        <button class="tab-button active" data-tab="students">Students</button>
+        <button class="tab-button" data-tab="alumni">Alumni</button>
+      </div>
+      
+      <div class="tab-content active" id="students-tab">
+        <div class="student">
+          <img src="images/people/nadav_cohen.jpg" alt="Nadav Z. Cohen" style="width: 240px; height: 240px; object-fit: cover; border-radius: 50%;" />
+          <div class="student-info">
+            <h3>Nadav Z. Cohen | Ph.D | Advisor: Ariel Shamir</h3>
+            <p>I’m a Ph.D. student specializing in generative models for 2D and 3D content creation, with a strong passion for artistic applications. My research focuses on developing tools that empower creatives to harness the potential of generative models while preserving their unique artistic voice and personal expression.</p>
+            <a href="https://nadavc220.github.io/" target="_blank">Website</a>
+            <a href="https://linkedin.com/in/nadavc220" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="alumni-tab">
+        <p>Alumni information coming soon...</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h1>Publications</h1>
+      <ul>
+        <li>Coming soon&hellip;</li>
+      </ul>
+    </section>
+
+    <section id="join">
+      <h1>Join Us</h1>
+      <p>
+        Interested in working with us? We are always looking for passionate students and researchers. Reach out for open positions or collaborations.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Canvas Lab. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
+      const sections = document.querySelectorAll('main > section');
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+      const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+      function activate(id) {
+        sections.forEach(sec => sec.classList.toggle('active', sec.id === id));
+        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
+      }
+
+      function closeMobileMenu() {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function openMobileMenu() {
+        mobileMenu.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
+        mobileMenuToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      // Mobile menu toggle
+      mobileMenuToggle.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+
+      // Close mobile menu
+      mobileMenuClose.addEventListener('click', closeMobileMenu);
+      mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+      // Navigation links
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const id = link.getAttribute('href').substring(1);
+          activate(id);
+          history.pushState(null, '', '#' + id);
+          closeMobileMenu();
+        });
+      });
+
+      const initial = location.hash ? location.hash.substring(1) : 'about';
+      activate(initial);
+
+      // People page tabs functionality
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const tabId = button.dataset.tab;
+          
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          document.getElementById(tabId + '-tab').classList.add('active');
+        });
+      });
+
+      // Expandable news items functionality
+      const newsItems = document.querySelectorAll('.news-item[data-expandable="true"]');
+      
+      newsItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          item.classList.toggle('expanded');
+        });
+      });
+
+      // Close mobile menu on window resize if it's open
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          closeMobileMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
