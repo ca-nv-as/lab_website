@@ -498,6 +498,7 @@
   text-align: center;
   width: 120px;
   margin-left: -60px;
+  pointer-events: none; /* Prevent it from interfering with layout */
 }
 
 .section-title-rotated:hover {
@@ -508,6 +509,16 @@
 #people {
   position: relative;
   padding-left: 80px;
+  overflow: visible; /* Ensure rotated title doesn't get clipped */
+}
+
+/* Ensure other sections don't have the same positioning */
+#research,
+#publications,
+#join {
+  position: static;
+  padding-left: 0;
+  overflow: visible;
 }
 
 /* Responsive adjustments */
@@ -515,18 +526,17 @@
   .section-title-rotated {
     position: static;
     transform: none;
-    margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg)
-      var(--spacing-lg); /* Add left margin */
+    margin: var(--spacing-lg) 0 var(--spacing-lg) 0;
     text-align: center;
     opacity: 1;
     width: auto;
-    margin-left: var(--spacing-lg); /* Ensure left margin */
+    margin-left: 0;
     font-size: var(--font-size-h3);
+    pointer-events: auto;
   }
 
   #people {
-    padding-left: var(--spacing-md);
-    padding-top: var(--spacing-md);
+    padding-left: 0;
   }
 }
 

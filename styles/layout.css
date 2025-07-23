@@ -8,6 +8,7 @@ header {
   height: var(--header-height);
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 nav {
@@ -18,6 +19,7 @@ nav {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
+  position: relative;
 }
 
 /* ===== LOGO STYLING ===== */
@@ -27,7 +29,8 @@ nav {
   cursor: pointer;
   transition: transform var(--transition-normal);
   margin: var(--spacing-md);
-  padding-top: var(--spacing-md); /* Add top padding to see the border */
+  position: relative; /* Ensure it doesn't move */
+  z-index: 2; /* Keep it above other elements */
 }
 
 .logo-container:hover {
@@ -124,13 +127,17 @@ nav {
   transform: scale(1.02);
 }
 
-/* Desktop Navigation */
+/* Desktop Navigation - Moved to the right */
 .desktop-nav {
   display: flex;
   list-style: none;
   gap: var(--spacing-xl);
   margin: 0;
   padding: 0;
+  position: absolute; /* Keep absolute positioning */
+  right: 0; /* Position to the right */
+  transform: none; /* Remove center transform */
+  white-space: nowrap;
 }
 
 .desktop-nav a {
@@ -170,6 +177,7 @@ nav {
   cursor: pointer;
   z-index: 1001;
   position: relative;
+  margin-left: auto; /* Push to the right */
 }
 
 .mobile-menu-toggle span {
@@ -257,13 +265,25 @@ nav {
 }
 
 /* ===== MAIN CONTENT ===== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Ensure sections don't cause horizontal overflow */
 main > section {
   max-width: var(--max-width);
   margin: var(--spacing-xxl) auto;
   padding: 0 var(--spacing-lg);
-  display: none; /* Hide all sections by default */
+  display: none;
   animation: fadeIn 0.4s ease-in-out;
   min-height: 60vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 main > section.active {
@@ -375,10 +395,16 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  main > section {
-    margin: var(--spacing-xl) auto;
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  nav {
     padding: 0 var(--spacing-md);
-    min-height: 50vh;
   }
 }
 
