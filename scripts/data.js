@@ -5,6 +5,15 @@ const LAB_DATA = {
   labDescription:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 
+  // Navigation structure
+  navigation: [
+    { id: "about", text: "About" },
+    { id: "research", text: "Research" },
+    { id: "people", text: "People" },
+    { id: "publications", text: "Publications" },
+    { id: "join", text: "Join Us" },
+  ],
+
   // Faculty members
   faculty: [
     {
@@ -46,7 +55,14 @@ const LAB_DATA = {
 
   // Alumni
   alumni: [
-    // Add alumni here
+    {
+      name: "Former Student",
+      degree: "Ph.D",
+      year: "2023",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      currentPosition: "Research Scientist at Tech Company",
+    },
   ],
 
   // Research areas
@@ -100,6 +116,24 @@ const LAB_DATA = {
     },
     {
       title: "Sed do eiusmod tempor incididunt ut labore",
+      content: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      ],
+    },
+  ],
+
+  // Publications
+  publications: [
+    {
+      title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      content: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      ],
+    },
+    {
+      title: "Sed do eiusmod tempor incididunt ut labore et dolore",
       content: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

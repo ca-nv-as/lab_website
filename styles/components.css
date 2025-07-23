@@ -452,3 +452,92 @@
     height: 120px;
   }
 }
+
+/* ===== FACULTY WEBSITE LINKS ===== */
+.faculty-website-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  vertical-align: middle;
+}
+
+.faculty-website-link:hover {
+  color: var(--hover);
+  transform: scale(1.1);
+}
+
+.website-icon {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--transition-fast);
+  vertical-align: baseline;
+  margin-bottom: 2px;
+}
+
+.faculty-website-link:hover .website-icon {
+  transform: rotate(15deg);
+}
+
+/* ===== ROTATED SECTION TITLES ===== */
+.section-title-rotated {
+  position: absolute;
+  left: -60px;
+  top: 120px;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  font-size: var(--font-size-h2);
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  opacity: 0.7;
+  transition: opacity var(--transition-normal);
+  z-index: 1;
+  text-align: center;
+  width: 120px;
+  margin-left: -60px;
+}
+
+.section-title-rotated:hover {
+  opacity: 1;
+}
+
+/* Make the people section relative for positioning */
+#people {
+  position: relative;
+  padding-left: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title-rotated {
+    position: static;
+    transform: none;
+    margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg)
+      var(--spacing-lg); /* Add left margin */
+    text-align: center;
+    opacity: 1;
+    width: auto;
+    margin-left: var(--spacing-lg); /* Ensure left margin */
+    font-size: var(--font-size-h3);
+  }
+
+  #people {
+    padding-left: var(--spacing-md);
+    padding-top: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title-rotated {
+    margin: var(--spacing-xl) var(--spacing-md) var(--spacing-lg)
+      var(--spacing-md); /* Consistent margins */
+    font-size: var(--font-size-large);
+  }
+
+  #people {
+    padding-top: var(--spacing-sm);
+  }
+}
