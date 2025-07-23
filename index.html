@@ -20,16 +20,21 @@
     <div id="app">
       <header>
         <nav>
-          <img
-            src="images/logo.png"
-            alt="Canvas Lab Logo"
-            class="logo"
-            style="cursor: pointer"
-          />
+          <div class="logo-container">
+            <div class="logo-border">
+              <img
+                src="images/vector_logo.svg"
+                alt="Canvas Lab Logo"
+                class="logo"
+                style="cursor: pointer"
+              />
+              <span class="logo-text">CANVAS LAB</span>
+            </div>
+          </div>
 
           <!-- Desktop Navigation -->
           <ul class="desktop-nav">
-            <!-- Navigation will be rendered here (without "about") -->
+            <!-- Navigation will be rendered here -->
           </ul>
 
           <!-- Mobile Menu Toggle -->
@@ -38,8 +43,6 @@
             <span></span>
             <span></span>
           </div>
-
-          <!-- Removed the runi-logo from here -->
         </nav>
       </header>
 
@@ -56,11 +59,16 @@
 
       <main>
         <section id="about" class="active">
-          <img
-            src="images/logo.png"
-            alt="Canvas Lab Large Logo"
-            style="max-width: 500px; display: block; margin: 0 auto 20px"
-          />
+          <div class="about-hero">
+            <h1 class="about-title">Welcome to Canvas Lab</h1>
+            <div class="lab-members-image">
+              <img
+                src="images/lab_members.jpg"
+                alt="Canvas Lab Members"
+                class="members-photo"
+              />
+            </div>
+          </div>
           <p data-lab-description></p>
 
           <h2 class="mt-4">Latest News</h2>

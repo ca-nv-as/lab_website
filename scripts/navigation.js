@@ -27,8 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'hidden';
   }
 
+  // Update the logo click handler
+  const logoContainer = document.querySelector('.logo-container');
+
   // Logo click handler - go to homepage (about section)
-  logo.addEventListener('click', (e) => {
+  logoContainer.addEventListener('click', (e) => {
     e.preventDefault();
     activate('about');
     history.pushState(null, '', '/'); // Set URL to root
