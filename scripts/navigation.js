@@ -1,36 +1,43 @@
 // Navigation functionality
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll("nav a, .mobile-menu a");
-  const sections = document.querySelectorAll("main > section");
-  const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
-  const mobileMenuClose = document.getElementById("mobileMenuClose");
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
+  const sections = document.querySelectorAll('main > section');
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const mobileMenuClose = document.getElementById('mobileMenuClose');
+  const logo = document.querySelector('.logo');
 
   function activate(id) {
-    sections.forEach((sec) => sec.classList.toggle("active", sec.id === id));
-    navLinks.forEach((link) =>
-      link.classList.toggle("active", link.getAttribute("href") === "#" + id)
-    );
+    sections.forEach(sec => sec.classList.toggle('active', sec.id === id));
+    navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
   }
 
   function closeMobileMenu() {
-    mobileMenu.classList.remove("active");
-    mobileMenuOverlay.classList.remove("active");
-    mobileMenuToggle.classList.remove("active");
-    document.body.style.overflow = "";
+    mobileMenu.classList.remove('active');
+    mobileMenuOverlay.classList.remove('active');
+    mobileMenuToggle.classList.remove('active');
+    document.body.style.overflow = '';
   }
 
   function openMobileMenu() {
-    mobileMenu.classList.add("active");
-    mobileMenuOverlay.classList.add("active");
-    mobileMenuToggle.classList.add("active");
-    document.body.style.overflow = "hidden";
+    mobileMenu.classList.add('active');
+    mobileMenuOverlay.classList.add('active');
+    mobileMenuToggle.classList.add('active');
+    document.body.style.overflow = 'hidden';
   }
 
+  // Logo click handler - go to homepage (about section)
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    activate('about');
+    history.pushState(null, '', '/'); // Set URL to root
+    closeMobileMenu();
+  });
+
   // Mobile menu toggle
-  mobileMenuToggle.addEventListener("click", () => {
-    if (mobileMenu.classList.contains("active")) {
+  mobileMenuToggle.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('active')) {
       closeMobileMenu();
     } else {
       openMobileMenu();
@@ -38,26 +45,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Close mobile menu
-  mobileMenuClose.addEventListener("click", closeMobileMenu);
-  mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+  mobileMenuClose.addEventListener('click', closeMobileMenu);
+  mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
   // Navigation links
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
       e.preventDefault();
-      const id = link.getAttribute("href").substring(1);
+      const id = link.getAttribute('href').substring(1);
       activate(id);
-      history.pushState(null, "", "#" + id);
+      history.pushState(null, '', '#' + id);
       closeMobileMenu();
     });
   });
 
-  // Initialize with hash or default to about
-  const initial = location.hash ? location.hash.substring(1) : "about";
+  // Initialize with about section as homepage
+  const initial = location.hash ? location.hash.substring(1) : 'about';
   activate(initial);
 
   // Close mobile menu on window resize if it's open
-  window.addEventListener("resize", () => {
+  window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
       closeMobileMenu();
     }

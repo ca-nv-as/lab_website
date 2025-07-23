@@ -5,9 +5,8 @@ const LAB_DATA = {
   labDescription:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 
-  // Navigation structure
+  // Navigation structure (removed "about")
   navigation: [
-    { id: "about", text: "About" },
     { id: "research", text: "Research" },
     { id: "people", text: "People" },
     { id: "publications", text: "Publications" },
