@@ -47,9 +47,19 @@ const LAB_DATA = {
       advisor: "Ariel Shamir",
       image: "images/people/nadav_cohen.jpg",
       description:
-        "Ph.D. student specializing in generative models for 2D and 3D content creation, with a strong passion for artistic applications. My research focuses on developing tools that empower creatives to harness the potential of generative models while preserving their unique artistic voice and personal expression.",
+        "Specializing in generative models for 2D and 3D content creation, with a strong passion for artistic applications. My research focuses on developing tools that empower creatives to harness the potential of generative models while preserving their unique artistic voice and personal expression.",
       website: "https://nadavc220.github.io/",
       linkedin: "https://linkedin.com/in/nadavc220",
+    },
+    {
+      name: "Hagar Dolev Refaeli",
+      degree: "M.Sc",
+      advisor: "Ohad Fried",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
+      description: "Focusing on Video editing and composition.",
+      website: "https://hagardolev.com",
+      linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
   ],
 

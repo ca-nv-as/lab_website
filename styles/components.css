@@ -164,6 +164,14 @@
   display: block;
 }
 
+/* Students grid layout */
+#students-tab {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
 /* Leaders Section - Fixed Layout */
 .leaders-container {
   display: grid;
@@ -209,14 +217,14 @@
   color: var(--hover);
 }
 
-/* Student Section - Fixed Layout */
+/* Student Section - Grid Layout */
 .student {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--spacing-xl);
-  gap: var(--spacing-lg);
   text-align: center;
+  max-width: 280px;
+  margin: 0;
 }
 
 .student img {
@@ -224,6 +232,7 @@
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: var(--spacing-md);
   transition: transform var(--transition-normal);
 }
 
@@ -233,31 +242,84 @@
 
 .student-info {
   width: 100%;
-  max-width: 600px;
   text-align: left;
 }
 
-.student-info h3 {
-  margin-bottom: var(--spacing-sm);
+.student-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.student-name {
+  margin: 0;
   color: var(--text-primary);
-  text-align: center;
+  font-size: var(--font-size-h3);
+  font-weight: 600;
 }
 
-.student-info p {
-  margin-bottom: var(--spacing-md);
+.student-details {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.student-degree {
+  margin: 0;
   color: var(--text-secondary);
-  text-align: left;
-}
-
-.student-info a {
-  margin-right: var(--spacing-md);
-  color: var(--primary);
-  text-decoration: none;
+  font-size: var(--font-size-large);
   font-weight: 500;
 }
 
-.student-info a:hover {
+.student-advisor {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-medium);
+  font-weight: 400;
+}
+
+.student-description {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: var(--font-size-medium);
+}
+
+.student-links {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.student-website-link,
+.student-linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+}
+
+.student-website-link:hover,
+.student-linkedin-link:hover {
   color: var(--hover);
+  transform: scale(1.1);
+  background: var(--background-hover);
+}
+
+.website-icon,
+.linkedin-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.student-website-link:hover .website-icon,
+.student-linkedin-link:hover .linkedin-icon {
+  transform: rotate(15deg);
 }
 
 /* ===== RESEARCH GALLERY ===== */
@@ -469,27 +531,9 @@
     height: 180px;
   }
 
-  .student {
-    gap: var(--spacing-md);
-  }
-
   .student img {
     width: 150px;
     height: 150px;
-  }
-
-  .student-info {
-    text-align: center;
-  }
-
-  .student-info h3,
-  .student-info p {
-    text-align: center;
-  }
-
-  .student-info a {
-    display: inline-block;
-    margin: var(--spacing-sm) var(--spacing-md);
   }
 }
 
