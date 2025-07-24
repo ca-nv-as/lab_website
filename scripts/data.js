@@ -5,8 +5,9 @@ const LAB_DATA = {
   labDescription:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 
-  // Navigation structure (removed "about")
+  // Navigation structure
   navigation: [
+    { id: "about", text: "About" },
     { id: "research", text: "Research" },
     { id: "people", text: "People" },
     { id: "publications", text: "Publications" },
@@ -19,21 +20,21 @@ const LAB_DATA = {
       name: "Prof. Ariel Shamir",
       image: "images/people/ariel_shamir.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Prof. Ariel Shamir's research focuses on computational photography, image and video synthesis, and machine creativity.",
       website: "https://faculty.runi.ac.il/arik/site/index.asp",
     },
     {
       name: "Prof. Ohad Fried",
       image: "images/people/ohad_fried.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Prof. Ohad Fried is a computer scientist specializing in computer graphics, computer vision, and generative AI. His research focuses on creating intuitive, AI-driven tools for visual media editing and synthesis.",
       website: "https://www.ohadf.com/",
     },
     {
       name: "Prof. Yacov Hel-Or",
       image: "images/people/toky.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Prof. Yacov Hel‑Or is Dean of the Efi Arazi School of Computer Science at Reichman University, where he leads research in computer vision, image processing and deep learning.",
       website: "https://example.com/sarah",
     },
   ],
@@ -46,7 +47,7 @@ const LAB_DATA = {
       advisor: "Ariel Shamir",
       image: "images/people/nadav_cohen.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Ph.D. student specializing in generative models for 2D and 3D content creation, with a strong passion for artistic applications. My research focuses on developing tools that empower creatives to harness the potential of generative models while preserving their unique artistic voice and personal expression.",
       website: "https://nadavc220.github.io/",
       linkedin: "https://linkedin.com/in/nadavc220",
     },

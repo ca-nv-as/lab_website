@@ -287,6 +287,12 @@ main > section.active {
   display: block;
 }
 
+/* Add consistent left margin to all sections */
+#about, #research, #publications, #join {
+  padding-left: 80px; /* Same as people section */
+}
+
+/* Ensure no other display rules interfere */
 #research, #people, #publications, #join {
   display: none;
 }
@@ -392,6 +398,17 @@ footer {
   
   .runi-logo-footer {
     height: 28px;
+  }
+
+  main > section {
+    margin: var(--spacing-xl) auto;
+    padding: 0 var(--spacing-md);
+    min-height: 50vh;
+  }
+  
+  /* Remove extra padding on mobile */
+  #about, #research, #publications, #join {
+    padding-left: 0;
   }
 }
 

@@ -64,7 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize with about section as homepage
   const initial = location.hash ? location.hash.substring(1) : 'about';
-  activate(initial);
+  
+  // Ensure about section is active by default
+  if (!location.hash) {
+    // Clear any existing active states
+    sections.forEach(sec => sec.classList.remove('active'));
+    navLinks.forEach(link => link.classList.remove('active'));
+    
+    // Activate about section
+    const aboutSection = document.getElementById('about');
+    const aboutLink = document.querySelector('a[href="#about"]');
+    
+    if (aboutSection) {
+      aboutSection.classList.add('active');
+    }
+    if (aboutLink) {
+      aboutLink.classList.add('active');
+    }
+  } else {
+    activate(initial);
+  }
 
   // Close mobile menu on window resize if it's open
   window.addEventListener('resize', () => {

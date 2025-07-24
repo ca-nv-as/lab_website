@@ -135,6 +135,37 @@ const RENDER_FUNCTIONS = {
     `).join('');
   },
 
+  // Adjust rotated title positioning based on text length
+  adjustRotatedTitles: () => {
+    const rotatedTitles = document.querySelectorAll('.section-title-rotated');
+    
+    rotatedTitles.forEach(title => {
+      const text = title.textContent;
+      const textLength = text.length;
+      
+      // Calculate positioning based on text length
+      let leftOffset, topOffset;
+      
+      if (textLength <= 8) {
+        // Short titles like "Research", "Join Us"
+        leftOffset = -60;
+        topOffset = 220;
+      } else if (textLength <= 12) {
+        // Medium titles like "Publications"
+        leftOffset = -60;
+        topOffset = 240;
+      } else {
+        // Long titles like "Welcome to Canvas Lab"
+        leftOffset = -60;
+        topOffset = 260;
+      }
+      
+      // Apply the calculated values
+      title.style.setProperty('--title-left', `${leftOffset}px`);
+      title.style.setProperty('--title-top', `${topOffset}px`);
+    });
+  },
+
   // Initialize all content
   init: () => {
     RENDER_FUNCTIONS.renderNavigation();
@@ -144,6 +175,29 @@ const RENDER_FUNCTIONS = {
     RENDER_FUNCTIONS.renderResearch();
     RENDER_FUNCTIONS.renderNews('#about .news-list'); // News in about section
     RENDER_FUNCTIONS.renderPublications(); // Publications in publications section
+    
+    // Adjust rotated titles after content is rendered
+    setTimeout(() => {
+      RENDER_FUNCTIONS.adjustRotatedTitles();
+    }, 100);
+    
+    // Ensure about section is active on initial load
+    setTimeout(() => {
+      if (!location.hash) {
+        const aboutSection = document.getElementById('about');
+        const aboutLink = document.querySelector('a[href="#about"]');
+        
+        if (aboutSection && !aboutSection.classList.contains('active')) {
+          // Clear all active states
+          document.querySelectorAll('main > section').forEach(sec => sec.classList.remove('active'));
+          document.querySelectorAll('nav a, .mobile-menu a').forEach(link => link.classList.remove('active'));
+          
+          // Activate about
+          aboutSection.classList.add('active');
+          if (aboutLink) aboutLink.classList.add('active');
+        }
+      }
+    }, 50);
   }
 };
 

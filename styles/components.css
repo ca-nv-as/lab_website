@@ -12,6 +12,24 @@
   letter-spacing: 1px;
 }
 
+/* Lab description styling */
+.lab-description {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.lab-description p {
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-large);
+  color: var(--text-secondary);
+}
+
+.lab-description p:last-child {
+  margin-bottom: 0;
+}
+
 .lab-members-image {
   max-width: 800px;
   margin: 0 auto;
@@ -518,20 +536,18 @@
 /* ===== ROTATED SECTION TITLES ===== */
 .section-title-rotated {
   position: absolute;
-  left: -60px;
-  top: 120px;
+  left: var(--title-left, 20px);
+  top: var(--title-top, 120px);
   transform: rotate(-90deg);
-  transform-origin: center center;
+  transform-origin: left center;
   font-size: var(--font-size-h2);
   font-weight: 600;
   color: var(--text-secondary);
   white-space: nowrap;
   opacity: 0.7;
   transition: opacity var(--transition-normal);
-  z-index: 1;
-  text-align: center;
-  width: 120px;
-  margin-left: -60px;
+  z-index: 10;
+  text-align: left;
   pointer-events: none; /* Prevent it from interfering with layout */
 }
 
@@ -539,20 +555,14 @@
   opacity: 1;
 }
 
-/* Make the people section relative for positioning */
-#people {
-  position: relative;
-  padding-left: 80px;
-  overflow: visible; /* Ensure rotated title doesn't get clipped */
-}
-
-/* Ensure other sections don't have the same positioning */
+/* Make sections with rotated titles relative for positioning */
+#about,
+#people,
 #research,
 #publications,
 #join {
-  position: static;
-  padding-left: 0;
-  overflow: visible;
+  position: relative;
+  overflow: visible; /* Ensure rotated title doesn't get clipped */
 }
 
 /* Responsive adjustments */
@@ -569,8 +579,12 @@
     pointer-events: auto;
   }
 
-  #people {
-    padding-left: 0;
+  #about,
+  #people,
+  #research,
+  #publications,
+  #join {
+    /* Remove any custom padding on mobile */
   }
 }
 
@@ -581,7 +595,11 @@
     font-size: var(--font-size-large);
   }
 
-  #people {
+  #about,
+  #people,
+  #research,
+  #publications,
+  #join {
     padding-top: var(--spacing-sm);
   }
 }
