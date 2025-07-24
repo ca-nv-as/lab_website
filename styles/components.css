@@ -1,6 +1,40 @@
+/* ===== ABOUT SECTION STYLING ===== */
+.about-hero {
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.about-title {
+  font-size: var(--font-size-h1);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: 1px;
+}
+
+.lab-members-image {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px var(--shadow);
+}
+
+.members-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.members-photo:hover {
+  transform: scale(1.02);
+}
+
 /* ===== NEWS COMPONENTS ===== */
 .news-list {
   margin-top: var(--spacing-lg);
+  width: 100%;
 }
 
 .news-item {

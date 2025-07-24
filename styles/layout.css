@@ -1,7 +1,6 @@
 /* ===== HEADER & NAVIGATION ===== */
 header {
   background: var(--background);
-  box-shadow: 0 2px 8px var(--shadow);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -29,8 +28,8 @@ nav {
   cursor: pointer;
   transition: transform var(--transition-normal);
   margin: var(--spacing-md);
-  position: relative; /* Ensure it doesn't move */
-  z-index: 2; /* Keep it above other elements */
+  position: relative;
+  z-index: 2;
 }
 
 .logo-container:hover {
@@ -39,23 +38,22 @@ nav {
 
 .logo-border {
   display: flex;
-  align-items: center;
   gap: var(--spacing-sm);
   border: 2px solid var(--primary);
   border-radius: 0;
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-sm);
   position: relative;
-  background: var(--background);
-  margin-bottom: 16px; /* More space for larger logo */
+  margin-bottom: -16px;
+  align-items: center;
 }
 
 .logo {
-  height: 80px; /* Larger logo */
+  height: 98px; /* Much larger logo */
   width: auto;
   transition: transform var(--transition-normal);
   position: absolute;
-  bottom: -16px; /* Logo extends further below border */
-  left: var(--spacing-md);
+  bottom: -25px; /* Logo extends further below border */
+  left: -5px;
   z-index: 2;
 }
 
@@ -65,9 +63,9 @@ nav {
   color: var(--text-primary);
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-left: 70px; /* More space for larger logo */
-  margin-top: var(--spacing-sm); /* Move text down a bit */
-  align-self: flex-end; /* Align text to bottom of container */
+  margin-left: 50px;
+  margin-top: var(--spacing-sm);
+  align-self: center; /* Fixed alignment */
 }
 
 /* Hero logo in about section */
@@ -134,9 +132,9 @@ nav {
   gap: var(--spacing-xl);
   margin: 0;
   padding: 0;
-  position: absolute; /* Keep absolute positioning */
-  right: 0; /* Position to the right */
-  transform: none; /* Remove center transform */
+  position: absolute;
+  right: 0;
+  transform: none;
   white-space: nowrap;
 }
 
@@ -177,7 +175,7 @@ nav {
   cursor: pointer;
   z-index: 1001;
   position: relative;
-  margin-left: auto; /* Push to the right */
+  margin-left: auto;
 }
 
 .mobile-menu-toggle span {
@@ -271,10 +269,9 @@ main {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
-/* Ensure sections don't cause horizontal overflow */
 main > section {
   max-width: var(--max-width);
   margin: var(--spacing-xxl) auto;
@@ -287,16 +284,15 @@ main > section {
 }
 
 main > section.active {
-  display: block; /* Only show active section */
+  display: block;
 }
 
-/* Ensure no other display rules interfere */
 #research, #people, #publications, #join {
-  display: none; /* Force hide when not active */
+  display: none;
 }
 
 #research.active, #people.active, #publications.active, #join.active {
-  display: block; /* Force show when active */
+  display: block;
 }
 
 /* Consistent content styling */
@@ -345,17 +341,17 @@ footer {
 
 .footer-text {
   display: flex;
-  align-items: center; /* This centers items vertically */
+  align-items: center;
   justify-content: center;
   gap: var(--spacing-md);
   flex-wrap: wrap;
-  line-height: 1; /* Reset line height for better alignment */
+  line-height: 1;
 }
 
 .footer-text p {
-  margin: 0; /* Remove default paragraph margins */
+  margin: 0;
   display: flex;
-  align-items: center; /* Center the text vertically */
+  align-items: center;
 }
 
 .runi-logo-footer {
@@ -363,34 +359,12 @@ footer {
   width: auto;
   opacity: 0.8;
   transition: opacity var(--transition-normal);
-  display: block; /* Ensure it's a block element */
-  flex-shrink: 0; /* Prevent logo from shrinking */
+  display: block;
+  flex-shrink: 0;
 }
 
 .runi-logo-footer:hover {
   opacity: 1;
-}
-
-/* Responsive footer */
-@media (max-width: 768px) {
-  footer {
-    padding: var(--spacing-md) var(--spacing-lg);
-  }
-  
-  .footer-text {
-    flex-direction: column;
-    gap: var(--spacing-sm);
-  }
-  
-  .runi-logo-footer {
-    height: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .runi-logo-footer {
-    height: 24px;
-  }
 }
 
 /* Responsive adjustments */
@@ -405,6 +379,19 @@ footer {
   
   nav {
     padding: 0 var(--spacing-md);
+  }
+  
+  footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .footer-text {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .runi-logo-footer {
+    height: 28px;
   }
 }
 
@@ -429,5 +416,9 @@ footer {
   .logo-border {
     padding: var(--spacing-xs) var(--spacing-sm);
     margin-bottom: 12px;
+  }
+  
+  .runi-logo-footer {
+    height: 24px;
   }
 }
