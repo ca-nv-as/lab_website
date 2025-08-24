@@ -8,10 +8,8 @@ const LAB_DATA = {
   // Navigation structure
   navigation: [
     { id: "about", text: "About" },
-    { id: "research", text: "Research" },
     { id: "people", text: "People" },
     { id: "publications", text: "Publications" },
-    { id: "join", text: "Join Us" },
   ],
 
   // Faculty members
