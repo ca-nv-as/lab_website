@@ -1134,7 +1134,7 @@
 }
 
 .alumni-container::before {
-  content: "Students";
+  content: "Alumni";
   position: absolute;
   left: -120px;
   top: 50%;
