@@ -117,18 +117,14 @@ const LAB_DATA = {
   // News items
   news: [
     {
-      title: "Lorem ipsum dolor sit amet consectetur",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      ],
+      title: "We have a new website!",
+      date: "24-08-2025",
+      content: ["We have a new website! Check it out in the about section."],
     },
     {
-      title: "Sed do eiusmod tempor incididunt ut labore",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      ],
+      title: "We have a new Logo!",
+      date: "24-08-2025",
+      content: ["We have a new Logo! Check it out in the about section."],
     },
   ],
 

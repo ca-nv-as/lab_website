@@ -165,9 +165,10 @@ const RENDER_FUNCTIONS = {
     container.innerHTML = itemsToRender
       .map(
         (item) => `
-      <li class="news-item" data-expandable="true">
-        <div class="news-title">${item.title}</div>
-        <div class="news-content">
+      <li class="news-item-simple">
+        <div class="news-date-simple">${item.date}</div>
+        <div class="news-title-simple">${item.title}</div>
+        <div class="news-content-simple">
           ${item.content.map((paragraph) => `<p>${paragraph}</p>`).join("")}
         </div>
       </li>
@@ -182,21 +183,39 @@ const RENDER_FUNCTIONS = {
     if (!container) return;
 
     // Sort publications by date (newest first) and take last 3
-    const sortedPublications = [...LAB_DATA.publications].sort((a, b) => {
-      const dateA = new Date(a.date.split('-').reverse().join('-'));
-      const dateB = new Date(b.date.split('-').reverse().join('-'));
-      return dateB - dateA;
-    }).slice(0, 3);
+    const sortedPublications = [...LAB_DATA.publications]
+      .sort((a, b) => {
+        const dateA = new Date(a.date.split("-").reverse().join("-"));
+        const dateB = new Date(b.date.split("-").reverse().join("-"));
+        return dateB - dateA;
+      })
+      .slice(0, 3);
 
     container.innerHTML = sortedPublications
       .map(
         (publication) => `
       <li class="recent-publication-item">
-        <div class="recent-publication-title">${publication.title}</div>
-        <div class="recent-publication-meta">
-          <span class="recent-authors">${publication.authors.join(", ")}</span>
-          <span class="recent-conference">${publication.conference}</span>
-          <span class="recent-year">${publication.date.split('-')[2]}</span>
+        <div class="recent-publication-details">
+          <h3 class="recent-publication-title">${publication.title}</h3>
+          <div class="recent-publication-meta">
+            <span class="recent-authors">${publication.authors.join(
+              ", "
+            )}</span>
+            <span class="recent-conference">${publication.conference}</span>
+            <span class="recent-year">${publication.date.split("-")[2]}</span>
+          </div>
+          <div class="recent-publication-links">
+            ${
+              publication.paper_link
+                ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-link paper-link">📄 Paper</a>`
+                : ""
+            }
+            ${
+              publication.project_link
+                ? `<a href="${publication.project_link}" target="_blank" class="recent-publication-link project-link">🔗 Project</a>`
+                : ""
+            }
+          </div>
         </div>
       </li>
     `
@@ -211,8 +230,8 @@ const RENDER_FUNCTIONS = {
 
     // Sort publications by date (newest first)
     const sortedPublications = [...LAB_DATA.publications].sort((a, b) => {
-      const dateA = new Date(a.date.split('-').reverse().join('-'));
-      const dateB = new Date(b.date.split('-').reverse().join('-'));
+      const dateA = new Date(a.date.split("-").reverse().join("-"));
+      const dateB = new Date(b.date.split("-").reverse().join("-"));
       return dateB - dateA;
     });
 
@@ -223,12 +242,26 @@ const RENDER_FUNCTIONS = {
         <div class="publication-header">
           <h3 class="publication-title">${publication.title}</h3>
           <div class="publication-meta">
-            <div class="publication-authors">${publication.authors.join(", ")}</div>
+            <div class="publication-authors">${publication.authors.join(
+              ", "
+            )}</div>
             <div class="publication-meta-row">
-              <span class="publication-conference">${publication.conference}</span>
-              <span class="publication-year">${publication.date.split('-')[2]}</span>
-              ${publication.paper_link ? `<a href="${publication.paper_link}" target="_blank" class="publication-link paper-link">Paper</a>` : ''}
-              ${publication.project_link ? `<a href="${publication.project_link}" target="_blank" class="publication-link project-link">Project</a>` : ''}
+              <span class="publication-conference">${
+                publication.conference
+              }</span>
+              <span class="publication-year">${
+                publication.date.split("-")[2]
+              }</span>
+              ${
+                publication.paper_link
+                  ? `<a href="${publication.paper_link}" target="_blank" class="publication-link paper-link">Paper</a>`
+                  : ""
+              }
+              ${
+                publication.project_link
+                  ? `<a href="${publication.project_link}" target="_blank" class="publication-link project-link">Project</a>`
+                  : ""
+              }
             </div>
           </div>
         </div>
@@ -279,8 +312,9 @@ const RENDER_FUNCTIONS = {
     RENDER_FUNCTIONS.renderStudents();
     RENDER_FUNCTIONS.renderAlumni();
     RENDER_FUNCTIONS.renderResearch();
-    RENDER_FUNCTIONS.renderRecentPublications(); // Recent publications in about section
-    RENDER_FUNCTIONS.renderPublications(); // Publications in publications section
+    RENDER_FUNCTIONS.renderNews("#about .news-list"); // Add this line
+    RENDER_FUNCTIONS.renderRecentPublications();
+    RENDER_FUNCTIONS.renderPublications();
 
     // Adjust rotated titles after content is rendered
     setTimeout(() => {

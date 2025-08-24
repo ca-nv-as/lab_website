@@ -10,9 +10,12 @@
   --accent: var(--secondary);
   --text-primary: var(--neutral);
   --text-secondary: #7f8c8d;
+  --text-tertiary: #95a5a6;
   --background: #ffffff;
+  --background-primary: #ffffff;
   --background-alt: var(--light);
   --border: #bdc3c7;
+  --border-color: #e1e8ed;
   --shadow: rgba(44, 90, 160, 0.1);
 
   /* Interactive States */
@@ -28,6 +31,8 @@
   --font-size-h1: 2.5rem;
   --font-size-h2: 2rem;
   --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1.125rem;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -52,6 +57,14 @@
   --max-width: 1200px;
   --header-height: 80px;
   --footer-height: 60px;
+
+  /* Additional Colors for Publications */
+  --success: #27ae60;
+  --info: #3498db;
+  --warning: #f39c12;
+  --error: #e74c3c;
+  --primary-light: rgba(44, 90, 160, 0.1);
+  --primary-shadow: rgba(44, 90, 160, 0.3);
 }
 
 /* ===== RESET & BASE STYLES ===== */
