@@ -16,7 +16,7 @@
 .lab-description {
   max-width: 800px;
   margin: 0 auto var(--spacing-xl);
-  text-align: center;
+  text-align: left;
   line-height: 1.8;
 }
 
