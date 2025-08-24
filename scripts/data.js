@@ -55,7 +55,7 @@ const LAB_DATA = {
       advisor: "Ohad Fried",
       image:
         "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
-      description: "Focusing on Video editing and composition.",
+      description: "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
       website: "https://hagardolev.com",
       linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
@@ -63,6 +63,24 @@ const LAB_DATA = {
 
   // Alumni
   alumni: [
+    {
+      name: "Gal Almog",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
+      advisor: "Ohad Fried",
+      degree: "M.Sc",
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/galalmog/",
+    },
+    {
+      name: "Gal Almog",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
+      advisor: "Ohad Fried",
+      degree: "M.Sc",
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/galalmog/",
+    },
     {
       name: "Gal Almog",
       image:
