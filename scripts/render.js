@@ -29,7 +29,7 @@ const RENDER_FUNCTIONS = {
       <div class="leader">
         <img src="${member.image}" alt="${member.name}" />
         <p>
-          <strong>${member.name}</strong>
+          <strong class="faculty-name">${member.name}</strong>
           ${
             member.website
               ? `

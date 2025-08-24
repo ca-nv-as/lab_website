@@ -18,21 +18,21 @@ const LAB_DATA = {
       name: "Prof. Ariel Shamir",
       image: "images/people/ariel_shamir.jpg",
       description:
-        "Prof. Ariel Shamir's research focuses on computational photography, image and video synthesis, and machine creativity.",
+        "Focuses on research in computational photography, image and video synthesis, and machine creativity.",
       website: "https://faculty.runi.ac.il/arik/site/index.asp",
     },
     {
       name: "Prof. Ohad Fried",
       image: "images/people/ohad_fried.jpg",
       description:
-        "Prof. Ohad Fried is a computer scientist specializing in computer graphics, computer vision, and generative AI. His research focuses on creating intuitive, AI-driven tools for visual media editing and synthesis.",
+        "Specializing in computer graphics, computer vision, and generative AI. His research focuses on creating intuitive, AI-driven tools for visual media editing and synthesis.",
       website: "https://www.ohadf.com/",
     },
     {
       name: "Prof. Yacov Hel-Or",
       image: "images/people/toky.jpg",
       description:
-        "Prof. Yacov Hel‑Or is Dean of the Efi Arazi School of Computer Science at Reichman University, where he leads research in computer vision, image processing and deep learning.",
+        "Dean of the Efi Arazi School of Computer Science at Reichman University, where he leads research in computer vision, image processing and deep learning.",
       website: "https://example.com/sarah",
     },
   ],
@@ -50,7 +50,7 @@ const LAB_DATA = {
       linkedin: "https://linkedin.com/in/nadavc220",
     },
     {
-      name: "Hagar Dolev Refaeli",
+      name: "Hagar Dolev",
       degree: "M.Sc",
       advisor: "Ohad Fried",
       image:
