@@ -196,25 +196,15 @@ const RENDER_FUNCTIONS = {
         (publication) => `
       <li class="recent-publication-item">
         <div class="recent-publication-details">
-          <h3 class="recent-publication-title">${publication.title}</h3>
+          <h3 class="recent-publication-title">
+            ${publication.paper_link ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-title-link">${publication.title}</a>` : publication.title}
+          </h3>
           <div class="recent-publication-meta">
             <span class="recent-authors">${publication.authors.join(
               ", "
             )}</span>
             <span class="recent-conference">${publication.conference}</span>
             <span class="recent-year">${publication.date.split("-")[2]}</span>
-          </div>
-          <div class="recent-publication-links">
-            ${
-              publication.paper_link
-                ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-link paper-link">📄 Paper</a>`
-                : ""
-            }
-            ${
-              publication.project_link
-                ? `<a href="${publication.project_link}" target="_blank" class="recent-publication-link project-link">🔗 Project</a>`
-                : ""
-            }
           </div>
         </div>
       </li>
