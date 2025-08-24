@@ -23,18 +23,6 @@ const RENDER_FUNCTIONS = {
     const container = document.querySelector(".leaders-container");
     if (!container) return;
 
-    // Add rotated title if it doesn't exist
-    const peopleSection = document.getElementById("people");
-    if (
-      peopleSection &&
-      !peopleSection.querySelector(".section-title-rotated")
-    ) {
-      const rotatedTitle = document.createElement("h1");
-      rotatedTitle.className = "section-title-rotated";
-      rotatedTitle.textContent = "Faculty";
-      peopleSection.insertBefore(rotatedTitle, peopleSection.firstChild);
-    }
-
     container.innerHTML = LAB_DATA.faculty
       .map(
         (member) => `
@@ -63,7 +51,7 @@ const RENDER_FUNCTIONS = {
 
   // Render students
   renderStudents: () => {
-    const container = document.getElementById("students-tab");
+    const container = document.querySelector(".students-container");
     if (!container) return;
 
     container.innerHTML = LAB_DATA.students
@@ -113,12 +101,12 @@ const RENDER_FUNCTIONS = {
 
   // Render alumni
   renderAlumni: () => {
-    const container = document.getElementById("alumni-tab");
+    const container = document.querySelector(".alumni-container");
     if (!container) return;
 
     if (LAB_DATA.alumni.length === 0) {
       container.innerHTML =
-        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>";
+        "<p class='no-alumni-message'>No alumni information available at the moment.</p>";
       return;
     }
 
@@ -126,9 +114,30 @@ const RENDER_FUNCTIONS = {
       .map(
         (alumni) => `
       <div class="alumni">
-        <h3>${alumni.name} | ${alumni.degree} | ${alumni.year}</h3>
-        <p>${alumni.description}</p>
-        <p><strong>Current Position:</strong> ${alumni.currentPosition}</p>
+        <img src="${alumni.image}" alt="${alumni.name}" class="alumni-image" />
+        <div class="alumni-info">
+          <div class="alumni-header">
+            <h3 class="alumni-name">${alumni.name}</h3>
+            <div class="alumni-links">
+              ${
+                alumni.linkedin
+                  ? `
+                <a href="${alumni.linkedin}" target="_blank" class="alumni-linkedin-link" title="Visit ${alumni.name}'s LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="linkedin-icon">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              `
+                  : ""
+              }
+            </div>
+          </div>
+          <div class="alumni-details">
+            <h4 class="alumni-degree">${alumni.degree}</h4>
+            <p class="alumni-advisor">Advised by ${alumni.advisor}</p>
+            <p class="alumni-year">Graduated: ${alumni.year}</p>
+          </div>
+        </div>
       </div>
     `
       )
@@ -197,7 +206,11 @@ const RENDER_FUNCTIONS = {
       <li class="recent-publication-item">
         <div class="recent-publication-details">
           <h3 class="recent-publication-title">
-            ${publication.paper_link ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-title-link">${publication.title}</a>` : publication.title}
+            ${
+              publication.paper_link
+                ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-title-link">${publication.title}</a>`
+                : publication.title
+            }
           </h3>
           <div class="recent-publication-meta">
             <span class="recent-authors">${publication.authors.join(

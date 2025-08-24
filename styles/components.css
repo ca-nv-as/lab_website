@@ -1036,3 +1036,273 @@
     padding-top: var(--spacing-sm);
   }
 }
+
+/* ===== PEOPLE PAGE STYLING ===== */
+
+/* Section titles for people page */
+.people-section-title {
+  font-size: var(--font-size-h2);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: var(--spacing-xxl) 0 var(--spacing-lg) 0;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--primary);
+  position: relative;
+}
+
+.people-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--secondary);
+}
+
+/* Remove the old absolute positioning approach */
+#people .section-title-rotated {
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+  width: 200px;
+  text-align: center;
+}
+
+/* Faculty section with its own title positioning */
+.leaders-container {
+  position: relative;
+  padding-left: 140px; /* Make space for side title */
+  margin-bottom: var(--spacing-xxl);
+}
+
+.leaders-container::before {
+  content: "Faculty";
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+  width: 200px;
+  text-align: center;
+}
+
+/* Students container with its own title positioning */
+.students-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+  position: relative;
+  padding-left: 140px; /* Make space for side title */
+}
+
+.students-container::before {
+  content: "Students";
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+  width: 200px;
+  text-align: center;
+}
+
+/* Alumni container with its own title positioning */
+.alumni-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+  position: relative;
+  padding-left: 140px; /* Make space for side title */
+}
+
+.alumni-container::before {
+  content: "Students";
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+  width: 200px;
+  text-align: center;
+}
+
+/* Hide the tab buttons since we don't want switching */
+.people-tabs {
+  display: none;
+}
+
+/* Make both tab contents always visible */
+.tab-content {
+  display: block !important;
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+/* Alumni styling - no cards, just clean layout */
+.alumni {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: all var(--transition-normal);
+}
+
+.alumni:hover {
+  transform: translateY(-2px);
+}
+
+.alumni-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--primary-light);
+}
+
+.alumni-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.alumni-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-xs);
+}
+
+.alumni-name {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.alumni-links {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.alumni-linkedin-link {
+  color: var(--primary);
+  transition: color var(--transition-normal);
+}
+
+.alumni-linkedin-link:hover {
+  color: var(--primary-dark);
+}
+
+.alumni-details {
+  margin-bottom: var(--spacing-xs);
+}
+
+.alumni-degree {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.alumni-advisor {
+  font-size: var(--font-size-small);
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.alumni-year {
+  font-size: var(--font-size-small);
+  color: var(--text-tertiary);
+  font-weight: 500;
+  margin: 0;
+}
+
+.no-alumni-message {
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: var(--spacing-xl);
+  grid-column: 1 / -1; /* Span full width */
+}
+
+/* Responsive design for people page */
+@media (max-width: 1200px) {
+  .students-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .alumni-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .leaders-container,
+  .students-container,
+  .alumni-container {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: var(--spacing-md);
+  }
+
+  .leaders-container::before,
+  .students-container::before,
+  .alumni-container::before {
+    display: none; /* Hide side titles on mobile */
+  }
+
+  #people .section-title-rotated {
+    position: static;
+    transform: none;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    color: var(--text-primary);
+    opacity: 1;
+    width: auto;
+  }
+
+  .alumni {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-sm);
+  }
+
+  .alumni-image {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .alumni-header {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+}
