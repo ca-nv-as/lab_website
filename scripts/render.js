@@ -178,7 +178,7 @@ const RENDER_FUNCTIONS = {
 
   // Render recent publications for about section (shorter version, last 3 by date)
   renderRecentPublications: () => {
-    const container = document.querySelector("#about .news-list");
+    const container = document.querySelector("#about .publications-list");
     if (!container) return;
 
     // Sort publications by date (newest first) and take last 3
