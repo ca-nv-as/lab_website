@@ -1,0 +1,441 @@
+/* ===== HEADER & NAVIGATION ===== */
+header {
+  background: var(--background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  position: relative;
+}
+
+/* ===== LOGO STYLING ===== */
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform var(--transition-normal);
+  margin: var(--spacing-md);
+  position: relative;
+  z-index: 2;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+.logo-border {
+  display: flex;
+  gap: var(--spacing-sm);
+  border: 2px solid var(--primary);
+  border-radius: 0;
+  padding: var(--spacing-sm) var(--spacing-sm);
+  position: relative;
+  margin-bottom: -16px;
+  align-items: center;
+}
+
+.logo {
+  height: 98px; /* Much larger logo */
+  width: auto;
+  transition: transform var(--transition-normal);
+  position: absolute;
+  bottom: -25px; /* Logo extends further below border */
+  left: -5px;
+  z-index: 2;
+}
+
+.logo-text {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-top: var(--spacing-sm);
+  align-self: center; /* Fixed alignment */
+}
+
+/* Hero logo in about section */
+.hero-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero-logo-image {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.hero-logo-text {
+  font-size: var(--font-size-h1);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* About section styling */
+.about-hero {
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.about-title {
+  font-size: var(--font-size-h1);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: 1px;
+}
+
+.lab-members-image {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px var(--shadow);
+}
+
+.members-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.members-photo:hover {
+  transform: scale(1.02);
+}
+
+/* Desktop Navigation - Moved to the right */
+.desktop-nav {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-xl);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  transform: none;
+  white-space: nowrap;
+}
+
+.desktop-nav a {
+  position: relative;
+  font-weight: 500;
+  font-size: var(--font-size-large);
+  color: var(--text-primary);
+  transition: color var(--transition-normal);
+  padding: var(--spacing-sm) 0;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width var(--transition-normal);
+}
+
+.desktop-nav a:hover,
+.desktop-nav a.active {
+  color: var(--primary);
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  width: 100%;
+}
+
+/* Mobile Navigation */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+  margin-left: auto;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-primary);
+  margin: 3px 0;
+  transition: var(--transition-normal);
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: none;
+}
+
+.mobile-menu-overlay.active {
+  display: block;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform var(--transition-normal);
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-menu ul {
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  text-align: center;
+  list-style: none;
+}
+
+.mobile-menu a {
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: var(--spacing-xl);
+  right: var(--spacing-xl);
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main > section {
+  max-width: var(--max-width);
+  margin: var(--spacing-xxl) auto;
+  padding: 0 var(--spacing-lg);
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+  min-height: 60vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main > section.active {
+  display: block;
+}
+
+/* Add consistent left margin to all sections */
+#about, #research, #publications, #join {
+  padding-left: 80px; /* Same as people section */
+}
+
+/* Ensure no other display rules interfere */
+#research, #people, #publications, #join {
+  display: none;
+}
+
+#research.active, #people.active, #publications.active, #join.active {
+  display: block;
+}
+
+/* Consistent content styling */
+#publications h1, #join h1 {
+  margin-bottom: var(--spacing-xl);
+}
+
+#publications .news-list {
+  margin-top: var(--spacing-lg);
+}
+
+#join p {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Ensure consistent spacing */
+.news-list {
+  margin-top: var(--spacing-lg);
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--background);
+  color: var(--text-secondary);
+  padding: var(--spacing-lg) var(--spacing-lg);
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  line-height: 1;
+}
+
+.footer-text p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.runi-logo-footer {
+  height: 32px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+  display: block;
+  flex-shrink: 0;
+}
+
+.runi-logo-footer:hover {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  nav {
+    padding: 0 var(--spacing-md);
+  }
+  
+  footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .footer-text {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .runi-logo-footer {
+    height: 28px;
+  }
+
+  main > section {
+    margin: var(--spacing-xl) auto;
+    padding: 0 var(--spacing-md);
+    min-height: 50vh;
+  }
+  
+  /* Remove extra padding on mobile */
+  #about, #research, #publications, #join {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  main > section {
+    margin: var(--spacing-lg) auto;
+    padding: 0 var(--spacing-sm);
+    min-height: 40vh;
+  }
+  
+  .logo {
+    height: 60px;
+    bottom: -12px;
+    left: var(--spacing-xs);
+  }
+  
+  .logo-text {
+    font-size: var(--font-size-small);
+    margin-left: 50px;
+  }
+  
+  .logo-border {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-bottom: 12px;
+  }
+  
+  .runi-logo-footer {
+    height: 24px;
+  }
+}
