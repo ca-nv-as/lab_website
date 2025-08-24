@@ -134,18 +134,44 @@ const LAB_DATA = {
   // Publications
   publications: [
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      ],
+      title: "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
+      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      conference: "CVPR",
+      date: "25-12-2025", // format: DD-MM-YYYY
+      image_link: "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
+      paper_link: "https://arxiv.org/abs/2412.19853",
+      project_link: "https://nadavc220.github.io/conditional-balance.github.io/",
+      abstract: ["Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content."],
     },
     {
-      title: "Sed do eiusmod tempor incididunt ut labore et dolore",
-      content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      ],
+      title: "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
+      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      conference: "CVPR",
+      date: "26-12-2025", // format: DD-MM-YYYY
+      image_link: "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
+      paper_link: "https://arxiv.org/abs/2412.19853",
+      project_link: "https://nadavc220.github.io/conditional-balance.github.io/",
+      abstract: ["Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content."],
+    },
+    {
+      title: "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
+      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      conference: "CVPR",
+      date: "28-12-2025", // format: DD-MM-YYYY
+      image_link: "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
+      paper_link: "https://arxiv.org/abs/2412.19853",
+      project_link: "https://nadavc220.github.io/conditional-balance.github.io/",
+      abstract: ["Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content."],
+    },
+    {
+      title: "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
+      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      conference: "CVPR",
+      date: "27-12-2025", // format: DD-MM-YYYY
+      image_link: "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
+      paper_link: "https://arxiv.org/abs/2412.19853",
+      project_link: "https://nadavc220.github.io/conditional-balance.github.io/",
+      abstract: ["Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content."],
     },
   ],
 };
