@@ -59,6 +59,14 @@ const LAB_DATA = {
       website: "https://hagardolev.com",
       linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
+     {
+      name: "Ofir Abramovich",
+      degree: "Ph.D",
+      advisor: "Ariel Shamir",
+      image: "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
+      description:"OPHIR please add!",
+      linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
+    },
   ],
 
   // Alumni
@@ -165,17 +173,17 @@ const LAB_DATA = {
     },
     {
       title:
-        "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
-      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+        "Best Paper EVER!!!",
+      authors: ["Hagar the queen"],
       conference: "CVPR",
-      date: "26-12-2025", // format: DD-MM-YYYY
+      date: "26-12-2026", // format: DD-MM-YYYY
       image_link:
         "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
       paper_link: "https://arxiv.org/abs/2412.19853",
       project_link:
         "https://nadavc220.github.io/conditional-balance.github.io/",
       abstract: [
-        "Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content.",
+        "Hagar did her best job ever"
       ],
     },
     {
