@@ -1,6 +1,10 @@
 /* ===== HEADER & NAVIGATION ===== */
 header {
-  background: var(--background);
+  background: linear-gradient(
+      to bottom,
+      var(--background),
+      99%,
+      transparent);
   position: sticky;
   top: 0;
   z-index: 100;
