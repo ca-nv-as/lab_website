@@ -24,7 +24,7 @@ students: [
   // ... existing students ...
   {
     name: "New Student Name",
-    degree: "M.Sc", // or "Ph.D"
+    degree: "M.Sc.", // or "Ph.D."
     advisor: "Advisor Name",
     image: "images/people/student_photo.jpg", // or full URL for external image - can be from linkedin or other website
     description: "Brief description of research focus and interests.",
@@ -150,7 +150,7 @@ alumni: [
     name: "Alumni Name",
     image: "images/people/alumni_photo.jpg", // or full URL
     advisor: "Advisor Name",
-    degree: "M.Sc", // or "Ph.D"
+    degree: "M.Sc.", // or "Ph.D."
     year: "2024", // graduation year
     linkedin: "https://linkedin.com/in/alumni-profile", // optional
   },

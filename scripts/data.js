@@ -41,7 +41,7 @@ const LAB_DATA = {
   students: [
     {
       name: "Nadav Z. Cohen",
-      degree: "Ph.D",
+      degree: "Ph.D.",
       advisor: "Ariel Shamir",
       image: "images/people/nadav_cohen.jpg",
       description:
@@ -51,7 +51,7 @@ const LAB_DATA = {
     },
     {
       name: "Hagar Dolev",
-      degree: "M.Sc",
+      degree: "M.Sc.",
       advisor: "Ohad Fried",
       image:
         "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
@@ -59,13 +59,31 @@ const LAB_DATA = {
       website: "https://hagardolev.com",
       linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
-     {
+    {
       name: "Ofir Abramovich",
-      degree: "Ph.D",
+      degree: "Ph.D.",
       advisor: "Ariel Shamir",
       image: "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
       description:"OPHIR please add!",
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
+    },
+    {
+      name: "Omri Avrahami",
+      degree: "Ph.D.",
+      advisor: "Ohad Fried & Dani Lischinski",
+      image: "https://omriavrahami.com/static/images/profile.jpg",
+      description: "",
+      website: "https://omriavrahami.com/",
+      linkedin: "https://www.linkedin.com/in/omri-avrahami/",
+    },
+    {
+      name: "Rotem Shalev",
+      degree: "M.Sc., Ph.D.",
+      advisor: "Ohad Fried & Amit Bermano",
+      image: "https://media.licdn.com/dms/image/v2/C5603AQGRDGv8EQBlqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1583644808028?e=1758758400&v=beta&t=X_iZQVWYkzL42lcO7J2-mJ9w31HFeIfncmbRnJ-ZH8s",
+      description: "",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/rotem-shalev/",
     },
   ],
 
@@ -76,7 +94,7 @@ const LAB_DATA = {
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
       advisor: "Ohad Fried",
-      degree: "M.Sc",
+      degree: "M.Sc.",
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
@@ -85,7 +103,7 @@ const LAB_DATA = {
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
       advisor: "Ohad Fried",
-      degree: "M.Sc",
+      degree: "M.Sc.",
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
@@ -94,7 +112,7 @@ const LAB_DATA = {
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
       advisor: "Ohad Fried",
-      degree: "M.Sc",
+      degree: "M.Sc.",
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
