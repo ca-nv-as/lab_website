@@ -88,8 +88,16 @@ const LAB_DATA = {
       website: "",
       linkedin: "https://www.linkedin.com/in/rotem-shalev/",
     },
+    {
+      name: "Oron Nir",
+      degree: "Ph.D.",
+      advisor: "Ariel Shamir",
+      image: "images/people/oron.jpg",
+      description: "My PhD research advances semantic video analytics, spanning tasks such as animated character recognition, video retrieval, synthesis, and multi-object tracking with re-identification. At its core, I explore how vision–language models can unlock richer, more meaningful understanding of video across domains.",
+      website: "https://scholar.google.com/citations?user=f4v5HMgAAAAJ&hl=en", // optional
+      linkedin: "https://www.linkedin.com/in/oronnir/", 
+    },
   ],
-
   // Alumni
   alumni: [
     {
