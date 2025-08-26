@@ -55,7 +55,8 @@ const LAB_DATA = {
       advisor: "Ohad Fried",
       image:
         "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
-      description: "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
+      description:
+        "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
       website: "https://hagardolev.com",
       linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
@@ -63,8 +64,9 @@ const LAB_DATA = {
       name: "Ofir Abramovich",
       degree: "Ph.D.",
       advisor: "Ariel Shamir",
-      image: "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
-      description:"OPHIR please add!",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
+      description: "OPHIR please add!",
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
     },
     {
@@ -80,7 +82,8 @@ const LAB_DATA = {
       name: "Rotem Shalev",
       degree: "M.Sc., Ph.D.",
       advisor: "Ohad Fried & Amit Bermano",
-      image: "https://media.licdn.com/dms/image/v2/C5603AQGRDGv8EQBlqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1583644808028?e=1758758400&v=beta&t=X_iZQVWYkzL42lcO7J2-mJ9w31HFeIfncmbRnJ-ZH8s",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQGRDGv8EQBlqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1583644808028?e=1758758400&v=beta&t=X_iZQVWYkzL42lcO7J2-mJ9w31HFeIfncmbRnJ-ZH8s",
       description: "",
       website: "",
       linkedin: "https://www.linkedin.com/in/rotem-shalev/",
@@ -89,24 +92,6 @@ const LAB_DATA = {
 
   // Alumni
   alumni: [
-    {
-      name: "Gal Almog",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
-      advisor: "Ohad Fried",
-      degree: "M.Sc.",
-      year: "2024",
-      linkedin: "https://www.linkedin.com/in/galalmog/",
-    },
-    {
-      name: "Gal Almog",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
-      advisor: "Ohad Fried",
-      degree: "M.Sc.",
-      year: "2024",
-      linkedin: "https://www.linkedin.com/in/galalmog/",
-    },
     {
       name: "Gal Almog",
       image:
@@ -180,51 +165,6 @@ const LAB_DATA = {
       authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
       conference: "CVPR",
       date: "25-12-2025", // format: DD-MM-YYYY
-      image_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
-      paper_link: "https://arxiv.org/abs/2412.19853",
-      project_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/",
-      abstract: [
-        "Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content.",
-      ],
-    },
-    {
-      title:
-        "Best Paper EVER!!!",
-      authors: ["Hagar the queen"],
-      conference: "CVPR",
-      date: "26-12-2026", // format: DD-MM-YYYY
-      image_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
-      paper_link: "https://arxiv.org/abs/2412.19853",
-      project_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/",
-      abstract: [
-        "Hagar did her best job ever"
-      ],
-    },
-    {
-      title:
-        "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
-      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
-      conference: "CVPR",
-      date: "28-12-2025", // format: DD-MM-YYYY
-      image_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
-      paper_link: "https://arxiv.org/abs/2412.19853",
-      project_link:
-        "https://nadavc220.github.io/conditional-balance.github.io/",
-      abstract: [
-        "Balancing content fidelity and artistic style is a pivotal challenge in image generation. While traditional style transfer methods and modern Denoising Diffusion Probabilistic Models (DDPMs) strive to achieve this balance, they often struggle to do so without sacrificing either style, content, or sometimes both. This work addresses this challenge by analyzing the ability of DDPMs to maintain content and style equilibrium. We introduce a novel method to identify sensitivities within the DDPM attention layers, identifying specific layers that correspond to different stylistic aspects. By directing conditional inputs only to these sensitive layers, our approach enables fine-grained control over style and content, significantly reducing issues arising from over-constrained inputs. Our findings demonstrate that this method enhances recent stylization techniques by better aligning style and content, ultimately improving the quality of generated visual content.",
-      ],
-    },
-    {
-      title:
-        "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
-      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
-      conference: "CVPR",
-      date: "27-12-2025", // format: DD-MM-YYYY
       image_link:
         "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
       paper_link: "https://arxiv.org/abs/2412.19853",
