@@ -97,6 +97,15 @@ const LAB_DATA = {
       website: "https://scholar.google.com/citations?user=f4v5HMgAAAAJ&hl=en", // optional
       linkedin: "https://www.linkedin.com/in/oronnir/", 
     },
+    {
+      name: "Shimon Malnick",
+      degree: "Ph.D.",
+      advisor: "Ohad Fried & Shai Avidan",
+      image: "https://www.malnick.net/assets/img/profile_image.jpeg",
+      description: "I work on image generation models, with a focus on tasks in privacy-preserving learning and model inversion. At its core, my research examines how generative systems encode and reconstruct visual information, both to uncover their capabilities and to mitigate their risks.",
+      website: "https://www.malnick.net/",
+      linkedin: "https://www.linkedin.com/in/shimonmalnick/",
+    },
   ],
   // Alumni
   alumni: [
@@ -197,5 +206,22 @@ const LAB_DATA = {
       "We leverage this property to devise new strategies for finding appropriate values for the radius more efficiently based on the Ternary Search algorithm. This is especially important for large scale data that is high-dimensional, where parameter tuning is computationally intensive. We validate our methodology through extensive applications across a range of high-dimensional, large-scale NLP, Audio, and Computer Vision tasks, demonstrating its practical effectiveness and robustness. This work not only offers a significant advancement in parameter control for density-based clustering but also broadens the understanding regarding the relations between their guiding parameters.",
     ],
   },
+    {
+      title:
+          "Memories of Forgotten Concepts",
+      authors: ["Matan Rusanovsky", "Shimon Malnick", "Amir Jevnisek", "Ohad Fried", "Shai Avidan"],
+      conference: "CVPR",
+      date: "13-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "https://www.malnick.net/assets/img/publication_preview/memories_forgotten_concepts/sphere.png",
+      paper_link: "https://arxiv.org/abs/2412.00782",
+      project_link:
+          "https://matanr.github.io/Memories_of_Forgotten_Concepts/",
+      github_link:
+          "https://github.com/matanr/Memories_of_Forgotten_Concepts/",
+      abstract: [
+        "Diffusion models dominate the space of text-to-image generation, yet they may produce undesirable outputs, including explicit content or private data. To mitigate this, concept ablation techniques have been explored to limit the generation of certain concepts. In this paper, we reveal that the erased concept information persists in the model and that erased concept images can be generated using the right latent. Utilizing inversion methods, we show that there exist latent seeds capable of generating high quality images of erased concepts. Moreover, we show that these latents have likelihoods that overlap with those of images outside the erased concept. We extend this to demonstrate that for every image from the erased concept set, we can generate many seeds that generate the erased concept. Given the vast space of latents capable of generating ablated concept images, our results suggest that fully erasing concept information may be intractable, highlighting possible vulnerabilities in current concept ablation techniques.",
+      ],
+    },
   ],
 };
