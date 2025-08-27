@@ -106,6 +106,15 @@ const LAB_DATA = {
       website: "https://www.malnick.net/",
       linkedin: "https://www.linkedin.com/in/shimonmalnick/",
     },
+    {
+      name: "Idan Dov Vidra",
+      degree: "M.Sc",
+      advisor: "Ariel Shamir",
+      image: "images/people/oron.jpg",
+      description: "My research is on AI and human collaboration and co-creativity.",
+      website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
+    },
   ],
   // Alumni
   alumni: [
@@ -221,6 +230,23 @@ const LAB_DATA = {
           "https://github.com/matanr/Memories_of_Forgotten_Concepts/",
       abstract: [
         "Diffusion models dominate the space of text-to-image generation, yet they may produce undesirable outputs, including explicit content or private data. To mitigate this, concept ablation techniques have been explored to limit the generation of certain concepts. In this paper, we reveal that the erased concept information persists in the model and that erased concept images can be generated using the right latent. Utilizing inversion methods, we show that there exist latent seeds capable of generating high quality images of erased concepts. Moreover, we show that these latents have likelihoods that overlap with those of images outside the erased concept. We extend this to demonstrate that for every image from the erased concept set, we can generate many seeds that generate the erased concept. Given the vast space of latents capable of generating ablated concept images, our results suggest that fully erasing concept information may be intractable, highlighting possible vulnerabilities in current concept ablation techniques.",
+      ],
+    },
+    {
+      title:
+          "Playing Along - Building AI Agents for Co-Creation of Improvised Stories",
+      authors: ["Idan Dov Vidra", "Gal Kimron", "Lior Noy", "Ariel Shamir"],
+      conference: "ICCC",
+      date: "23-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "images/teasers/yes_and_paper_teaser.png",
+      paper_link: "https://idanvidra.github.io/playing_along_paper_site/papers/Playing%20Along%20-%20Building%20AI%20Agents%20for%20Co-Creation%20of%20Improvised%20Stories%20-%20Paper.pdf",
+      project_link:
+          "https://idanvidra.github.io/playing_along_paper_site/",
+      github_link:
+          "https://github.com/idanvidra/Yes-And-Game-Paper",
+      abstract: [
+        "This work focuses on human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the 'Yes! and…' game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent are indistinguishable from stories co-created with a human in terms of novelty, value, and surprise. This shows how 'hallucinations' - typically considered problematic in AI systems - can serve as creative assets in collaborative storytelling. More generally, our approach presents the 'Yes! and…' game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup"
       ],
     },
   ],
