@@ -223,5 +223,22 @@ const LAB_DATA = {
         "Diffusion models dominate the space of text-to-image generation, yet they may produce undesirable outputs, including explicit content or private data. To mitigate this, concept ablation techniques have been explored to limit the generation of certain concepts. In this paper, we reveal that the erased concept information persists in the model and that erased concept images can be generated using the right latent. Utilizing inversion methods, we show that there exist latent seeds capable of generating high quality images of erased concepts. Moreover, we show that these latents have likelihoods that overlap with those of images outside the erased concept. We extend this to demonstrate that for every image from the erased concept set, we can generate many seeds that generate the erased concept. Given the vast space of latents capable of generating ablated concept images, our results suggest that fully erasing concept information may be intractable, highlighting possible vulnerabilities in current concept ablation techniques.",
       ],
     },
+    {
+      title:
+          "Taming Normalizing Flows",
+      authors: ["Shimon Malnick", "Shai Avidan", "Ohad Fried"],
+      conference: "WACV",
+      date: "01-01-2024", // format: DD-MM-YYYY
+      image_link:
+          "https://www.malnick.net/assets/img/publication_preview/taming_flows/taming.png",
+      paper_link: "https://arxiv.org/abs/2211.16488",
+      project_link:
+          "https://www.malnick.net/taming_norm_flows",
+      github_link:
+          "https://github.com/ShimonMalnick/taming_norm_flows",
+      abstract: [
+        "We propose an algorithm for taming Normalizing Flow models - changing the probability that the model will produce a specific image or image category. We focus on Normalizing Flows because they can calculate the exact generation probability likelihood for a given image. We demonstrate taming using models that generate human faces, a subdomain with many interesting privacy and bias considerations. Our method can be used in the context of privacy, e.g., removing a specific person from the output of a model, and also in the context of debiasing by forcing a model to output specific image categories according to a given target distribution. Taming is achieved with a fast fine-tuning process without retraining the model from scratch, achieving the goal in a matter of minutes. We evaluate our method qualitatively and quantitatively, showing that the generation quality remains intact, while the desired changes are applied.",
+      ],
+    },
   ],
 };
