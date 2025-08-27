@@ -83,7 +83,8 @@ publications: [
 
 **Optional fields:**
 
-- `project_link`: Link to project website or code repository
+- `project_link`: Link to project website
+- `github_link`: Link to code repository
 
 ### Adding News Items
 
