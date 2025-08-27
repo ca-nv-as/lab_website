@@ -1346,3 +1346,53 @@
     width: 80%; /* Wider gradient on mobile */
   }
 }
+
+/* Update the publication links styling */
+.publication-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  margin-left: var(--spacing-sm);
+}
+
+.publication-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-normal);
+}
+
+.publication-link img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+}
+
+.publication-link:hover img {
+  opacity: 1;
+}
+
+/* Specific styling for each link type */
+.arxiv-link {
+  color: var(--success);
+}
+
+.project-link {
+  color: var(--info);
+}
+
+.github-link {
+  color: var(--text-secondary);
+}
+
+.github-link img {
+  filter: grayscale(100%);
+  transition: filter var(--transition-normal);
+}
+
+.github-link:hover img {
+  filter: none;
+}

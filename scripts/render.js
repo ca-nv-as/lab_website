@@ -245,26 +245,35 @@ const RENDER_FUNCTIONS = {
         <div class="publication-header">
           <h3 class="publication-title">${publication.title}</h3>
           <div class="publication-meta">
-            <div class="publication-authors">${publication.authors.join(
-              ", "
-            )}</div>
+            <div class="publication-authors">${publication.authors.join(", ")}</div>
             <div class="publication-meta-row">
-              <span class="publication-conference">${
-                publication.conference
-              }</span>
-              <span class="publication-year">${
-                publication.date.split("-")[2]
-              }</span>
-              ${
-                publication.paper_link
-                  ? `<a href="${publication.paper_link}" target="_blank" class="publication-link paper-link">Paper</a>`
-                  : ""
-              }
-              ${
-                publication.project_link
-                  ? `<a href="${publication.project_link}" target="_blank" class="publication-link project-link">Project</a>`
-                  : ""
-              }
+              <span class="publication-conference">${publication.conference}</span>
+              <span class="publication-year">${publication.date.split("-")[2]}</span>
+              <div class="publication-links">
+                ${
+                  publication.paper_link
+                    ? `<a href="${publication.paper_link}" target="_blank" class="publication-link arxiv-link" title="View on arXiv">
+                        <img src="images/icons/arxiv-logomark-small.svg" alt="arXiv"/>
+                       </a>`
+                    : ""
+                }
+                ${
+                  publication.project_link
+                    ? `<a href="${publication.project_link}" target="_blank" class="publication-link project-link" title="View Project">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                       </a>`
+                    : ""
+                }
+                ${
+                  publication.github_link
+                    ? `<a href="${publication.github_link}" target="_blank" class="publication-link github-link" title="View on GitHub">
+                        <img src="images/icons/github.png" alt="GitHub"/>
+                       </a>`
+                    : ""
+                }
+              </div>
             </div>
           </div>
         </div>
