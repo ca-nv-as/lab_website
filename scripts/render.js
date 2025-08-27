@@ -54,7 +54,14 @@ const RENDER_FUNCTIONS = {
     const container = document.querySelector(".students-container");
     if (!container) return;
 
-    container.innerHTML = LAB_DATA.students
+    // Sort students by last name
+    const sortedStudents = [...LAB_DATA.students].sort((a, b) => {
+      const aLastName = a.name.split(" ").pop();
+      const bLastName = b.name.split(" ").pop();
+      return aLastName.localeCompare(bLastName);
+    });
+
+    container.innerHTML = sortedStudents
       .map(
         (student) => `
       <div class="student">
@@ -110,7 +117,12 @@ const RENDER_FUNCTIONS = {
       return;
     }
 
-    container.innerHTML = LAB_DATA.alumni
+    // Sort alumni by year in descending order (most recent first)
+    const sortedAlumni = [...LAB_DATA.alumni].sort((a, b) => {
+      return parseInt(b.year) - parseInt(a.year);
+    });
+
+    container.innerHTML = sortedAlumni
       .map(
         (alumni) => `
       <div class="alumni">
