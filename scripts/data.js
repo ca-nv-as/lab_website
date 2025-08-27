@@ -172,7 +172,7 @@ const LAB_DATA = {
         "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
       authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
       conference: "CVPR",
-      date: "25-12-2024", // format: DD-MM-YYYY
+      date: "13-06-2025", // format: DD-MM-YYYY
       image_link:
         "https://nadavc220.github.io/conditional-balance.github.io/static/images/results_image_cond.png",
       paper_link: "https://arxiv.org/abs/2412.19853",

@@ -220,7 +220,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 0; /* Remove existing margin */
+  padding-bottom: var(--spacing-xxl);
+  border-bottom: 2px solid var(--primary); /* Add navy blue line */
 }
 
 .leader {
@@ -271,8 +273,8 @@
 }
 
 .student img {
-  width: 100px;
-  height: 100px;
+  width: 150px; /* Increased from 100px */
+  height: 150px; /* Increased from 100px */
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: var(--spacing-md);
@@ -476,8 +478,12 @@
 }
 
 .publication-conference {
-  color: var(--text-secondary);
-  font-weight: 500;
+  color: var(--info); /* Change from var(--text-secondary) to var(--info) for blue color */
+  font-weight: 600;
+  background: var(--primary-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  display: inline-block;
 }
 
 .publication-year {
@@ -498,17 +504,30 @@
 }
 
 .publication-image {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   text-align: center;
 }
 
 .publication-image img {
   max-width: 100%;
-  height: 150px;
+  height: 250px;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 12px var(--shadow);
+  /* Remove the transform transition */
+}
+
+/* Remove or comment out the hover effect */
+/* .publication-image img:hover {
+    transform: scale(1.05);
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-image img {
+    height: 200px; /* Slightly smaller on mobile but still larger than original */
+  }
 }
 
 /* Gallery layout for the publications list */
@@ -686,13 +705,13 @@
 }
 
 .recent-conference {
-  color: var(--primary);
+  color: var(--info); /* Change from var(--primary) to var(--info) for blue color */
   font-weight: 600;
-  background: var(--primary-light);
+  background: rgba(52, 152, 219, 0.1); /* Light blue background */
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
-  white-space: nowrap; /* Prevent conference name from wrapping */
-  flex-shrink: 0; /* Don't shrink */
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .recent-year {
@@ -921,8 +940,8 @@
   }
 
   .student img {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Increased from 80px for mobile */
+    height: 120px; /* Increased from 80px for mobile */
   }
 }
 
@@ -933,8 +952,8 @@
   }
 
   .student img {
-    width: 80px;
-    height: 80px;
+    width: 100px; /* Increased from 80px for smallest screens */
+    height: 100px; /* Increased from 80px for smallest screens */
   }
 }
 
@@ -1108,7 +1127,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 0; /* Remove existing margin */
+  padding-bottom: var(--spacing-xxl);
+  border-bottom: 2px solid var(--primary); /* Add navy blue line */
   position: relative;
   padding-left: 140px; /* Make space for side title */
 }
@@ -1137,6 +1158,7 @@
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xxl);
   position: relative;
+  margin-top: var(--spacing-xxl); /* Add consistent spacing */
   padding-left: 140px; /* Make space for side title */
 }
 
@@ -1262,120 +1284,65 @@
   grid-column: 1 / -1; /* Span full width */
 }
 
-/* Responsive design for people page */
-@media (max-width: 1200px) {
-  .students-container {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-
-  .alumni-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 900px; /* Smaller max-width on medium screens */
-  }
+/* Update the section containers */
+.leaders-container {
+  /* Remove existing border */
+  border-bottom: none;
+  /* Add new separator */
+  position: relative;
+  margin-bottom: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xl);
 }
 
+.leaders-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary),
+    transparent
+  );
+}
+
+.students-container {
+  /* Remove existing border */
+  border-bottom: none;
+  /* Add new separator */
+  position: relative;
+  margin-bottom: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.students-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary),
+    transparent
+  );
+}
+
+.alumni-container {
+  padding-top: var(--spacing-xl);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .leaders-container,
-  .students-container,
-  .alumni-container {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-    gap: var(--spacing-md);
-    max-width: none; /* Full width on mobile */
-    text-align: center; /* Center content on mobile */
-  }
-
-  /* Hide the rotated side titles on mobile */
-  .leaders-container::before,
-  .students-container::before,
-  .alumni-container::before {
-    display: none;
-  }
-
-  /* Show regular titles on mobile (not rotated) */
-  #people .section-title-rotated {
-    position: static;
-    transform: none;
-    margin-bottom: var(--spacing-lg);
-    text-align: center;
-    color: var(--text-primary);
-    opacity: 1;
-    width: auto;
-    display: block !important; /* Force display on mobile */
-  }
-
-  /* Center the grid items on mobile */
-  .students-container {
-    justify-items: center;
-  }
-
-  .alumni-container {
-    justify-items: center;
-  }
-
-  .alumni {
-    flex-direction: column;
-    text-align: center;
-    padding: var(--spacing-sm);
-    max-width: none; /* Full width on mobile */
-    width: 100%; /* Take full width on mobile */
-  }
-
-  .alumni-image {
-    width: 80px; /* Slightly smaller on mobile */
-    height: 80px; /* Slightly smaller on mobile */
-    margin: 0 auto;
-  }
-
-  .alumni-header {
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xs);
-  }
-
-  /* Center student cards on mobile */
-  .student {
-    text-align: center;
-    width: 100%;
-  }
-
-  .student img {
-    margin: 0 auto;
-    width: 80px; /* Same size as alumni on mobile */
-    height: 80px; /* Same size as alumni on mobile */
-  }
-
-  .student-links {
-    justify-content: center;
-  }
-
-  /* Center faculty on mobile */
-  .leader {
-    text-align: center;
-  }
-
-  .leader img {
-    margin: 0 auto;
-  }
-}
-
-/* Extra small mobile devices */
-@media (max-width: 480px) {
-  .leaders-container,
-  .students-container,
-  .alumni-container {
-    padding: 0 var(--spacing-sm); /* Add some side padding */
-  }
-
-  .alumni {
-    padding: var(--spacing-sm);
-  }
-
-  .student {
-    padding: var(--spacing-sm);
-  }
-
-  .leader {
-    padding: var(--spacing-sm);
+  .leaders-container::after,
+  .students-container::after {
+    width: 80%; /* Wider gradient on mobile */
   }
 }
