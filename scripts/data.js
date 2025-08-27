@@ -106,6 +106,15 @@ const LAB_DATA = {
       website: "https://www.malnick.net/",
       linkedin: "https://www.linkedin.com/in/shimonmalnick/",
     },
+    {
+      name: "Idan Dov Vidra",
+      degree: "M.Sc",
+      advisor: "Ariel Shamir",
+      image: "images/people/oron.jpg",
+      description: "My research is on AI and human collaboration and co-creativity.",
+      website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
+    },
   ],
   // Alumni
   alumni: [
@@ -224,8 +233,7 @@ const LAB_DATA = {
       ],
     },
     {
-      title:
-          "Taming Normalizing Flows",
+      title: "Taming Normalizing Flows",
       authors: ["Shimon Malnick", "Shai Avidan", "Ohad Fried"],
       conference: "WACV",
       date: "01-01-2024", // format: DD-MM-YYYY
@@ -238,6 +246,22 @@ const LAB_DATA = {
           "https://github.com/ShimonMalnick/taming_norm_flows",
       abstract: [
         "We propose an algorithm for taming Normalizing Flow models - changing the probability that the model will produce a specific image or image category. We focus on Normalizing Flows because they can calculate the exact generation probability likelihood for a given image. We demonstrate taming using models that generate human faces, a subdomain with many interesting privacy and bias considerations. Our method can be used in the context of privacy, e.g., removing a specific person from the output of a model, and also in the context of debiasing by forcing a model to output specific image categories according to a given target distribution. Taming is achieved with a fast fine-tuning process without retraining the model from scratch, achieving the goal in a matter of minutes. We evaluate our method qualitatively and quantitatively, showing that the generation quality remains intact, while the desired changes are applied.",
+      ],
+    },
+    {
+      title: "Playing Along - Building AI Agents for Co-Creation of Improvised Stories",
+      authors: ["Idan Dov Vidra", "Gal Kimron", "Lior Noy", "Ariel Shamir"],
+      conference: "ICCC",
+      date: "23-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "images/teasers/yes_and_paper_teaser.png",
+      paper_link: "https://idanvidra.github.io/playing_along_paper_site/papers/Playing%20Along%20-%20Building%20AI%20Agents%20for%20Co-Creation%20of%20Improvised%20Stories%20-%20Paper.pdf",
+      project_link:
+          "https://idanvidra.github.io/playing_along_paper_site/",
+      github_link:
+          "https://github.com/idanvidra/Yes-And-Game-Paper",
+      abstract: [
+        "This work focuses on human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the 'Yes! and…' game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent are indistinguishable from stories co-created with a human in terms of novelty, value, and surprise. This shows how 'hallucinations' - typically considered problematic in AI systems - can serve as creative assets in collaborative storytelling. More generally, our approach presents the 'Yes! and…' game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup"
       ],
     },
   ],
