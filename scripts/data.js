@@ -54,7 +54,7 @@ const LAB_DATA = {
       degree: "M.Sc.",
       advisor: "Ohad Fried",
       image:
-        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
+        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1759363200&v=beta&t=WPyd1WM8dRhBXOd7InQcOw8BmQaUEIBx2JTRAxwQN04",
       description:
         "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
       website: "https://hagardolev.com",
@@ -108,9 +108,9 @@ const LAB_DATA = {
     },
     {
       name: "Idan Dov Vidra",
-      degree: "M.Sc",
+      degree: "M.Sc.",
       advisor: "Ariel Shamir",
-      image: "images/people/oron.jpg",
+      image: "images/people/idan_vidra.jpg",
       description: "My research is on AI and human collaboration and co-creativity.",
       website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
       linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
