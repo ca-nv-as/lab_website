@@ -132,6 +132,15 @@ const LAB_DATA = {
       description: "My research focuses on generative 3D graphics, with an emphasis on creating and manipulating 3D meshes and textured shapes.",
       website: "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
       linkedin: "https://www.linkedin.com/in/rotem-g8",
+    },    
+    {
+      name: "Adi Rosenthal",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir & Doron Friedman",
+      image: "images/people/adirosenthal.jpg",
+      description: "I work on co-speech gesture synthesis and semantic motion editing. Using audio and text cues, I generate and control gestures that are natural, personalized, and aligned with meaning.",
+      website: "https://github.com/Adirosenthal540",
+      linkedin: "https://www.https://www.linkedin.com/in/adi-rosenthal-24a3291aa/",
     },
   ],
   // Alumni
