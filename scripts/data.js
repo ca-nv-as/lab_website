@@ -65,7 +65,7 @@ const LAB_DATA = {
       degree: "M.Sc.",
       advisor: "Yacov Hel-Or & Ohad Fried",
       image:
-        "images/people/ofek_basson.PNG",
+        "images/people/ofek_basson.jpg",
       description: "My research lies at the intersection of image generation and 3D understanding, focusing on improving how generative models capture and synthesize the structure of visual scenes.",
       website: "https://github.com/OfekBasson",
       linkedin: "https://www.linkedin.com/in/ofek-basson/",
