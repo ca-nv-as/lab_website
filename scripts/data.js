@@ -137,7 +137,7 @@ const LAB_DATA = {
       name: "Adi Rosenthal",
       degree: "M.Sc.",
       advisor: "Ariel Shamir & Doron Friedman",
-      image: "images/people/adi_rosenthal.jpg",
+      image: "images/people/adirosenthal.jpg",
       description: "I work on co-speech gesture synthesis and semantic motion editing. Using audio and text cues, I generate and control gestures that are natural, personalized, and aligned with meaning.",
       website: "https://github.com/Adirosenthal540",
       linkedin: "https://www.https://www.linkedin.com/in/adi-rosenthal-24a3291aa/",
