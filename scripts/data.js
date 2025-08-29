@@ -216,7 +216,7 @@ const LAB_DATA = {
     {
       title:
         "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
-      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      authors: ["Nadav Z. Cohen", "Oron Nir", "Ariel Shamir"],
       conference: "CVPR",
       date: "13-06-2025", // format: DD-MM-YYYY
       image_link:
