@@ -2,6 +2,10 @@
 .about-hero {
   text-align: center;
   margin-bottom: var(--spacing-xxl);
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-title {
@@ -18,6 +22,7 @@
   margin: 0 auto var(--spacing-xl);
   text-align: left;
   line-height: 1.8;
+  width: 90%;
 }
 
 .lab-description p {
@@ -32,6 +37,7 @@
 
 .lab-members-image {
   max-width: 800px;
+  width: 90%;
   margin: 0 auto;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -532,55 +538,41 @@
 
 /* Gallery layout for the publications list */
 #publications .news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  max-width: 90%;
+  margin: var(--spacing-lg) auto;
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-lg);
+  justify-content: center;
 }
 
-/* Responsive design */
+/* Update individual publication item width */
+.publication-item {
+  width: calc(50% - var(--spacing-lg));
+  margin-right: 0; /* Remove the old margin system */
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Update responsive breakpoints */
 @media (max-width: 1400px) {
   .publication-item {
-    width: calc(33.333% - var(--spacing-md));
-  }
-
-  .publication-item:nth-child(4n) {
-    margin-right: var(--spacing-md);
-  }
-
-  .publication-item:nth-child(3n) {
-    margin-right: 0;
+    width: calc(50% - var(--spacing-lg));
   }
 }
 
 @media (max-width: 1000px) {
+  #publications .news-list {
+    max-width: 95%; /* Slightly wider on smaller screens */
+  }
+  
   .publication-item {
     width: calc(50% - var(--spacing-md));
   }
-
-  .publication-item:nth-child(3n) {
-    margin-right: var(--spacing-md);
-  }
-
-  .publication-item:nth-child(2n) {
-    margin-right: 0;
-  }
 }
 
 @media (max-width: 768px) {
   .publication-item {
     width: 100%;
-    margin-right: 0;
-  }
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .publication-item {
-    width: 100%;
-    margin-right: 0;
   }
 }
 
@@ -943,17 +935,52 @@
     width: 120px; /* Increased from 80px for mobile */
     height: 120px; /* Increased from 80px for mobile */
   }
-}
 
-@media (max-width: 480px) {
-  .leader img {
-    width: 150px;
-    height: 150px;
+  /* Center about text on mobile */
+  .lab-description {
+    text-align: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .student img {
-    width: 100px; /* Increased from 80px for smallest screens */
-    height: 100px; /* Increased from 80px for smallest screens */
+  /* Adjust news items width on mobile */
+  #about .news-list {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust recent publications width on mobile */
+  #about .publications-list {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-item,
+  .recent-publication-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Keep consistent spacing */
+  #about h2 {
+    text-align: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .lab-description,
+  #about .news-list,
+  #about .publications-list,
+  #about h2 {
+    width: 90%;
   }
 }
 
@@ -1341,9 +1368,69 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .leaders-container,
+  .students-container,
+  .alumni-container {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-xl);
+  }
+
+  /* Adjust vertical titles for mobile */
+  .leaders-container::before,
+  .students-container::before,
+  .alumni-container::before {
+    left: -25px;
+    top: 20px;
+    font-size: var(--font-size-h4);
+    transform: translateY(0) rotate(-90deg);
+    opacity: 0.9;
+    width: auto;
+  }
+
+  /* Center individual cards */
+  .leader,
+  .student,
+  .alumni {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Ensure proper spacing between sections */
+  .students-container {
+    margin-top: var(--spacing-xxl);
+    padding-top: var(--spacing-xl);
+  }
+
+  .alumni-container {
+    margin-top: var(--spacing-xxl);
+    padding-top: var(--spacing-xl);
+  }
+
+  /* Adjust gradients for mobile */
   .leaders-container::after,
   .students-container::after {
-    width: 80%; /* Wider gradient on mobile */
+    width: 90%;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  .leaders-container::before,
+  .students-container::before,
+  .alumni-container::before {
+    left: -20px;
+    font-size: var(--font-size-h5);
+  }
+
+  .leader,
+  .student,
+  .alumni {
+    width: 95%;
   }
 }
 
