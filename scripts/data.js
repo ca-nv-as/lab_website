@@ -124,6 +124,15 @@ const LAB_DATA = {
       website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
       linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
     },
+    {
+      name: "Rotem Gatenyo",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried",
+      image: "images/people/rotem_gatenyo.jpg",
+      description: "My research focuses on generative 3D graphics, with an emphasis on creating and manipulating 3D meshes and textured shapes.",
+      website: "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/rotem-g8",
+    },
   ],
   // Alumni
   alumni: [
