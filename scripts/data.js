@@ -145,6 +145,16 @@ const LAB_DATA = {
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
+    {
+      name: "Or Madar",
+      image:
+        "images/people/or_madar.jpg",
+      advisor: "Ohad Fried",
+      degree: "M.Sc.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/or-madar-a73bb5143/",
+    },
+
   ],
 
   // Research areas
@@ -282,5 +292,22 @@ const LAB_DATA = {
         "This work focuses on human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the 'Yes! and…' game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent are indistinguishable from stories co-created with a human in terms of novelty, value, and surprise. This shows how 'hallucinations' - typically considered problematic in AI systems - can serve as creative assets in collaborative storytelling. More generally, our approach presents the 'Yes! and…' game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup"
       ],
     },
+    {
+      title:
+          "Tiled Diffusion",
+      authors: ["Or Madar", "Ohad Fried"],
+      conference: "CVPR",
+      date: "13-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "https://madaror.github.io/tiled-diffusion.github.io/images/optimized/teaser.webp",
+      paper_link: "https://arxiv.org/abs/2412.15185",
+      project_link:
+          "https://madaror.github.io/tiled-diffusion.github.io/",
+      github_link:
+          "https://github.com/madaror/tiled-diffusion",
+      abstract: [
+        "Image tiling—the seamless connection of disparate images to create a coherent visual field—is crucial for applications such as texture creation, video game asset development, and digital art. Traditionally, tiles have been constructed manually, a method that poses significant limitations in scalability and flexibility. Recent research has attempted to automate this process using generative models. However, current approaches primarily focus on tiling textures and manipulating models for single-image generation, without inherently supporting the creation of multiple interconnected tiles across diverse domains. This paper presents Tiled Diffusion, a novel approach that extends the capabilities of diffusion models to accommodate the generation of cohesive tiling patterns across various domains of image synthesis that require tiling. Our method supports a wide range of tiling scenarios, from self-tiling to complex many-to-many connections, enabling seamless integration of multiple images. Tiled Diffusion automates the tiling process, eliminating the need for manual intervention and enhancing creative possibilities in various applications, such as seamlessly tiling of existing images, tiled texture creation, and 360° synthesis.",
+      ],
+    }
   ],
 };
