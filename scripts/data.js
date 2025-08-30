@@ -71,11 +71,11 @@ const LAB_DATA = {
     },
     {
       name: "Ofir Abramovich",
-      degree: "Ph.D.",
+      degree: "Ph.D Candidate.",
       advisor: "Ariel Shamir",
       image:
         "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
-      description: "OPHIR please add!",
+      description: "I'm broadly interested in 3D Graphics, focusing on visual reasoning, 3D motion modeling and generation using Transformers",
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
     },
     {
