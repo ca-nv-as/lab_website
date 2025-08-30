@@ -142,6 +142,15 @@ const LAB_DATA = {
       website: "https://github.com/Adirosenthal540",
       linkedin: "https://www.linkedin.com/in/adi-rosenthal-24a3291aa/",
     },
+    {
+      name: "Ben Vardi",
+      degree: "Ph.D.",
+      advisor: "Ariel Shamir",
+      image: "images/people/ben_vardi.jpg",
+      description: "My research focuses on the robustness of models combining vision and language. I explore efficient interventions to strengthen robustness in tasks such as text-to-image and image-to-text generation, as well as in pathology applications.",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/ben-vardi-760432108/",
+    },
   ],
   // Alumni
   alumni: [
