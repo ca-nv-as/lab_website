@@ -2,6 +2,10 @@
 .about-hero {
   text-align: center;
   margin-bottom: var(--spacing-xxl);
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-title {
@@ -18,6 +22,7 @@
   margin: 0 auto var(--spacing-xl);
   text-align: left;
   line-height: 1.8;
+  width: 90%;
 }
 
 .lab-description p {
@@ -32,6 +37,7 @@
 
 .lab-members-image {
   max-width: 800px;
+  width: 90%;
   margin: 0 auto;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -470,37 +476,49 @@
   line-height: 1.3;
 }
 
-.publication-meta-row {
+.publication-meta-row,
+.recent-meta-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-xs);
   align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: nowrap;
+  margin-top: var(--spacing-sm);
 }
 
-.publication-conference {
-  color: var(--info); /* Change from var(--text-secondary) to var(--info) for blue color */
+.publication-conference,
+.recent-publication-meta .publication-conference {
+  flex-shrink: 0;
+  color: var(--info);
   font-weight: 600;
   background: var(--primary-light);
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
-  display: inline-block;
 }
 
 .publication-year {
+  flex-shrink: 0;
   color: var(--text-tertiary);
 }
 
-.publication-link {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color var(--transition-normal);
-  font-size: 0.9em;
+.publication-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
-.publication-link:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-meta-row,
+  .recent-meta-row {
+    gap: var(--spacing-sm);
+  }
+  
+  .publication-conference,
+  .recent-publication-meta .publication-conference {
+    font-size: 0.9em;
+  }
 }
 
 .publication-image {
@@ -532,55 +550,41 @@
 
 /* Gallery layout for the publications list */
 #publications .news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  max-width: 90%;
+  margin: var(--spacing-lg) auto;
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-lg);
+  justify-content: center;
 }
 
-/* Responsive design */
+/* Update individual publication item width */
+.publication-item {
+  width: calc(50% - var(--spacing-lg));
+  margin-right: 0; /* Remove the old margin system */
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Update responsive breakpoints */
 @media (max-width: 1400px) {
   .publication-item {
-    width: calc(33.333% - var(--spacing-md));
-  }
-
-  .publication-item:nth-child(4n) {
-    margin-right: var(--spacing-md);
-  }
-
-  .publication-item:nth-child(3n) {
-    margin-right: 0;
+    width: calc(50% - var(--spacing-lg));
   }
 }
 
 @media (max-width: 1000px) {
+  #publications .news-list {
+    max-width: 95%; /* Slightly wider on smaller screens */
+  }
+  
   .publication-item {
     width: calc(50% - var(--spacing-md));
   }
-
-  .publication-item:nth-child(3n) {
-    margin-right: var(--spacing-md);
-  }
-
-  .publication-item:nth-child(2n) {
-    margin-right: 0;
-  }
 }
 
 @media (max-width: 768px) {
   .publication-item {
     width: 100%;
-    margin-right: 0;
-  }
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .publication-item {
-    width: 100%;
-    margin-right: 0;
   }
 }
 
@@ -643,6 +647,8 @@
 }
 
 .recent-publication-item {
+  display: flex;
+  gap: var(--spacing-xl);
   background: var(--background-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -650,133 +656,42 @@
   margin-bottom: var(--spacing-lg);
   box-shadow: 0 4px 16px var(--shadow);
   transition: all var(--transition-normal);
-  list-style: none;
-  overflow: hidden;
 }
 
-.recent-publication-item:hover {
-  box-shadow: 0 8px 25px var(--shadow);
-  transform: translateY(-2px);
-  border-color: var(--primary);
+.recent-publication-image {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.recent-publication-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .recent-publication-details {
-  width: 100%;
-}
-
-.recent-publication-title {
-  font-size: var(--font-size-h5);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.3;
-}
-
-.recent-publication-title-link {
-  color: inherit;
-  text-decoration: none;
-  transition: color var(--transition-normal);
-}
-
-.recent-publication-title-link:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-/* Remove the old link buttons section since we don't need it anymore */
-.recent-publication-links {
-  display: none; /* Hide the old buttons */
-}
-
-.recent-publication-meta {
+  flex: 1;
+  min-width: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-  font-size: var(--font-size-small);
-  align-items: center; /* Align items vertically */
+  flex-direction: column;
 }
 
-.recent-authors {
-  color: var(--text-primary);
-  font-weight: 500;
-  flex: 1; /* Take up available space */
-  min-width: 0; /* Allow text to wrap */
-}
-
-.recent-conference {
-  color: var(--info); /* Change from var(--primary) to var(--info) for blue color */
-  font-weight: 600;
-  background: rgba(52, 152, 219, 0.1); /* Light blue background */
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.recent-year {
-  color: var(--text-tertiary);
-  font-weight: 500;
-  white-space: nowrap; /* Prevent year from wrapping */
-  flex-shrink: 0; /* Don't shrink */
-}
-
-.recent-publication-link {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: var(--font-size-small);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border: 1px solid var(--primary);
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-normal);
-  background: transparent;
-}
-
-.recent-publication-link:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--primary-shadow);
-}
-
-.recent-publication-link.paper-link {
-  border-color: var(--success);
-  color: var(--success);
-}
-
-.recent-publication-link.paper-link:hover {
-  background: var(--success);
-  color: white;
-}
-
-.recent-publication-link.project-link {
-  border-color: var(--info);
-  color: var(--info);
-}
-
-.recent-publication-link.project-link:hover {
-  background: var(--info);
-  color: white;
-}
-
-/* Responsive design for recent publications */
+/* Mobile adjustments */
 @media (max-width: 768px) {
-  .recent-publication-meta {
+  .recent-publication-item {
     flex-direction: column;
-    gap: var(--spacing-sm);
-    align-items: flex-start; /* Align to left on mobile */
+    gap: var(--spacing-lg);
   }
 
-  .recent-authors {
-    flex: none; /* Don't flex on mobile */
+  .recent-publication-image {
+    width: 100%;
   }
 
-  .recent-publication-links {
-    justify-content: center;
+  .recent-publication-image img {
+    height: 200px;
+    width: 100%;
   }
 }
 
@@ -943,17 +858,52 @@
     width: 120px; /* Increased from 80px for mobile */
     height: 120px; /* Increased from 80px for mobile */
   }
-}
 
-@media (max-width: 480px) {
-  .leader img {
-    width: 150px;
-    height: 150px;
+  /* Center about text on mobile */
+  .lab-description {
+    text-align: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .student img {
-    width: 100px; /* Increased from 80px for smallest screens */
-    height: 100px; /* Increased from 80px for smallest screens */
+  /* Adjust news items width on mobile */
+  #about .news-list {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust recent publications width on mobile */
+  #about .publications-list {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-item,
+  .recent-publication-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Keep consistent spacing */
+  #about h2 {
+    text-align: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .lab-description,
+  #about .news-list,
+  #about .publications-list,
+  #about h2 {
+    width: 90%;
   }
 }
 
@@ -1341,9 +1291,69 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .leaders-container,
+  .students-container,
+  .alumni-container {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-xl);
+  }
+
+  /* Adjust vertical titles for mobile */
+  .leaders-container::before,
+  .students-container::before,
+  .alumni-container::before {
+    left: -25px;
+    top: 20px;
+    font-size: var(--font-size-h4);
+    transform: translateY(0) rotate(-90deg);
+    opacity: 0.9;
+    width: auto;
+  }
+
+  /* Center individual cards */
+  .leader,
+  .student,
+  .alumni {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Ensure proper spacing between sections */
+  .students-container {
+    margin-top: var(--spacing-xxl);
+    padding-top: var(--spacing-xl);
+  }
+
+  .alumni-container {
+    margin-top: var(--spacing-xxl);
+    padding-top: var(--spacing-xl);
+  }
+
+  /* Adjust gradients for mobile */
   .leaders-container::after,
   .students-container::after {
-    width: 80%; /* Wider gradient on mobile */
+    width: 90%;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  .leaders-container::before,
+  .students-container::before,
+  .alumni-container::before {
+    left: -20px;
+    font-size: var(--font-size-h5);
+  }
+
+  .leader,
+  .student,
+  .alumni {
+    width: 95%;
   }
 }
 
@@ -1395,4 +1405,49 @@
 
 .github-link:hover img {
   filter: none;
+}
+
+/* Update recent publication conference styling */
+.recent-publication-meta .recent-conference {
+  color: var(--info);
+  font-weight: 600;
+  background: var(--primary-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-right: var(--spacing-sm);
+}
+
+/* Update spacing between meta elements */
+.recent-publication-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-sm) 0;
+}
+
+/* Update meta row styling for recent publications */
+.recent-publication-meta .publication-meta-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+/* Make conference styling consistent with main publications */
+.recent-publication-meta .publication-conference {
+  color: var(--info);
+  font-weight: 600;
+  background: var(--primary-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+/* Adjust links positioning */
+.recent-publication-meta .publication-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-left: auto;
 }

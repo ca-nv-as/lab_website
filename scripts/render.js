@@ -203,37 +203,50 @@ const RENDER_FUNCTIONS = {
     const container = document.querySelector("#about .publications-list");
     if (!container) return;
 
-    // Sort publications by date (newest first) and take last 3
-    const sortedPublications = [...LAB_DATA.publications]
+    // Get latest 5 publications instead of 3
+    const recentPublications = [...LAB_DATA.publications]
       .sort((a, b) => {
         const dateA = new Date(a.date.split("-").reverse().join("-"));
         const dateB = new Date(b.date.split("-").reverse().join("-"));
         return dateB - dateA;
       })
-      .slice(0, 3);
+      .slice(0, 5); // Changed from 3 to 5
 
-    container.innerHTML = sortedPublications
+    // Update the template inside renderRecentPublications
+    container.innerHTML = recentPublications
       .map(
-        (publication) => `
-      <li class="recent-publication-item">
-        <div class="recent-publication-details">
-          <h3 class="recent-publication-title">
-            ${
-              publication.paper_link
-                ? `<a href="${publication.paper_link}" target="_blank" class="recent-publication-title-link">${publication.title}</a>`
-                : publication.title
-            }
-          </h3>
-          <div class="recent-publication-meta">
-            <span class="recent-authors">${publication.authors.join(
-              ", "
-            )}</span>
-            <span class="recent-conference">${publication.conference}</span>
-            <span class="recent-year">${publication.date.split("-")[2]}</span>
-          </div>
+        (pub) => `
+    <li class="recent-publication-item">
+        <div class="recent-publication-image">
+            <img src="${pub.image_link}" alt="${pub.title}" />
         </div>
-      </li>
-    `
+        <div class="recent-publication-details">
+            <h3 class="recent-publication-title">
+                ${pub.title}
+            </h3>
+            <div class="recent-authors">
+                ${pub.authors.join(", ")}
+            </div>
+            <div class="recent-meta-row">
+                <span class="publication-conference">${pub.conference}</span>
+                <span class="publication-year">${pub.date.split("-")[2]}</span>
+                <div class="publication-links">
+                    ${pub.paper_link ? `<a href="${pub.paper_link}" target="_blank" class="publication-link arxiv-link" title="View on arXiv">
+                        <img src="images/icons/arxiv-logomark-small.svg" alt="arXiv" />
+                    </a>` : ""}
+                    ${pub.project_link ? `<a href="${pub.project_link}" target="_blank" class="publication-link project-link" title="View Project">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </a>` : ""}
+                    ${pub.github_link ? `<a href="${pub.github_link}" target="_blank" class="publication-link github-link" title="View on GitHub">
+                        <img src="images/icons/github.png" alt="GitHub" />
+                    </a>` : ""}
+                </div>
+            </div>
+        </div>
+    </li>
+`
       )
       .join("");
   },

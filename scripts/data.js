@@ -54,19 +54,28 @@ const LAB_DATA = {
       degree: "M.Sc.",
       advisor: "Ohad Fried",
       image:
-        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1756339200&v=beta&t=5vdVPzQ0itIrfxBirbaIbnleXPatSfPp0etRfSIeM0Y",
+        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1759363200&v=beta&t=WPyd1WM8dRhBXOd7InQcOw8BmQaUEIBx2JTRAxwQN04",
       description:
         "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
       website: "https://hagardolev.com",
       linkedin: "https://www.linkedin.com/in/hagardolev/",
     },
     {
+      name: "Ofek Basson",
+      degree: "M.Sc.",
+      advisor: "Yacov Hel-Or & Ohad Fried",
+      image: "images/people/ofek_basson.jpg",
+      description: "My research lies at the intersection of image generation and 3D understanding, focusing on improving how generative models capture and synthesize the structure of visual scenes.",
+      website: "https://github.com/OfekBasson",
+      linkedin: "https://www.linkedin.com/in/ofek-basson/",
+    },
+    {
       name: "Ofir Abramovich",
-      degree: "Ph.D.",
+      degree: "Ph.D Candidate.",
       advisor: "Ariel Shamir",
       image:
         "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
-      description: "OPHIR please add!",
+      description: "I'm broadly interested in 3D Graphics, focusing on visual reasoning, 3D motion modeling and generation using Transformers",
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
     },
     {
@@ -107,6 +116,42 @@ const LAB_DATA = {
       website: "https://www.malnick.net/",
       linkedin: "https://www.linkedin.com/in/shimonmalnick/",
     },
+    {
+      name: "Idan Dov Vidra",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir",
+      image: "images/people/idan_vidra.jpg",
+      description: "My research is on AI and human collaboration and co-creativity.",
+      website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
+    },
+    {
+      name: "Rotem Gatenyo",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried",
+      image: "images/people/rotem_gatenyo.jpg",
+      description: "My research focuses on generative 3D graphics, with an emphasis on creating and manipulating 3D meshes and textured shapes.",
+      website: "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
+      linkedin: "https://www.linkedin.com/in/rotem-g8",
+    },
+    {
+      name: "Adi Rosenthal",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir & Doron Friedman",
+      image: "images/people/adirosenthal.jpg",
+      description: "I work on co-speech gesture synthesis and semantic motion editing. Using audio and text cues, I generate and control gestures that are natural, personalized, and aligned with meaning.",
+      website: "https://github.com/Adirosenthal540",
+      linkedin: "https://www.linkedin.com/in/adi-rosenthal-24a3291aa/",
+    },
+    {
+      name: "Ben Vardi",
+      degree: "Ph.D.",
+      advisor: "Ariel Shamir",
+      image: "images/people/ben_vardi.jpg",
+      description: "My research focuses on the robustness of models combining vision and language. I explore efficient interventions to strengthen robustness in tasks such as text-to-image and image-to-text generation, as well as in pathology applications.",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/ben-vardi-760432108/",
+    },
   ],
   // Alumni
   alumni: [
@@ -119,6 +164,16 @@ const LAB_DATA = {
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
+    {
+      name: "Or Madar",
+      image:
+        "images/people/or_madar.jpg",
+      advisor: "Ohad Fried",
+      degree: "M.Sc.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/or-madar-a73bb5143/",
+    },
+
   ],
 
   // Research areas
@@ -180,7 +235,7 @@ const LAB_DATA = {
     {
       title:
         "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
-      authors: ["Nadav Cohen", "Oron Nir", "Ariel Shamir"],
+      authors: ["Nadav Z. Cohen", "Oron Nir", "Ariel Shamir"],
       conference: "CVPR",
       date: "13-06-2025", // format: DD-MM-YYYY
       image_link:
@@ -289,8 +344,7 @@ const LAB_DATA = {
       ],
     },
     {
-      title:
-          "Taming Normalizing Flows",
+      title: "Taming Normalizing Flows",
       authors: ["Shimon Malnick", "Shai Avidan", "Ohad Fried"],
       conference: "WACV",
       date: "01-01-2024", // format: DD-MM-YYYY
@@ -303,6 +357,39 @@ const LAB_DATA = {
           "https://github.com/ShimonMalnick/taming_norm_flows",
       abstract: [
         "We propose an algorithm for taming Normalizing Flow models - changing the probability that the model will produce a specific image or image category. We focus on Normalizing Flows because they can calculate the exact generation probability likelihood for a given image. We demonstrate taming using models that generate human faces, a subdomain with many interesting privacy and bias considerations. Our method can be used in the context of privacy, e.g., removing a specific person from the output of a model, and also in the context of debiasing by forcing a model to output specific image categories according to a given target distribution. Taming is achieved with a fast fine-tuning process without retraining the model from scratch, achieving the goal in a matter of minutes. We evaluate our method qualitatively and quantitatively, showing that the generation quality remains intact, while the desired changes are applied.",
+      ],
+    },
+    {
+      title: "Playing Along - Building AI Agents for Co-Creation of Improvised Stories",
+      authors: ["Idan Dov Vidra", "Gal Kimron", "Lior Noy", "Ariel Shamir"],
+      conference: "ICCC",
+      date: "23-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "images/teasers/yes_and_paper_teaser.png",
+      paper_link: "https://idanvidra.github.io/playing_along_paper_site/papers/Playing%20Along%20-%20Building%20AI%20Agents%20for%20Co-Creation%20of%20Improvised%20Stories%20-%20Paper.pdf",
+      project_link:
+          "https://idanvidra.github.io/playing_along_paper_site/",
+      github_link:
+          "https://github.com/idanvidra/Yes-And-Game-Paper",
+      abstract: [
+        "This work focuses on human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the 'Yes! and…' game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent are indistinguishable from stories co-created with a human in terms of novelty, value, and surprise. This shows how 'hallucinations' - typically considered problematic in AI systems - can serve as creative assets in collaborative storytelling. More generally, our approach presents the 'Yes! and…' game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup"
+      ],
+    },
+    {
+      title:
+          "Tiled Diffusion",
+      authors: ["Or Madar", "Ohad Fried"],
+      conference: "CVPR",
+      date: "13-06-2025", // format: DD-MM-YYYY
+      image_link:
+          "https://madaror.github.io/tiled-diffusion.github.io/images/optimized/teaser.webp",
+      paper_link: "https://arxiv.org/abs/2412.15185",
+      project_link:
+          "https://madaror.github.io/tiled-diffusion.github.io/",
+      github_link:
+          "https://github.com/madaror/tiled-diffusion",
+      abstract: [
+        "Image tiling—the seamless connection of disparate images to create a coherent visual field—is crucial for applications such as texture creation, video game asset development, and digital art. Traditionally, tiles have been constructed manually, a method that poses significant limitations in scalability and flexibility. Recent research has attempted to automate this process using generative models. However, current approaches primarily focus on tiling textures and manipulating models for single-image generation, without inherently supporting the creation of multiple interconnected tiles across diverse domains. This paper presents Tiled Diffusion, a novel approach that extends the capabilities of diffusion models to accommodate the generation of cohesive tiling patterns across various domains of image synthesis that require tiling. Our method supports a wide range of tiling scenarios, from self-tiling to complex many-to-many connections, enabling seamless integration of multiple images. Tiled Diffusion automates the tiling process, eliminating the need for manual intervention and enhancing creative possibilities in various applications, such as seamlessly tiling of existing images, tiled texture creation, and 360° synthesis.",
       ],
     },
       {
