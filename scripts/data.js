@@ -392,6 +392,18 @@ const LAB_DATA = {
         "Image tiling—the seamless connection of disparate images to create a coherent visual field—is crucial for applications such as texture creation, video game asset development, and digital art. Traditionally, tiles have been constructed manually, a method that poses significant limitations in scalability and flexibility. Recent research has attempted to automate this process using generative models. However, current approaches primarily focus on tiling textures and manipulating models for single-image generation, without inherently supporting the creation of multiple interconnected tiles across diverse domains. This paper presents Tiled Diffusion, a novel approach that extends the capabilities of diffusion models to accommodate the generation of cohesive tiling patterns across various domains of image synthesis that require tiling. Our method supports a wide range of tiling scenarios, from self-tiling to complex many-to-many connections, enabling seamless integration of multiple images. Tiled Diffusion automates the tiling process, eliminating the need for manual intervention and enhancing creative possibilities in various applications, such as seamlessly tiling of existing images, tiled texture creation, and 360° synthesis.",
       ],
     },
+    {
+      title: "VCR: Video Representation for Contextual Retrieval",
+      authors: ["Oron Nir", "Idan Vidra", "Avi Neeman", "Barak Kinarti", "Ariel Shamir"],
+      conference: "CMLDS",
+      date: "12-04-2024",
+      image_link: "https://raw.githubusercontent.com/oronnir/VCR/refs/heads/main/ArchiveExplorer-04.png",
+      paper_link: "https://arxiv.org/abs/2402.07466",
+      project_link: "https://github.com/oronnir/VCR", // optional project URL
+      abstract: [
+        "Streamlining content discovery within media archives requires integrating advanced data representations and effective visualization techniques for clear communication of video topics to users. The proposed system addresses the challenge of efficiently navigating large video collections by exploiting a fusion of visual, audio, and textual features to accurately index and categorize video content through a text-based method. Additionally, semantic embeddings are employed to provide contextually relevant information and recommendations to users, resulting in an intuitive and engaging exploratory experience over our topics ontology map using OpenAI GPT-4."
+      ],
+    },
       {
       title:
         "Ham2Pose: Animating Sign Language Notation into Pose Sequences",
