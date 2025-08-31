@@ -439,7 +439,7 @@ const LAB_DATA = {
     authors: ["Cheng Yao Wang", "Oron Nir", "Eyal Ofek", "Sai Vemprala", "Ashish Kapoor", "Daniel McDuff", "Mar Gonzalez-Franco"],
     conference: "ICIR",
     date: "14-12-2022",
-    image_link: "https://github.com/CitylifeSim/CitylifeSim.github.io/blob/main/video.PNG",
+    image_link: "https://github.com/CitylifeSim/CitylifeSim.github.io/blob/main/video.PNG?raw=true",
     paper_link: "https://ieeexplore.ieee.org/document/10070899",
     project_link: "https://citylifesim.github.io/", // optional project URL
     abstract: [
