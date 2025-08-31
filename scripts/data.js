@@ -434,5 +434,18 @@ const LAB_DATA = {
   	    "We first train a neural network on a large-scale set of animation videos and use the mapping to deep features as an embedding space. Next, we use self-supervision to refine the representation for any specific animation style by gathering many examples of animated characters in this style, using a multi-object tracking. These examples are used to define triplets for contrastive loss training. The refined semantic space allows better clustering of animated characters even when they have diverse manifestations. Using this space we can build dictionaries of characters in an animation videos, and define specialized classifiers for specific stylistic content (e.g., characters in a specific animation series) with very little user effort. These classifiers are the basis for automatically labeling characters in animation videos. We present results on a collection of characters in a variety of animation styles."
       ],
   },
+  {
+    title: "CityLifeSim: A High-Fidelity Pedestrian and Vehicle Simulation with Complex Behaviors",
+    authors: ["Cheng Yao Wang", "Oron Nir", "Eyal Ofek", "Sai Vemprala", "Ashish Kapoor", "Daniel McDuff", "Mar Gonzalez-Franco"],
+    conference: "ICIR",
+    date: "14-12-2022",
+    image_link: "https://github.com/CitylifeSim/CitylifeSim.github.io/blob/main/video.PNG",
+    paper_link: "https://ieeexplore.ieee.org/document/10070899",
+    project_link: "https://citylifesim.github.io/", // optional project URL
+    abstract: [
+      "Simulations are a powerful tools particularly in the case of safety critical scenarios. However, simulating complex temporal events in multi-agent scenarios with vehicles and pedestrians, such as those that exist in urban environments, is challenging. We present CityLifeSim, a simulation for the research community that focuses on rich pedestrian behavior, such as the one that arises when different personalities, environmental events, and group goals are simulated. In our simulations we can see cases of people jay walking a red light, sitting on a bench, waiting for the bus, or calling on the phone, but also more complex creation and management of crowds that might even line up or just keep moving while observing interpersonal distances.",
+	  "CityLifeSim is configurable and can create unlimited scenarios with detailed logging capabilities. As a demonstration we have run CityLifeSim to create a demo dataset for training setups that includes 17 different cameras, views from a moving vehicle in the street under different weather conditions (rain, snow, sun), and from a drone with frontal and downward views. All content is released with the corresponding original configuration files, ground truth pedestrian segmentation, and RGB-D frames. We evaluate our dataset on a pedestrian detection and identification task with state of the art Multi-Object Tracker (MOT), showing the limitations and opportunities for synthetic data in this use case."
+    ],
+  },
   ],
 };
