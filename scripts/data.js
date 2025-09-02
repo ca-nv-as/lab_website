@@ -152,6 +152,15 @@ const LAB_DATA = {
       website: "",
       linkedin: "https://www.linkedin.com/in/ben-vardi-760432108/",
     },
+    {
+      name: "Raz Cohen",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried",
+      image: "images/people/raz_cohen.jpg",
+      description: "My research focuses on text-to-image models, currently working on ways to improve attention to high-detail areas.",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/raz-cohen-3a4251230/",
+    },	  
   ],
   // Alumni
   alumni: [
