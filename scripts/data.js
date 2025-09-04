@@ -160,7 +160,16 @@ const LAB_DATA = {
       description: "My research focuses on text-to-image models, currently working on ways to improve attention to high-detail areas.",
       website: "",
       linkedin: "https://www.linkedin.com/in/raz-cohen-3a4251230/",
-    },	  
+    },	 
+	{
+      name: "Almog Friedlander",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried & Ariel Shamir",
+      image: "https://media.licdn.com/dms/image/v2/C5603AQFEPVk5DX0I5g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517448593357?e=1759968000&v=beta&t=QMUe0orPPkVD5Fhbc6W23KD2ncquFc50HVphU4esz94",
+      description: "Focuses on 3D change detection and generative models.",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/mogy/",
+    },
   ],
   // Alumni
   alumni: [
