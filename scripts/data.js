@@ -174,6 +174,15 @@ const LAB_DATA = {
   // Alumni
   alumni: [
     {
+      name: "Or Madar",
+      image:
+        "images/people/or_madar.jpg",
+      advisor: "Ohad Fried",
+      degree: "M.Sc.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/or-madar-a73bb5143/",
+    },
+    {
       name: "Gal Almog",
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
@@ -183,15 +192,50 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
     {
-      name: "Or Madar",
+      name: "Eran Levin",
       image:
-        "images/people/or_madar.jpg",
+        "images/people/eran_levin.jpeg",
+      advisor: "Ohad Fried & Amir Averbuch",
+      degree: "M.Sc.",
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/eran-levin-4733527b/",
+    },
+    {
+      name: "Or Nachmias",
+      image:
+        "images/people/or_nachmias.jpeg",
+      advisor: "Ohad Fried & Ariel Shamir",
+      degree: "M.Sc.",
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/or-nachmias-8b8010124/",
+    },
+    {
+      name: "Dudi Dadon",
+      image:
+        "images/people/dudi_dadon.jpeg",
+      advisor: "Ohad Fried & Yacov Hel-Or",
+      degree: "M.Sc.",
+      year: "2022",
+      linkedin: "https://www.linkedin.com/in/dudi-dadon-48a72b193/",
+    },
+    {
+      name: "Asaf Karnieli",
+      image:
+        "images/people/asaf_karnieli.jpeg",
+      advisor: "Ohad Fried & Yacov Hel-Or",
+      degree: "M.Sc.",
+      year: "2022",
+      linkedin: "https://www.linkedin.com/in/karnieli/",
+    },
+    {
+      name: "Gili Knafo",
+      image:
+        "images/people/gili_knafo.jpeg",
       advisor: "Ohad Fried",
       degree: "M.Sc.",
-      year: "2025",
-      linkedin: "https://www.linkedin.com/in/or-madar-a73bb5143/",
+      year: "2022",
+      linkedin: "https://www.linkedin.com/in/gili-knafo-1b591b240/",
     },
-
   ],
 
   // Research areas
