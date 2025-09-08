@@ -18,7 +18,7 @@ const LAB_DATA = {
       name: "Prof. Ariel Shamir",
       image: "images/people/ariel_shamir.jpg",
       description:
-        "Focuses on research in computational photography, image and video synthesis, and machine creativity.",
+        "Focuses on research in computer graphics, image and video processing and synthesis, and machine learning.",
       website: "https://faculty.runi.ac.il/arik/site/index.asp",
     },
     {
@@ -191,6 +191,15 @@ const LAB_DATA = {
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
+	{
+      name: "Yarin Moshe",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1757919600&v=beta&t=iA9Z68nYow6N5wi6CqUO51prwnJ0iz4IhgId1e1Xryw",
+      advisor: "Ariel Shamir & Yael Moses",
+      degree: "M.Sc.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/yarinmoshe/",
+    },
     {
       name: "Eran Levin",
       image:
@@ -235,6 +244,15 @@ const LAB_DATA = {
       degree: "M.Sc.",
       year: "2022",
       linkedin: "https://www.linkedin.com/in/gili-knafo-1b591b240/",
+    },
+	{
+      name: "Yarin Moshe",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1757919600&v=beta&t=iA9Z68nYow6N5wi6CqUO51prwnJ0iz4IhgId1e1Xryw",
+      advisor: "Ariel Shamir & Yael Moses",
+      degree: "M.Sc.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/yarinmoshe/",
     },
   ],
 
