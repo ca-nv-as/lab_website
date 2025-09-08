@@ -246,13 +246,22 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/gili-knafo-1b591b240/",
     },
 	{
-      name: "Yarin Moshe",
+      name: "Yael Vinker",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1757919600&v=beta&t=iA9Z68nYow6N5wi6CqUO51prwnJ0iz4IhgId1e1Xryw",
-      advisor: "Ariel Shamir & Yael Moses",
-      degree: "M.Sc.",
+        "https://media.licdn.com/dms/image/v2/D4D03AQEo2PZnPWg90A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721818750156?e=1759968000&v=beta&t=rdAZIMGW7iI-yup4i-JpGghnZ1bU8lEZR-o__59C-58",
+      advisor: "Ariel Shamir & Daniel Cohen-Or",
+      degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
-      linkedin: "https://www.linkedin.com/in/yarinmoshe/",
+      linkedin: "https://www.linkedin.com/in/yael-vinker-a91a00157/",
+    },
+    {
+      name: "Moab Arar",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQG9k57BGJChmA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679468592538?e=1759968000&v=beta&t=4m81ajdvqbCiaDfE6nOCVB1YH-0e7OiWDkcsht0qIlQ",
+      advisor: "Ariel Shamir & Amit Bermano",
+      degree: "Ph.D. (Tel Aviv U.)",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/moab-arar-36597196/",
     },
   ],
 
