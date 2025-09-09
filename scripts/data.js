@@ -265,6 +265,7 @@ const LAB_DATA = {
     },
   ],
 
+
   // News items
   news: [
     {
