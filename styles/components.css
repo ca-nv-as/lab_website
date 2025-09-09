@@ -1058,8 +1058,8 @@
 .leaders-container::before {
   content: "Faculty";
   position: absolute;
-  left: -120px;
-  top: 50%;
+  left: -50px;
+  top: 100px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   color: var(--text-secondary);
@@ -1087,8 +1087,8 @@
 .students-container::before {
   content: "Students";
   position: absolute;
-  left: -120px;
-  top: 50%;
+  left: -50px;
+  top: 100px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   color: var(--text-secondary);
@@ -1115,8 +1115,8 @@
 .alumni-container::before {
   content: "Alumni";
   position: absolute;
-  left: -120px;
-  top: 50%;
+  left: -50px;
+  top: 100px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   color: var(--text-secondary);
