@@ -181,25 +181,6 @@ const RENDER_FUNCTIONS = {
       .join("");
   },
 
-  // Render research areas
-  renderResearch: () => {
-    const container = document.querySelector(".research-gallery");
-    if (!container) return;
-
-    container.innerHTML = LAB_DATA.research
-      .map(
-        (item) => `
-      <div class="research-item">
-        <img src="${item.image}" alt="${item.title}" class="research-image" />
-        <div class="research-content">
-          <h3>${item.title}</h3>
-          <p>${item.description}</p>
-        </div>
-      </div>
-    `
-      )
-      .join("");
-  },
 
   // Render news items
   renderNews: (containerSelector, newsData = null) => {

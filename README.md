@@ -4,11 +4,25 @@ A modern, responsive website for the Canvas Lab at Reichman University, showcasi
 
 ## Table of Contents
 
+- [Task list](#task-list) - Task list for the website
 - [How To?](#how-to) - Content management guide
 - [How It Works](#how-it-works) - Technical architecture for developers
 - [File Structure](#file-structure) - Project organization
 - [Content Management Tips](#content-management-tips) - Best practices
 - [Troubleshooting](#troubleshooting) - Common issues and solutions
+
+---
+
+## Task list
+
+- [ ] Add logo tooltip with backronym
+- [ ] Fix mobile lighthouse score
+- [ ] Add a google scholar field to people
+- [ ] Add <meta> tags for better SEO
+- [ ] Add a bit of transparency to the navbar?
+- [ ] Make the 2025 update automatically.
+- [ ] Make sure all the people and publications are there.
+- [ ] Once stable, add to the google search index and let team link it from their personal webpages, project pages, github repos, etc.
 
 ---
 
