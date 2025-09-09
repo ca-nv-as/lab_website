@@ -54,8 +54,24 @@ const RENDER_FUNCTIONS = {
     const container = document.querySelector(".students-container");
     if (!container) return;
 
-    // Sort students by last name
     const sortedStudents = [...LAB_DATA.students].sort((a, b) => {
+      // First sort by degree, using the custom order defined in customDegreeOrder
+      const customDegreeOrder = ['Ph.D.', 'M.Sc.', 'Visiting'];
+
+      let aIndex = customDegreeOrder.indexOf(a.degree);
+      let bIndex = customDegreeOrder.indexOf(b.degree);
+
+      // Items not in the customOrder will be last
+      if (aIndex === -1) {aIndex = customDegreeOrder.length}
+      if (bIndex === -1) {bIndex = customDegreeOrder.length}
+
+      const degreeComparison = aIndex - bIndex; // Sort based on the index in customOrder
+
+      if (degreeComparison !== 0) {
+        return degreeComparison; // If degrees are different, we use that to sort
+      }
+
+      // Otherwise, we use the last name to sort
       const aLastName = a.name.split(" ").pop();
       const bLastName = b.name.split(" ").pop();
       return aLastName.localeCompare(bLastName);
@@ -117,9 +133,18 @@ const RENDER_FUNCTIONS = {
       return;
     }
 
-    // Sort alumni by year in descending order (most recent first)
+    // Sort alumni by year in descending order (most recent first), and by last name
     const sortedAlumni = [...LAB_DATA.alumni].sort((a, b) => {
-      return parseInt(b.year) - parseInt(a.year);
+      const yearComparison = parseInt(b.year) - parseInt(a.year);
+
+      if (yearComparison !== 0) {
+        return yearComparison; // If years are different, we use that to sort
+      }
+
+      // Otherwise, we use the last name to sort
+      const aLastName = a.name.split(" ").pop();
+      const bLastName = b.name.split(" ").pop();
+      return aLastName.localeCompare(bLastName);
     });
 
     container.innerHTML = sortedAlumni

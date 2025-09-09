@@ -71,7 +71,7 @@ const LAB_DATA = {
     },
     {
       name: "Ofir Abramovich",
-      degree: "Ph.D Candidate.",
+      degree: "Ph.D.",
       advisor: "Ariel Shamir",
       image:
         "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
@@ -205,7 +205,7 @@ const LAB_DATA = {
       image:
         "images/people/eran_levin.jpeg",
       advisor: "Ohad Fried & Amir Averbuch",
-      degree: "M.Sc.",
+      degree: "M.Sc. (Tel Aviv U.)",
       year: "2023",
       linkedin: "https://www.linkedin.com/in/eran-levin-4733527b/",
     },
@@ -308,14 +308,9 @@ const LAB_DATA = {
   // News items
   news: [
     {
-      title: "We have a new website!",
-      date: "24-08-2025",
-      content: ["We have a new website! Check it out in the about section."],
-    },
-    {
       title: "We have a new Logo!",
       date: "24-08-2025",
-      content: ["We have a new Logo! Check it out in the about section."],
+      content: ["We have a new Logo! Check it out above."],
     },
   ],
 
