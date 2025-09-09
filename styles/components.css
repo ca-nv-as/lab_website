@@ -1152,8 +1152,6 @@
   box-shadow: none;
   transition: all var(--transition-normal);
   max-width: 350px; /* Limit individual card width */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .alumni:hover {
