@@ -170,6 +170,15 @@ const LAB_DATA = {
       website: "",
       linkedin: "https://www.linkedin.com/in/mogy/",
     },
+	{
+      name: "Dan Botchan",
+      degree: "M.Sc.",
+      advisor: "Yacov Hel-Or & Ohad Fried",
+      image: "images/people/dan_botchan.jpeg",
+      description: "My research focuses on image demixing, where I use text-to-image diffusion models as semantic and natural image priors to separate mixed images, much like how humans instinctively know which features don't belong together when looking at complex visual scenes.",
+      website: "",
+      linkedin: "https://www.linkedin.com/in/dan-botchan-b7a184141/",
+    },
   ],
   // Alumni
   alumni: [
