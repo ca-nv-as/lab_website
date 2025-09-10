@@ -134,7 +134,8 @@
       <footer>
         <div class="footer-content">
           <div class="footer-text">
-            <p>&copy; 2025 Canvas Lab. All rights reserved.</p>
+            <p> &copy; &nbsp; <span id="currentYear"></span> &nbsp; All rights reserved. Canvas Lab: Computational Aesthetics, Neural Vision, Artificial Synthesis
+            </p>
             <img
               src="images/runi_logo.svg"
               alt="Reichman University Logo"
@@ -145,6 +146,10 @@
       </footer>
     </div>
 
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").innerText = currentYear;
+    </script>
     <!-- JavaScript Files -->
     <script src="scripts/data.js"></script>
     <script src="scripts/render.js"></script>
