@@ -529,7 +529,7 @@ const LAB_DATA = {
   {
     title: "Duet dancing from a solo dance video",
     authors: ["Yarin Moshe", "Yael Moses", "Ariel Shamir"],
-    journal: "Computers and Graphics",
+    conference: "Computers and Graphics",
     date: "01-08-2025",
     image_link: "https://faculty.runi.ac.il/arik/site/images/research/duetDanceOverview.jpg",
     paper_link: "https://www.sciencedirect.com/science/article/pii/S0097849325000913",
