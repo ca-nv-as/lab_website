@@ -203,7 +203,7 @@ const LAB_DATA = {
 	{
       name: "Yarin Moshe",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1757919600&v=beta&t=iA9Z68nYow6N5wi6CqUO51prwnJ0iz4IhgId1e1Xryw",
+		"https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1758553200&v=beta&t=wsL4zVDeEDNWfdmTEI_sWxYEpm6yeNt0Z8KHj1QX1Yg",
       advisor: "Ariel Shamir & Yael Moses",
       degree: "M.Sc.",
       year: "2025",
