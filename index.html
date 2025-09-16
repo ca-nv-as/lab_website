@@ -89,11 +89,24 @@
               </p>
             </div>
             <div class="lab-members-image">
-              <img
-                src="images/lab_members.jpeg"
-                alt="Canvas Lab Members"
-                class="members-photo"
-              />
+              <picture class="members-photo">
+                <source
+                    type="image/avif"
+                    srcset="images/lab_members/lab_members-480.avif 480w ,images/lab_members/lab_members-960.avif 960w ,images/lab_members/lab_members-1920.avif 1920w"
+                    sizes="(width <= 600px) 480px, (width <= 1200px) 960px, 1920px">
+
+                <source
+                    type="image/webp"
+                    srcset="images/lab_members/lab_members-480.webp 480w ,images/lab_members/lab_members-960.webp 960w ,images/lab_members/lab_members-1920.webp 1920w"
+                    sizes="(width <= 600px) 480px, (width <= 1200px) 960px, 1920px">
+
+                <img class="members-photo"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACAWGBwYFCAcGhwkIiAmMFA0MCwsMGJGSjpQdGZ6eHJmcG6AkLicgIiuim5woNqirr7EztDOfJri8uDI8LjKzsb/2wBDASIkJDAqMF40NF7GhHCExsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsb/wAARCAAUABQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCRruPI3Apzg5qG7JlVfI59eari2Z/4CFHB5pGjdHRFBU4OSKHJtWYlFIilt23/ADOue9FRXUclvMUdtxPOQetFKwzogo4FRTYTbgDk4oopSHEzZVWSVmYDOaKKKEB//9k="
+                    alt="Canvas Lab Members"
+                    loading="lazy"
+                    style="background:#eee; filter:blur(20px); transition:filter 0.3s ease-out;"
+                    onload="this.style.filter='none'">
+              </picture>
             </div>
           </div>
           <p data-lab-description></p>
