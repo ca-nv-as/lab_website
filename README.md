@@ -15,8 +15,10 @@ A modern, responsive website for the Canvas Lab at Reichman University, showcasi
 
 ## Task list
 
-- [ ] Add logo tooltip with backronym
-- [ ] Fix mobile lighthouse score
+- [ ] Add bibtex for easy citation of papers.
+- [ ] Serve page from docs folder, add util scripts (e.g. image resize) to root folder.
+- [ ] HTML template for images should use a srcset.
+- [ ] Fix mobile lighthouse score.
 - [ ] Add a google scholar field to people
 - [ ] Add <meta> tags for better SEO
 - [ ] Add a bit of transparency to the navbar?

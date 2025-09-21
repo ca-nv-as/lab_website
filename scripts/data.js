@@ -287,6 +287,57 @@ const LAB_DATA = {
   // Publications
   publications: [
     {
+      title: "Stable Flow: Vital Layers for Training-Free Image Editing",
+      authors: ["Omri Avrahami", "Or Patashnik", "Ohad Fried", "Egor Nemchinov", "Kfir Aberman", "Dani Lischinski", "Daniel Cohen-Or"],
+      conference: "CVPR",
+      date: "13-06-2025", // format: DD-MM-YYYY
+      image_link: "images/papers/stable-flow/stable-flow-1920.avif",
+      paper_link: "https://arxiv.org/abs/2411.14430",
+      project_link: "https://omriavrahami.com/stable-flow/",
+      github_link: "https://github.com/snap-research/stable-flow",
+      abstract: [
+        "Diffusion models have revolutionized the field of content synthesis and editing. Recent models have replaced the traditional UNet architecture with the Diffusion Transformer (DiT), and employed flow-matching for improved training and sampling. However, they exhibit limited generation diversity. In this work, we leverage this limitation to perform consistent image edits via selective injection of attention features. The main challenge is that, unlike the UNet-based models, DiT lacks a coarse-to-fine synthesis structure, making it unclear in which layers to perform the injection. Therefore, we propose an automatic method to identify \"vital layers\" within DiT, crucial for image formation, and demonstrate how these layers facilitate a range of controlled stable edits, from non-rigid modifications to object addition, using the same mechanism. Next, to enable real-image editing, we introduce an improved image inversion method for flow models. Finally, we evaluate our approach through qualitative and quantitative comparisons, along with a user study, and demonstrate its effectiveness across multiple applications.",
+      ],
+    },
+    {
+      title: "Differential Diffusion: Giving Each Pixel Its Strength",
+      authors: ["Eran Levin", "Ohad Fried"],
+      conference: "EuroGraphics",
+      date: "12-05-2025", // format: DD-MM-YYYY
+      image_link: "images/papers/diff-diff/diff-diff-1920.avif",
+      paper_link: "https://arxiv.org/abs/2306.00950",
+      project_link: "https://differential-diffusion.github.io/",
+      github_link: "https://github.com/exx8/differential-diffusion",
+      abstract: [
+        "Diffusion models have revolutionized image generation and editing, producing state-of-the-art results in conditioned and unconditioned image synthesis. While current techniques enable user control over the degree of change in an image edit, the controllability is limited to global changes over an entire edited region. This paper introduces a novel framework that enables customization of the amount of change per pixel or per image region. Our framework can be integrated into any existing diffusion model, enhancing it with this capability. Such granular control on the quantity of change opens up a diverse array of new editing capabilities, such as control of the extent to which individual objects are modified, or the ability to introduce gradual spatial changes. Furthermore, we showcase the framework's effectiveness in soft-inpainting -- the completion of portions of an image while subtly adjusting the surrounding areas to ensure seamless integration. Additionally, we introduce a new tool for exploring the effects of different change quantities. Our framework operates solely during inference, requiring no model training or fine-tuning. We demonstrate our method with the current open state-of-the-art models, and validate it via both quantitative and qualitative comparisons, and a user study.",
+      ],
+    },
+    {
+      title: "REED-VAE: RE-Encode Decode Training for Iterative Image Editing with Diffusion Models",
+      authors: ["Gal Almog", "Ariel Shamir", "Ohad Fried"],
+      conference: "EuroGraphics",
+      date: "12-05-2025", // format: DD-MM-YYYY
+      image_link: "images/papers/reed/reed-1920.avif",
+      paper_link: "https://reed-vae.github.io/static/REED_VAE.pdf",
+      project_link: "https://reed-vae.github.io/",
+      github_link: "https://github.com/galmog/REED-VAE",
+      abstract: [
+        "While latent diffusion models achieve impressive image editing results, their application to iterative editing of the same image is severely restricted. When trying to apply consecutive edit operations using current models, they accumulate artifacts and noise due to repeated transitions between pixel and latent spaces. Some methods have attempted to address this limitation by performing the entire edit chain within the latent space, sacrificing flexibility by supporting only a limited, predetermined set of diffusion editing operations. We present a RE-encode decode (REED) training scheme for variational autoencoders (VAEs), which promotes image quality preservation even after many iterations. Our work enables multi-method iterative image editing: users can perform a variety of iterative edit operations, with each operation building on the output of the previous one using both diffusion-based operations and conventional editing techniques. We demonstrate the advantage of REED-VAE across a range of image editing scenarios, including text-based and mask-based editing frameworks. In addition, we show how REED-VAE enhances the overall editability of images, increasing the likelihood of successful and precise edit operations. We hope that this work will serve as a benchmark for the newly introduced task of multi-method image editing.",
+      ],
+    },
+    {
+      title: "Prediction of Scene Plausibility",
+      authors: ["Or Nachmias", "Ohad Fried", "Ariel Shamir"],
+      conference: "Computational Visual Media",
+      date: "04-06-2025", // format: DD-MM-YYYY
+      image_link: "images/papers/scene-plausibility/scene-plausibility-1920.avif",
+      paper_link: "https://arxiv.org/abs/2212.01470",
+      github_link: "https://github.com/ornachmias/scene_plusibility_prediction",
+      abstract: [
+        "Understanding the 3D world from 2D images involves more than detection and segmentation of the objects within the scene. It also includes the interpretation of the structure and arrangement of the scene elements. Such understanding is often rooted in recognizing the physical world and its limitations, and in prior knowledge as to how similar typical scenes are arranged. In this research we pose a new challenge for neural network (or other) scene understanding algorithms - can they distinguish between plausible and implausible scenes? Plausibility can be defined both in terms of physical properties and in terms of functional and typical arrangements. Hence, we define plausibility as the probability of encountering a given scene in the real physical world. We build a dataset of synthetic images containing both plausible and implausible scenes, and test the success of various vision models in the task of recognizing and understanding plausibility.",
+      ],
+    },
+    {
       title:
         "Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation",
       authors: ["Nadav Z. Cohen", "Oron Nir", "Ariel Shamir"],
