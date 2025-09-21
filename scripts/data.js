@@ -401,7 +401,7 @@ const LAB_DATA = {
         "Diffusion models dominate the space of text-to-image generation, yet they may produce undesirable outputs, including explicit content or private data. To mitigate this, concept ablation techniques have been explored to limit the generation of certain concepts. In this paper, we reveal that the erased concept information persists in the model and that erased concept images can be generated using the right latent. Utilizing inversion methods, we show that there exist latent seeds capable of generating high quality images of erased concepts. Moreover, we show that these latents have likelihoods that overlap with those of images outside the erased concept. We extend this to demonstrate that for every image from the erased concept set, we can generate many seeds that generate the erased concept. Given the vast space of latents capable of generating ablated concept images, our results suggest that fully erasing concept information may be intractable, highlighting possible vulnerabilities in current concept ablation techniques.",
       ],
     },
-      {
+    {
       title:
         "Towards AI-driven Sign Language Generation with Non-manual Markers",
       authors: ["Han Zhang", "Rotem Shalev-Arkushin", "Vasileios Baltatzis", "Connor Gillis", "Gierad Laput", "Raja Kushalnagar", "Lorna Quandt", "Leah Findlater", "Abdelkareem Bedri", "Colin Lea"],
@@ -414,7 +414,7 @@ const LAB_DATA = {
         "Sign languages are essential for the Deaf and Hard-of-Hearing (DHH) community. Sign language generation systems have the potential to support communication by translating from written languages, such as English, into signed videos. However, current systems often fail to meet user needs due to poor translation of grammatical structures, the absence of facial cues and body language, and insufficient visual and motion fidelity. We address these challenges by building on recent advances in LLMs and video generation models to translate English sentences into natural-looking AI ASL signers. The text component of our model extracts information for manual and non-manual components of ASL, which are used to synthesize skeletal pose sequences and corresponding video frames. Our findings from a user study with 30 DHH participants and thorough technical evaluations demonstrate significant progress and identify critical areas necessary to meet user needs."
       ],
     },
-      {
+    {
       title:
         "V-LASIK: Consistent Glasses-Removal from Videos Using Synthetic Data",
       authors: ["Rotem Shalev-Arkushin", "Aharon Azulay", "Tavi Halperin", "Eitan Richardson", "Amit H. Bermano", "Ohad Fried"],
@@ -431,14 +431,78 @@ const LAB_DATA = {
         "Diffusion-based generative models have recently shown remarkable image and video editing capabilities. However, local video editing, particularly removal of small attributes like glasses, remains a challenge. Existing methods either alter the videos excessively, generate unrealistic artifacts, or fail to perform the requested edit consistently throughout the video. In this work, we focus on consistent and identity-preserving removal of glasses in videos, using it as a case study for consistent local attribute removal in videos. Due to the lack of paired data, we adopt a weakly supervised approach and generate synthetic imperfect data, using an adjusted pretrained diffusion model. We show that despite data imperfection, by learning from our generated data and leveraging the prior of pretrained diffusion models, our model is able to perform the desired edit consistently while preserving the original video content. Furthermore, we exemplify the generalization ability of our method to other local video editing tasks by applying it successfully to facial sticker-removal. Our approach demonstrates significant improvement over existing methods, showcasing the potential of leveraging synthetic data and strong video priors for local video editing tasks."
       ],
     },
-      {
+    {
+      title: "SaSPA: Advancing Fine-Grained Classification by Structure and Subject Preserving Augmentation",
+      authors: ["Eyal Michaeli", "Ohad Fried"],
+      conference: "NeurIPS",
+      date: "10-12-2024", // format: DD-MM-YYYY
+      image_link: "images/papers/saspa/saspa-1920.avif",
+      paper_link: "https://arxiv.org/abs/2406.14551",
+      project_link: "https://eyalmichaeli.github.io/SaSPA-Aug/",
+      github_link: "https://github.com/EyalMichaeli/SaSPA-Aug",
+      abstract: [
+        "Fine-grained visual classification (FGVC) involves classifying closely related sub-classes. This task is difficult due to the subtle differences between classes and the high intra-class variance. Moreover, FGVC datasets are typically small and challenging to gather, thus highlighting a significant need for effective data augmentation. Recent advancements in text-to-image diffusion models offer new possibilities for augmenting classification datasets. While these models have been used to generate training data for classification tasks, their effectiveness in full-dataset training of FGVC models remains under-explored. Recent techniques that rely on Text2Image generation or Img2Img methods, often struggle to generate images that accurately represent the class while modifying them to a degree that significantly increases the dataset's diversity. To address these challenges, we present SaSPA: Structure and Subject Preserving Augmentation. Contrary to recent methods, our method does not use real images as guidance, thereby increasing generation flexibility and promoting greater diversity. To ensure accurate class representation, we employ conditioning mechanisms, specifically by conditioning on image edges and subject representation. We conduct extensive experiments and benchmark SaSPA against both traditional and recent generative data augmentation methods. SaSPA consistently outperforms all established baselines across multiple settings, including full dataset training, contextual bias, and few-shot classification. Additionally, our results reveal interesting patterns in using synthetic data for FGVC models; for instance, we find a relationship between the amount of real data used and the optimal proportion of synthetic data.",
+      ],
+    },
+    {
+      title: "DiffUHaul: A Training-Free Method for Object Dragging in Images",
+      authors: ["Omri Avrahami", "Rinon Gal", "Gal Chechik", "Ohad Fried", "Dani Lischinski", "Arash Vahdat", "Weili Nie"],
+      conference: "SIGGRAPH Asia",
+      date: "03-12-2024", // format: DD-MM-YYYY
+      image_link: "images/papers/diffuhaul/diffuhaul-1920.avif",
+      paper_link: "https://arxiv.org/abs/2406.01594",
+      project_link: "https://omriavrahami.com/diffuhaul/",
+      abstract: [
+        "Text-to-image diffusion models have proven effective for solving many image editing tasks. However, the seemingly straightforward task of seamlessly relocating objects within a scene remains surprisingly challenging. Existing methods addressing this problem often struggle to function reliably in real-world scenarios due to lacking spatial reasoning. In this work, we propose a training-free method, dubbed DiffUHaul, that harnesses the spatial understanding of a localized text-to-image model, for the object dragging task. Blindly manipulating layout inputs of the localized model tends to cause low editing performance due to the intrinsic entanglement of object representation in the model. To this end, we first apply attention masking in each denoising step to make the generation more disentangled across different objects and adopt the self-attention sharing mechanism to preserve the high-level object appearance. Furthermore, we propose a new diffusion anchoring technique: in the early denoising steps, we interpolate the attention features between source and target images to smoothly fuse new layouts with the original appearance; in the later denoising steps, we pass the localized features from the source images to the interpolated images to retain fine-grained object details. To adapt DiffUHaul to real-image editing, we apply a DDPM self-attention bucketing that can better reconstruct real images with the localized model. Finally, we introduce an automated evaluation pipeline for this task and showcase the efficacy of our method. Our results are reinforced through a user preference study.",
+      ],
+    },
+    {
+      title: "The Chosen One: Consistent Characters in Text-to-Image Diffusion Models",
+      authors: ["Omri Avrahami", "Amir Hertz", "Yael Vinker", "Moab Arar", "Shlomi Fruchter", "Ohad Fried", "Daniel Cohen-Or", "Dani Lischinski"],
+      conference: "SIGGRAPH",
+      date: "28-07-2024", // format: DD-MM-YYYY
+      image_link: "images/papers/chosen-one/chosen-one-1920.avif",
+      paper_link: "https://arxiv.org/abs/2311.10093",
+      project_link: "https://omriavrahami.com/the-chosen-one/",
+      github_link: "https://github.com/ZichengDuan/TheChosenOne",
+      abstract: [
+        "Recent advances in text-to-image generation models have unlocked vast potential for visual creativity. However, the users that use these models struggle with the generation of consistent characters, a crucial aspect for numerous real-world applications such as story visualization, game development, asset design, advertising, and more. Current methods typically rely on multiple pre-existing images of the target character or involve labor-intensive manual processes. In this work, we propose a fully automated solution for consistent character generation, with the sole input being a text prompt. We introduce an iterative procedure that, at each stage, identifies a coherent set of images sharing a similar identity and extracts a more consistent identity from this set. Our quantitative analysis demonstrates that our method strikes a better balance between prompt alignment and identity consistency compared to the baseline methods, and these findings are reinforced by a user study. To conclude, we showcase several practical applications of our approach.",
+      ],
+    },
+    {
+      title: "Deep Image Fingerprint: Towards Low Budget Synthetic Image Detection and Model Lineage Analysis",
+      authors: ["Sergey Sinitsa", "Ohad Fried"],
+      conference: "WACV",
+      date: "04-01-2024", // format: DD-MM-YYYY
+      image_link: "images/papers/DIF/DIF-1920.avif",
+      paper_link: "https://arxiv.org/abs/2303.10762",
+      project_link: "https://sergo2020.github.io/DIF/",
+      github_link: "https://github.com/Sergo2020/DIF_pytorch_official",
+      abstract: [
+        "The generation of high-quality images has become widely accessible and is a rapidly evolving process. As a result, anyone can generate images that are indistinguishable from real ones. This leads to a wide range of applications, including malicious usage with deceptive intentions. Despite advances in detection techniques for generated images, a robust detection method still eludes us. Furthermore, model personalization techniques might affect the detection capabilities of existing methods. In this work, we utilize the architectural properties of convolutional neural networks (CNNs) to develop a new detection method. Our method can detect images from a known generative model and enable us to establish relationships between fine-tuned generative models. We tested the method on images produced by both Generative Adversarial Networks (GANs) and recent large text-to-image models (LTIMs) that rely on Diffusion Models. Our approach outperforms others trained under identical conditions and achieves comparable performance to state-of-the-art pre-trained detection methods on images generated by Stable Diffusion and MidJourney, with significantly fewer required train samples.",
+      ],
+    },
+    {
+      title: "GEFF: Improving Any Clothes-Changing Person ReID Model using Gallery Enrichment with Face Features",
+      authors: ["Daniel Arkushin", "Bar Cohen", "Shmuel Peleg", "Ohad Fried"],
+      conference: "RWS @ WACV",
+      date: "04-01-2024", // format: DD-MM-YYYY
+      image_link: "images/papers/reface/reface-1920.avif",
+      paper_link: "https://arxiv.org/abs/2211.13807",
+      project_link: "https://vision.huji.ac.il/reface/",
+      github_link: "https://github.com/bar371/GEFF",
+      abstract: [
+        "In the Clothes-Changing Re-Identification (CC-ReID) problem, given a query sample of a person, the goal is to determine the correct identity based on a labeled gallery in which the person appears in different clothes. Several models tackle this challenge by extracting clothes-independent features. However, the performance of these models is still lower for the clothes-changing setting compared to the same-clothes setting in which the person appears with the same clothes in the labeled gallery. As clothing-related features are often dominant features in the data, we propose a new process we call Gallery Enrichment, to utilize these features. In this process, we enrich the original gallery by adding to it query samples based on their face features, using an unsupervised algorithm. Additionally, we show that combining ReID and face feature extraction modules alongside an enriched gallery results in a more accurate ReID model, even for query samples with new outfits that do not include faces. Moreover, we claim that existing CC-ReID benchmarks do not fully represent real-world scenarios, and propose a new video CC-ReID dataset called 42Street, based on a theater play that includes crowded scenes and numerous clothes changes. When applied to multiple ReID models, our method (GEFF) achieves an average improvement of 33.5% and 6.7% in the Top-1 clothes-changing metric on the PRCC and LTCC benchmarks. Combined with the latest ReID models, our method achieves new SOTA results on the PRCC, LTCC, CCVID, LaST and VC-Clothes benchmarks and the proposed 42Street dataset.",
+      ],
+    },
+    {
       title:
         "Monkey see, monkey do: Harnessing self-attention in motion diffusion for zero-shot motion transfer",
       authors: ["Sigal Raab", "Inbar Gat", "Nathan Sala", "Guy Tevet", "Rotem Shalev-Arkushin", "Ohad Fried", "Amit H. Bermano", "Daniel Cohen-Or"],
       conference: "SIGGRAPH Asia",
       date: "01-01-2024", // format: DD-MM-YYYY
       image_link:
-        "https://rotem-shalev.github.io/rotemshalevarkushin/assets/img/momo.png",
+        "images/papers/momo/momo-1920.avif",
       paper_link: "https://arxiv.org/abs/2406.06508",
       project_link:
         "https://monkeyseedocg.github.io/",
@@ -454,7 +518,7 @@ const LAB_DATA = {
       conference: "WACV",
       date: "01-01-2024", // format: DD-MM-YYYY
       image_link:
-          "https://www.malnick.net/assets/img/publication_preview/taming_flows/taming.png",
+          "images/papers/taming/taming-1920.avif",
       paper_link: "https://arxiv.org/abs/2211.16488",
       project_link:
           "https://www.malnick.net/taming_norm_flows",
