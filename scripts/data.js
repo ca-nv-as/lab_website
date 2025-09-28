@@ -53,8 +53,7 @@ const LAB_DATA = {
       name: "Hagar Dolev",
       degree: "M.Sc.",
       advisor: "Ohad Fried",
-      image:
-        "https://media.licdn.com/dms/image/v2/C5603AQEHpdspA808ZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591189329440?e=1759363200&v=beta&t=WPyd1WM8dRhBXOd7InQcOw8BmQaUEIBx2JTRAxwQN04",
+      image: "images/people/hagar_dolev.jpg",
       description:
         "Focusing on Video editing and composition, and video retrival. Graduated from Bezalel - school for the design and arts.",
       website: "https://hagardolev.com",
@@ -73,8 +72,7 @@ const LAB_DATA = {
       name: "Ofir Abramovich",
       degree: "Ph.D.",
       advisor: "Ariel Shamir",
-      image:
-        "https://media.licdn.com/dms/image/v2/C5103AQFOujTwTRL0mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565009276598?e=1758758400&v=beta&t=Y8qkm0v9VVFwIhP9889kx9zVJ99L_ImyKuP1CWIlZo4",
+      image: "images/people/ofir_abremovich.jpeg",
       description: "I'm broadly interested in 3D Graphics, focusing on visual reasoning and 3D motion modeling and generation using Transformers",
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
     },
@@ -91,8 +89,7 @@ const LAB_DATA = {
       name: "Rotem Shalev-Arkushin",
       degree: "Ph.D.",
       advisor: "Ohad Fried & Amit Bermano",
-      image:
-        "https://media.licdn.com/dms/image/v2/C5603AQGRDGv8EQBlqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1583644808028?e=1758758400&v=beta&t=X_iZQVWYkzL42lcO7J2-mJ9w31HFeIfncmbRnJ-ZH8s",
+      image: "images/people/rotem_shalev.jpeg",
       description: "My main research topic is visual content synthesis, with a focus on low-resource challenges.\n" +
           "In particular, I am interested in Sign Language Production, image and video editing and generation.",
       website: "https://rotem-shalev.github.io/rotemshalevarkushin/",
@@ -193,8 +190,7 @@ const LAB_DATA = {
     },
     {
       name: "Gal Almog",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQG9fL_UrQKVuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696250891607?e=1758758400&v=beta&t=YSZ0MAQuxpzubRZZ0jELEeUhtXrfnkKqeDr9iGy1XRU",
+      image: "images/people/gal_almog.jpeg",
       advisor: "Ohad Fried",
       degree: "M.Sc.",
       year: "2024",
@@ -202,8 +198,7 @@ const LAB_DATA = {
     },
 	{
       name: "Yarin Moshe",
-      image:
-		"https://media.licdn.com/dms/image/v2/D4D35AQEEy-Y-RQsOxw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1691924752470?e=1758553200&v=beta&t=wsL4zVDeEDNWfdmTEI_sWxYEpm6yeNt0Z8KHj1QX1Yg",
+      image: "images/people/yarin_moshe.jpeg",
       advisor: "Ariel Shamir & Yael Moses",
       degree: "M.Sc.",
       year: "2025",
