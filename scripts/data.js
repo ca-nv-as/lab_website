@@ -176,6 +176,15 @@ const LAB_DATA = {
       website: "",
       linkedin: "https://www.linkedin.com/in/dan-botchan-b7a184141/",
     },
+      {
+          name: "Nadav Benedek",
+          degree: "Ph.D.",
+          advisor: "Ohad Fried",
+          image: "images/people/Nadav_Benedek.png",
+          description: "My research focuses on ..",
+          website: "nadavb.com",
+          linkedin: "https://www.linkedin.com/in/nadavbenedek/",
+      },
   ],
   // Alumni
   alumni: [
