@@ -162,7 +162,7 @@ const LAB_DATA = {
       name: "Almog Friedlander",
       degree: "M.Sc.",
       advisor: "Ohad Fried & Ariel Shamir",
-      image: "https://media.licdn.com/dms/image/v2/C5603AQFEPVk5DX0I5g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517448593357?e=1759968000&v=beta&t=QMUe0orPPkVD5Fhbc6W23KD2ncquFc50HVphU4esz94",
+      image: "images/people/almog_fridlander.jpeg", 
       description: "Focuses on 3D change detection and generative models.",
       website: "",
       linkedin: "https://www.linkedin.com/in/mogy/",
