@@ -260,8 +260,7 @@ const LAB_DATA = {
     },
 	{
       name: "Yael Vinker",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQEo2PZnPWg90A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721818750156?e=1759968000&v=beta&t=rdAZIMGW7iI-yup4i-JpGghnZ1bU8lEZR-o__59C-58",
+      image:"images/people/yael_vinker.jpeg",
       advisor: "Ariel Shamir & Daniel Cohen-Or",
       degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
@@ -269,8 +268,7 @@ const LAB_DATA = {
     },
     {
       name: "Moab Arar",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQG9k57BGJChmA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679468592538?e=1759968000&v=beta&t=4m81ajdvqbCiaDfE6nOCVB1YH-0e7OiWDkcsht0qIlQ",
+      image:"images/people/moab_arar.jpeg",
       advisor: "Ariel Shamir & Amit Bermano",
       degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
