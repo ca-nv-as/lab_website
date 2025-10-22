@@ -77,15 +77,6 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/ofir-abramovich-063804168/",
     },
     {
-      name: "Omri Avrahami",
-      degree: "Ph.D.",
-      advisor: "Ohad Fried & Dani Lischinski",
-      image: "https://omriavrahami.com/static/images/profile.jpg",
-      description: "",
-      website: "https://omriavrahami.com/",
-      linkedin: "https://www.linkedin.com/in/omri-avrahami/",
-    },
-    {
       name: "Rotem Shalev-Arkushin",
       degree: "Ph.D.",
       advisor: "Ohad Fried & Amit Bermano",
@@ -188,6 +179,15 @@ const LAB_DATA = {
   ],
   // Alumni
   alumni: [
+    {
+      name: "Omri Avrahami",
+      image: "https://omriavrahami.com/static/images/profile.jpg",
+      advisor: "Ohad Fried & Dani Lischinski",
+      degree: "Ph.D.",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/omri-avrahami/",
+      // website: "https://omriavrahami.com/",
+    },
     {
       name: "Or Madar",
       image:
