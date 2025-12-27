@@ -654,5 +654,18 @@ const LAB_DATA = {
       "This paper introduces a method to generate duet dance videos from an input solo dancerÕs video performance. Addressing this novel problem, our system tackles a set of sub-tasks, including dancer segmentation, camera motion handling, stage reconstruction and the intricate management of geometric constraints such as dancer scale preservation and dancers collision prevention. The proposed approach leverages existing methodologies and new solutions. Notably, we address collisions in 2D spaceÐtime directly, departing from traditional 3D approaches. We modify the initial location of the dancer to avoid long-time collisions globally, while also modulating the pace of the dance by deliberate slowing down or accelerating motion to avoid short collisions locally. Experimental results attest to the efficacy of our approach. The system not only successfully synthesizes engaging duet dance sequences but also upholds the authenticity of individual performances, as shown by a user study."
     ],
    },
+   {
+    title: "CLIP-UP: CLIP-Based Unanswerable Problem Detection for Visual Question Answering",
+    authors: ["Ben Vardi", "Oron Nir", "Ariel Shamir"],
+    conference: "WACV",
+    date: "01-01-2026",
+    image_link: "https://benvr.github.io/CLIP-UP/static/images/clip_up_results_demo.jpg",
+    paper_link: "https://arxiv.org/abs/2501.01371",
+	project_link: https://benvr.github.io/CLIP-UP,
+    abstract: [
+      "Vision-Language Models (VLMs) demonstrate remarkable capabilities in visual understanding and reasoning, such as in Visual Question Answering (VQA), where the model is asked a question related to a visual input. Still, these models can make distinctly unnatural errors, for example, providing (wrong) answers to unanswerable VQA questions, such as questions asking about objects that do not appear in the image.",
+	  "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged.",
+	  "Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."],
+   },
   ],
 };
