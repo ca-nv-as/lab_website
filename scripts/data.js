@@ -657,7 +657,7 @@ const LAB_DATA = {
    {
     title: "CLIP-UP: CLIP-Based Unanswerable Problem Detection for Visual Question Answering",
     authors: ["Ben Vardi", "Oron Nir", "Ariel Shamir"],
-    conference: "WACV",
+    conference: "WACV (oral)",
     date: "01-01-2026",
     image_link: "https://benvr.github.io/CLIP-UP/static/images/clip_up_results_demo.jpg",
     paper_link: "https://arxiv.org/abs/2501.01371",
