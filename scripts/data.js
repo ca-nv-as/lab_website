@@ -280,10 +280,35 @@ const LAB_DATA = {
   // News items
   news: [
     {
-      title: "We have a new Logo!",
-      date: "24-08-2025",
-      content: ["We have a new Logo! Check it out above."],
+      title: "Two papers accepted to ICLR 2026! &#128165; &#128165; &#128165;",
+      date: "29-01-2026",
+      content: [],
     },
+    {
+      title: '"CLIP-UP" has been accepted to WACV 2026 as oral! &#127797; &#128509;',
+      date: "22-01-2026",
+      content: [],
+    },
+    {
+      title: '"Unimodal Strategies in Density-Based Clustering" has been accepted to ECML-PKDD 2025! &#127863; &#127749;',
+      date: "01-07-2025",
+      content: [],
+    },
+    {
+      title: "Four papers accepted to CVPR 2025! &#128293; 🎸",
+      date: "25-03-2025",
+      content: [],
+    },
+    {
+      title: "Two papers accepted to Eurographics 2025! 🎡 🍻",
+      date: "13-02-2025",
+      content: [],
+    },
+    // {
+    //   title: "We have a new Logo!",
+    //   date: "24-08-2025",
+    //   content: ["We have a new Logo! Check it out above."],
+    // },
   ],
 
   // Publications
