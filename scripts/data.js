@@ -280,6 +280,11 @@ const LAB_DATA = {
   // News items
   news: [
     {
+      title: '"Copy-Transform-Paste" has been accepted to CVPR 2026! &#127956; &#129413;️ &#127482;&#127480;',
+      date: "29-01-2026",
+      content: [],
+    },
+    {
       title: "Two papers accepted to ICLR 2026! &#128165; &#128165; &#128165;",
       date: "29-01-2026",
       content: [],
@@ -692,5 +697,15 @@ const LAB_DATA = {
       "Vision-Language Models (VLMs) demonstrate remarkable capabilities in visual understanding and reasoning, such as in Visual Question Answering (VQA), where the model is asked a question related to a visual input. Still, these models can make distinctly unnatural errors, for example, providing (wrong) answers to unanswerable VQA questions, such as questions asking about objects that do not appear in the image.",
 	  "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged. Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."],
    },
+  {
+    title: "Copy-Transform-Paste: Zero-Shot Object-Object Alignment Guided by Vision-Language and Geometric Constraints",
+    authors: ["Rotem Gatenyo", "Ohad Fried"],
+    conference: "CVPR",
+    date: "20-01-2026",
+    image_link: "images/papers/copy-transform-paste/copy-transform-paste.png",
+    paper_link: "https://arxiv.org/abs/2601.14207",
+    project_link: "https://rotemgat.github.io/CopyTransformPaste/",
+    abstract: ["We study zero-shot 3D alignment of two given meshes, using a text prompt describing their spatial relation -- an essential capability for content creation and scene assembly. Earlier approaches primarily rely on geometric alignment procedures, while recent work leverages pretrained 2D diffusion models to model language-conditioned object-object spatial relationships. In contrast, we directly optimize the relative pose at test time, updating translation, rotation, and isotropic scale with CLIP-driven gradients via a differentiable renderer, without training a new model. Our framework augments language supervision with geometry-aware objectives: a variant of soft-Iterative Closest Point (ICP) term to encourage surface attachment and a penetration loss to discourage interpenetration. A phased schedule strengthens contact constraints over time, and camera control concentrates the optimization on the interaction region. To enable evaluation, we curate a benchmark containing diverse categories and relations, and compare against baselines. Our method outperforms all alternatives, yielding semantically faithful and physically plausible alignments."],
+}
   ],
 };
