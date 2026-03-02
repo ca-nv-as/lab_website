@@ -281,7 +281,7 @@ const LAB_DATA = {
   news: [
     {
       title: '"Copy-Transform-Paste" has been accepted to CVPR 2026! &#127956; &#129413;️ &#127482;&#127480;',
-      date: "29-01-2026",
+      date: "21-02-2026",
       content: [],
     },
     {
