@@ -280,6 +280,11 @@ const LAB_DATA = {
   // News items
   news: [
     {
+      title: '"Copy-Transform-Paste" has been accepted to CVPR 2026! &#127956; &#129413;️ &#127482;&#127480;',
+      date: "29-01-2026",
+      content: [],
+    },
+    {
       title: "Two papers accepted to ICLR 2026! &#128165; &#128165; &#128165;",
       date: "29-01-2026",
       content: [],
