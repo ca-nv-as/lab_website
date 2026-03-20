@@ -702,7 +702,7 @@ const LAB_DATA = {
       title: "Copy-Transform-Paste: Zero-Shot Object-Object Alignment Guided by Vision-Language and Geometric Constraints",
       authors: ["Rotem Gatenyo", "Ohad Fried"],
       conference: "CVPR",
-      date: "20-01-2026",
+      date: "03-06-2026",
       image_link: "images/papers/copy-transform-paste/copy-transform-paste.png",
       paper_link: "https://arxiv.org/abs/2601.14207",
       project_link: "https://rotemgat.github.io/CopyTransformPaste/",
