@@ -387,19 +387,19 @@ const LAB_DATA = {
       ],
     },
     {
-    title: "Unimodal Strategies in Density-Based Clustering",
-    authors: ["Oron Nir", "Jay Tenenbaum", "Ariel Shamir"],
-    conference: "ECML-PKDD",
-    date: "15-09-2025",
-    image_link: "https://github.com/oronnir/UnimodalStrategies/blob/main/ESC-50/LFW.png?raw=true",
-    paper_link: "https://arxiv.org/abs/2506.21695",
-    github_link: "https://github.com/oronnir/UnimodalStrategies",
-    abstract: [
-      "Density-based clustering methods often surpass centroid-based counterparts, when addressing data with noise or arbitrary data distributions common in real-world problems. In this study, we reveal a key property intrinsic to density-based clustering methods regarding the relation between the number of clusters and the neighborhood radius of core points - we empirically show that it is nearly unimodal, and support this claim theoretically in a specific setting.",
-      "We leverage this property to devise new strategies for finding appropriate values for the radius more efficiently based on the Ternary Search algorithm. This is especially important for large scale data that is high-dimensional, where parameter tuning is computationally intensive. We validate our methodology through extensive applications across a range of high-dimensional, large-scale NLP, Audio, and Computer Vision tasks, demonstrating its practical effectiveness and robustness. This work not only offers a significant advancement in parameter control for density-based clustering but also broadens the understanding regarding the relations between their guiding parameters.",
-    ],
-  },
-      {
+      title: "Unimodal Strategies in Density-Based Clustering",
+      authors: ["Oron Nir", "Jay Tenenbaum", "Ariel Shamir"],
+      conference: "ECML-PKDD",
+      date: "15-09-2025",
+      image_link: "https://github.com/oronnir/UnimodalStrategies/blob/main/ESC-50/LFW.png?raw=true",
+      paper_link: "https://arxiv.org/abs/2506.21695",
+      github_link: "https://github.com/oronnir/UnimodalStrategies",
+      abstract: [
+        "Density-based clustering methods often surpass centroid-based counterparts, when addressing data with noise or arbitrary data distributions common in real-world problems. In this study, we reveal a key property intrinsic to density-based clustering methods regarding the relation between the number of clusters and the neighborhood radius of core points - we empirically show that it is nearly unimodal, and support this claim theoretically in a specific setting.",
+        "We leverage this property to devise new strategies for finding appropriate values for the radius more efficiently based on the Ternary Search algorithm. This is especially important for large scale data that is high-dimensional, where parameter tuning is computationally intensive. We validate our methodology through extensive applications across a range of high-dimensional, large-scale NLP, Audio, and Computer Vision tasks, demonstrating its practical effectiveness and robustness. This work not only offers a significant advancement in parameter control for density-based clustering but also broadens the understanding regarding the relations between their guiding parameters.",
+      ],
+    },
+    {
       title:
         "Express4D: Expressive, Friendly, and Extensible 4D Facial Motion Generation Benchmark",
       authors: ["Yaron Aloni", "Rotem Shalev-Arkushin", "Yonatan Shafir", "Guy Tevet", "Ohad Fried", "Amit H. Bermano"],
@@ -605,7 +605,7 @@ const LAB_DATA = {
         "Streamlining content discovery within media archives requires integrating advanced data representations and effective visualization techniques for clear communication of video topics to users. The proposed system addresses the challenge of efficiently navigating large video collections by exploiting a fusion of visual, audio, and textual features to accurately index and categorize video content through a text-based method. Additionally, semantic embeddings are employed to provide contextually relevant information and recommendations to users, resulting in an intuitive and engaging exploratory experience over our topics ontology map using OpenAI GPT-4."
       ],
     },
-      {
+    {
       title:
         "Ham2Pose: Animating Sign Language Notation into Pose Sequences",
       authors: ["Rotem Shalev-Arkushin", "Amit Moryossef", "Ohad Fried"],
@@ -634,78 +634,79 @@ const LAB_DATA = {
         "Cartoons and animation domain videos have very different characteristics compared to real-life images and videos. In addition, this domain carries a large variability in styles. Current computer vision and deep-learning solutions often fail on animated content because they were trained on natural images. In this paper we present a method to refine a semantic representation suitable for specific animated content.",
   	    "We first train a neural network on a large-scale set of animation videos and use the mapping to deep features as an embedding space. Next, we use self-supervision to refine the representation for any specific animation style by gathering many examples of animated characters in this style, using a multi-object tracking. These examples are used to define triplets for contrastive loss training. The refined semantic space allows better clustering of animated characters even when they have diverse manifestations. Using this space we can build dictionaries of characters in an animation videos, and define specialized classifiers for specific stylistic content (e.g., characters in a specific animation series) with very little user effort. These classifiers are the basis for automatically labeling characters in animation videos. We present results on a collection of characters in a variety of animation styles."
       ],
-  },
-  {
-    title: "CityLifeSim: A High-Fidelity Pedestrian and Vehicle Simulation with Complex Behaviors",
-    authors: ["Cheng Yao Wang", "Oron Nir", "Eyal Ofek", "Sai Vemprala", "Ashish Kapoor", "Daniel McDuff", "Mar Gonzalez-Franco"],
-    conference: "ICIR",
-    date: "14-12-2022",
-    image_link: "https://github.com/CitylifeSim/CitylifeSim.github.io/blob/main/video.PNG?raw=true",
-    paper_link: "https://ieeexplore.ieee.org/document/10070899",
-    project_link: "https://citylifesim.github.io/", // optional project URL
-    abstract: [
-      "Simulations are a powerful tools particularly in the case of safety critical scenarios. However, simulating complex temporal events in multi-agent scenarios with vehicles and pedestrians, such as those that exist in urban environments, is challenging. We present CityLifeSim, a simulation for the research community that focuses on rich pedestrian behavior, such as the one that arises when different personalities, environmental events, and group goals are simulated. In our simulations we can see cases of people jay walking a red light, sitting on a bench, waiting for the bus, or calling on the phone, but also more complex creation and management of crowds that might even line up or just keep moving while observing interpersonal distances.",
-	  "CityLifeSim is configurable and can create unlimited scenarios with detailed logging capabilities. As a demonstration we have run CityLifeSim to create a demo dataset for training setups that includes 17 different cameras, views from a moving vehicle in the street under different weather conditions (rain, snow, sun), and from a drone with frontal and downward views. All content is released with the corresponding original configuration files, ground truth pedestrian segmentation, and RGB-D frames. We evaluate our dataset on a pedestrian detection and identification task with state of the art Multi-Object Tracker (MOT), showing the limitations and opportunities for synthetic data in this use case."
-    ],
-  },
-  {
-    title: "Semantic Segmentation in Art Paintings",
-    authors: ["Nadav Z. Cohen", "Yael Newman", "Ariel Shamir"],
-    conference: "EuroGraphics",
-    date: "25-04-2022",
-    image_link: "https://nadavc220.github.io/ssiap/static/new_images/teaser.png",
-    paper_link: "https://arxiv.org/abs/2203.03238",
-    project_link: "https://nadavc220.github.io/ssiap/", // optional project URL
-	github_link: "https://github.com/Nadavc220/SemanticSegmentationInArtPaintings",
-    abstract: [
-      " Semantic segmentation is a difficult task even when trained in a supervised manner on photographs. In this paper, we tackle the problem of semantic segmentation of artistic paintings, an even more challenging task because of a much larger diversity in colors, textures, and shapes and because there are no ground truth annotations available for segmentation. We propose an unsupervised method for semantic segmentation of paintings using domain adaptation. Our approach creates a training set of pseudo-paintings in specific artistic styles by using style-transfer on the PASCAL VOC 2012 dataset, and then applies domain confusion between PASCAL VOC 2012 and real paintings. These two steps build on a new dataset we gathered called DRAM (Diverse Realism in Art Movements) composed of figurative art paintings from four movements, which are highly diverse in pattern, color, and geometry. To segment new paintings, we present a composite multi-domain adaptation method that trains on each sub-domain separately and composes their solutions during inference time. Our method provides better segmentation results not only on the specific artistic movements of DRAM, but also on other, unseen ones. We compare our approach to alternative methods and show applications of semantic segmentation in art paintings"
-    ],
-  },
-  {
-    title: "SwiftSketch: A Diffusion Model for Image-to-Vector Sketch Generation",
-    authors: ["Ellie Arar", "Yarden Frenkel", "Daniel Cohen-Or", "Ariel Shamir", "Yael Vinker"],
-    conference: "SIGGRAPH",
-    date: "07-08-2025",
-    image_link: "https://swiftsketch.github.io/static/figures/teaser_.svg",
-    paper_link: "https://arxiv.org/abs/2502.08642",
-    project_link: "https://swiftsketch.github.io/", // optional project URL
-    abstract: [
-      "Recent advancements in large vision-language models have enabled highly expressive and diverse vector sketch generation. However, state-of-the-art methods rely on a time-consuming optimization process involving repeated feedback from a pretrained model to determine stroke placement. Consequently, despite producing impressive sketches, these methods are limited in practical applications. In this work, we introduce SwiftSketch, a diffusion model for image-conditioned vector sketch generation that can produce high-quality sketches in less than a second. SwiftSketch operates by progressively denoising stroke control points sampled from a Gaussian distribution. Its transformer-decoder architecture is designed to effectively handle the discrete nature of vector representation and capture the inherent global dependencies between strokes. To train SwiftSketch, we construct a synthetic dataset of image-sketch pairs, addressing the limitations of existing sketch datasets, which are often created by non-artists and lack professional quality. For generating these synthetic sketches, we introduce ControlSketch, a method that enhances SDS-based techniques by incorporating precise spatial control through a depth-aware ControlNet. We demonstrate that SwiftSketch generalizes across diverse concepts, efficiently producing sketches that combine high fidelity with a natural and visually appealing style."
-    ],
-  },
-  {
-    title: "Duet dancing from a solo dance video",
-    authors: ["Yarin Moshe", "Yael Moses", "Ariel Shamir"],
-    conference: "Computers and Graphics",
-    date: "01-08-2025",
-    image_link: "https://faculty.runi.ac.il/arik/site/images/research/duetDanceOverview.jpg",
-    paper_link: "https://www.sciencedirect.com/science/article/pii/S0097849325000913",
-    abstract: [
-      "This paper introduces a method to generate duet dance videos from an input solo dancerÕs video performance. Addressing this novel problem, our system tackles a set of sub-tasks, including dancer segmentation, camera motion handling, stage reconstruction and the intricate management of geometric constraints such as dancer scale preservation and dancers collision prevention. The proposed approach leverages existing methodologies and new solutions. Notably, we address collisions in 2D spaceÐtime directly, departing from traditional 3D approaches. We modify the initial location of the dancer to avoid long-time collisions globally, while also modulating the pace of the dance by deliberate slowing down or accelerating motion to avoid short collisions locally. Experimental results attest to the efficacy of our approach. The system not only successfully synthesizes engaging duet dance sequences but also upholds the authenticity of individual performances, as shown by a user study."
-    ],
-   },
-   {
-    title: "CLIP-UP: CLIP-Based Unanswerable Problem Detection for Visual Question Answering",
-    authors: ["Ben Vardi", "Oron Nir", "Ariel Shamir"],
-    conference: "WACV (oral)",
-    date: "01-01-2026",
-    image_link: "https://benvr.github.io/CLIP-UP/static/images/clip_up_results_demo.jpg",
-    paper_link: "https://arxiv.org/abs/2501.01371",
-	project_link: "https://benvr.github.io/CLIP-UP",
-	github_link: "https://github.com/BenVr/CLIP-UP",
-    abstract: [
-      "Vision-Language Models (VLMs) demonstrate remarkable capabilities in visual understanding and reasoning, such as in Visual Question Answering (VQA), where the model is asked a question related to a visual input. Still, these models can make distinctly unnatural errors, for example, providing (wrong) answers to unanswerable VQA questions, such as questions asking about objects that do not appear in the image.",
-	  "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged. Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."],
-   },
-  {
-    title: "Copy-Transform-Paste: Zero-Shot Object-Object Alignment Guided by Vision-Language and Geometric Constraints",
-    authors: ["Rotem Gatenyo", "Ohad Fried"],
-    conference: "CVPR",
-    date: "20-01-2026",
-    image_link: "images/papers/copy-transform-paste/copy-transform-paste.png",
-    paper_link: "https://arxiv.org/abs/2601.14207",
-    project_link: "https://rotemgat.github.io/CopyTransformPaste/",
-    abstract: ["We study zero-shot 3D alignment of two given meshes, using a text prompt describing their spatial relation -- an essential capability for content creation and scene assembly. Earlier approaches primarily rely on geometric alignment procedures, while recent work leverages pretrained 2D diffusion models to model language-conditioned object-object spatial relationships. In contrast, we directly optimize the relative pose at test time, updating translation, rotation, and isotropic scale with CLIP-driven gradients via a differentiable renderer, without training a new model. Our framework augments language supervision with geometry-aware objectives: a variant of soft-Iterative Closest Point (ICP) term to encourage surface attachment and a penetration loss to discourage interpenetration. A phased schedule strengthens contact constraints over time, and camera control concentrates the optimization on the interaction region. To enable evaluation, we curate a benchmark containing diverse categories and relations, and compare against baselines. Our method outperforms all alternatives, yielding semantically faithful and physically plausible alignments."],
-}
+    },
+    {
+      title: "CityLifeSim: A High-Fidelity Pedestrian and Vehicle Simulation with Complex Behaviors",
+      authors: ["Cheng Yao Wang", "Oron Nir", "Eyal Ofek", "Sai Vemprala", "Ashish Kapoor", "Daniel McDuff", "Mar Gonzalez-Franco"],
+      conference: "ICIR",
+      date: "14-12-2022",
+      image_link: "https://github.com/CitylifeSim/CitylifeSim.github.io/blob/main/video.PNG?raw=true",
+      paper_link: "https://ieeexplore.ieee.org/document/10070899",
+      project_link: "https://citylifesim.github.io/", // optional project URL
+      abstract: [
+        "Simulations are a powerful tools particularly in the case of safety critical scenarios. However, simulating complex temporal events in multi-agent scenarios with vehicles and pedestrians, such as those that exist in urban environments, is challenging. We present CityLifeSim, a simulation for the research community that focuses on rich pedestrian behavior, such as the one that arises when different personalities, environmental events, and group goals are simulated. In our simulations we can see cases of people jay walking a red light, sitting on a bench, waiting for the bus, or calling on the phone, but also more complex creation and management of crowds that might even line up or just keep moving while observing interpersonal distances.",
+	      "CityLifeSim is configurable and can create unlimited scenarios with detailed logging capabilities. As a demonstration we have run CityLifeSim to create a demo dataset for training setups that includes 17 different cameras, views from a moving vehicle in the street under different weather conditions (rain, snow, sun), and from a drone with frontal and downward views. All content is released with the corresponding original configuration files, ground truth pedestrian segmentation, and RGB-D frames. We evaluate our dataset on a pedestrian detection and identification task with state of the art Multi-Object Tracker (MOT), showing the limitations and opportunities for synthetic data in this use case."
+      ],
+    },
+    {
+      title: "Semantic Segmentation in Art Paintings",
+      authors: ["Nadav Z. Cohen", "Yael Newman", "Ariel Shamir"],
+      conference: "EuroGraphics",
+      date: "25-04-2022",
+      image_link: "https://nadavc220.github.io/ssiap/static/new_images/teaser.png",
+      paper_link: "https://arxiv.org/abs/2203.03238",
+      project_link: "https://nadavc220.github.io/ssiap/", // optional project URL
+	    github_link: "https://github.com/Nadavc220/SemanticSegmentationInArtPaintings",
+      abstract: [
+        "Semantic segmentation is a difficult task even when trained in a supervised manner on photographs. In this paper, we tackle the problem of semantic segmentation of artistic paintings, an even more challenging task because of a much larger diversity in colors, textures, and shapes and because there are no ground truth annotations available for segmentation. We propose an unsupervised method for semantic segmentation of paintings using domain adaptation. Our approach creates a training set of pseudo-paintings in specific artistic styles by using style-transfer on the PASCAL VOC 2012 dataset, and then applies domain confusion between PASCAL VOC 2012 and real paintings. These two steps build on a new dataset we gathered called DRAM (Diverse Realism in Art Movements) composed of figurative art paintings from four movements, which are highly diverse in pattern, color, and geometry. To segment new paintings, we present a composite multi-domain adaptation method that trains on each sub-domain separately and composes their solutions during inference time. Our method provides better segmentation results not only on the specific artistic movements of DRAM, but also on other, unseen ones. We compare our approach to alternative methods and show applications of semantic segmentation in art paintings"
+      ],
+    },
+    {
+      title: "SwiftSketch: A Diffusion Model for Image-to-Vector Sketch Generation",
+      authors: ["Ellie Arar", "Yarden Frenkel", "Daniel Cohen-Or", "Ariel Shamir", "Yael Vinker"],
+      conference: "SIGGRAPH",
+      date: "07-08-2025",
+      image_link: "https://swiftsketch.github.io/static/figures/teaser_.svg",
+      paper_link: "https://arxiv.org/abs/2502.08642",
+      project_link: "https://swiftsketch.github.io/", // optional project URL
+      abstract: [
+        "Recent advancements in large vision-language models have enabled highly expressive and diverse vector sketch generation. However, state-of-the-art methods rely on a time-consuming optimization process involving repeated feedback from a pretrained model to determine stroke placement. Consequently, despite producing impressive sketches, these methods are limited in practical applications. In this work, we introduce SwiftSketch, a diffusion model for image-conditioned vector sketch generation that can produce high-quality sketches in less than a second. SwiftSketch operates by progressively denoising stroke control points sampled from a Gaussian distribution. Its transformer-decoder architecture is designed to effectively handle the discrete nature of vector representation and capture the inherent global dependencies between strokes. To train SwiftSketch, we construct a synthetic dataset of image-sketch pairs, addressing the limitations of existing sketch datasets, which are often created by non-artists and lack professional quality. For generating these synthetic sketches, we introduce ControlSketch, a method that enhances SDS-based techniques by incorporating precise spatial control through a depth-aware ControlNet. We demonstrate that SwiftSketch generalizes across diverse concepts, efficiently producing sketches that combine high fidelity with a natural and visually appealing style."
+      ],
+    },
+    {
+      title: "Duet dancing from a solo dance video",
+      authors: ["Yarin Moshe", "Yael Moses", "Ariel Shamir"],
+      conference: "Computers and Graphics",
+      date: "01-08-2025",
+      image_link: "https://faculty.runi.ac.il/arik/site/images/research/duetDanceOverview.jpg",
+      paper_link: "https://www.sciencedirect.com/science/article/pii/S0097849325000913",
+      abstract: [
+        "This paper introduces a method to generate duet dance videos from an input solo dancerÕs video performance. Addressing this novel problem, our system tackles a set of sub-tasks, including dancer segmentation, camera motion handling, stage reconstruction and the intricate management of geometric constraints such as dancer scale preservation and dancers collision prevention. The proposed approach leverages existing methodologies and new solutions. Notably, we address collisions in 2D spaceÐtime directly, departing from traditional 3D approaches. We modify the initial location of the dancer to avoid long-time collisions globally, while also modulating the pace of the dance by deliberate slowing down or accelerating motion to avoid short collisions locally. Experimental results attest to the efficacy of our approach. The system not only successfully synthesizes engaging duet dance sequences but also upholds the authenticity of individual performances, as shown by a user study."
+      ],
+    },
+    {
+      title: "CLIP-UP: CLIP-Based Unanswerable Problem Detection for Visual Question Answering",
+      authors: ["Ben Vardi", "Oron Nir", "Ariel Shamir"],
+      conference: "WACV (oral)",
+      date: "01-01-2026",
+      image_link: "https://benvr.github.io/CLIP-UP/static/images/clip_up_results_demo.jpg",
+      paper_link: "https://arxiv.org/abs/2501.01371",
+	    project_link: "https://benvr.github.io/CLIP-UP",
+	    github_link: "https://github.com/BenVr/CLIP-UP",
+      abstract: [
+        "Vision-Language Models (VLMs) demonstrate remarkable capabilities in visual understanding and reasoning, such as in Visual Question Answering (VQA), where the model is asked a question related to a visual input. Still, these models can make distinctly unnatural errors, for example, providing (wrong) answers to unanswerable VQA questions, such as questions asking about objects that do not appear in the image.",
+	      "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged. Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."
+      ],
+    },
+    {
+      title: "Copy-Transform-Paste: Zero-Shot Object-Object Alignment Guided by Vision-Language and Geometric Constraints",
+      authors: ["Rotem Gatenyo", "Ohad Fried"],
+      conference: "CVPR",
+      date: "20-01-2026",
+      image_link: "images/papers/copy-transform-paste/copy-transform-paste.png",
+      paper_link: "https://arxiv.org/abs/2601.14207",
+      project_link: "https://rotemgat.github.io/CopyTransformPaste/",
+      abstract: ["We study zero-shot 3D alignment of two given meshes, using a text prompt describing their spatial relation -- an essential capability for content creation and scene assembly. Earlier approaches primarily rely on geometric alignment procedures, while recent work leverages pretrained 2D diffusion models to model language-conditioned object-object spatial relationships. In contrast, we directly optimize the relative pose at test time, updating translation, rotation, and isotropic scale with CLIP-driven gradients via a differentiable renderer, without training a new model. Our framework augments language supervision with geometry-aware objectives: a variant of soft-Iterative Closest Point (ICP) term to encourage surface attachment and a penetration loss to discourage interpenetration. A phased schedule strengthens contact constraints over time, and camera control concentrates the optimization on the interaction region. To enable evaluation, we curate a benchmark containing diverse categories and relations, and compare against baselines. Our method outperforms all alternatives, yielding semantically faithful and physically plausible alignments."],
+    }
   ],
 };
