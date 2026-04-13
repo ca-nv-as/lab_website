@@ -319,6 +319,19 @@ const LAB_DATA = {
   // Publications
   publications: [
     {
+      title: "MultiAct: Text-to-Motion Generation from Composite Text via Tailored Attention Guidance",
+      authors: ["Nathan Sala", "Ofir Abramovich", "Ariel Shamir", "Daniel Cohen-Or", "Andreas Aristidou", "Sigal Raab"],
+      conference: "SIGGRAPH",
+      date: "13-04-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/MultiAct/multiact_fig.png",
+      paper_link: "https://arxiv.org/abs/TBD",
+      project_link: "TBD",
+      github_link: "TBD",
+      abstract: [
+        "Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human–computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all components of a composite description, models frequently prioritize a single dominant action and neglect the rest, leading to incomplete or ambiguous motion. We present MultiAct, an unpaired, inference-time framework for compositional text-to-motion synthesis that operates directly on pretrained motion generators without retraining or architectural modification. Our method counteracts semantic collapse by adaptively reinforcing cross-attention associated with underrepresented prompt components. Since effective intervention depends on prompt-specific choices, such as which tokens, layers, and optimization settings to target, we introduce a lightweight auxiliary MLP that evaluates candidate parameterizations for a given prompt, enabling the ranking of attention-strengthening configurations and selecting the most effective one. Extensive evaluations demonstrate that MultiAct consistently outperforms existing baselines on composite prompts, achieving improved semantic coverage while preserving motion realism. Our code and data will be shared.",
+      ],
+    },
+    {
       title: "Stable Flow: Vital Layers for Training-Free Image Editing",
       authors: ["Omri Avrahami", "Or Patashnik", "Ohad Fried", "Egor Nemchinov", "Kfir Aberman", "Dani Lischinski", "Daniel Cohen-Or"],
       conference: "CVPR",
