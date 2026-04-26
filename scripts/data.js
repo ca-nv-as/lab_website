@@ -280,6 +280,11 @@ const LAB_DATA = {
   // News items
   news: [
     {
+      title: "Three papers accepted to SIGGRAPH 2026! &#127909; &#127796; &#129361;",
+      date: "21-02-2026",
+      content: [],
+    },
+    {
       title: '"Copy-Transform-Paste" has been accepted to CVPR 2026! &#127956; &#129413;️ &#127482;&#127480;',
       date: "21-02-2026",
       content: [],
@@ -702,7 +707,7 @@ const LAB_DATA = {
       title: "Copy-Transform-Paste: Zero-Shot Object-Object Alignment Guided by Vision-Language and Geometric Constraints",
       authors: ["Rotem Gatenyo", "Ohad Fried"],
       conference: "CVPR",
-      date: "03-06-2026",
+      date: "03-04-2026",
       image_link: "images/papers/copy-transform-paste/copy-transform-paste.png",
       paper_link: "https://arxiv.org/abs/2601.14207",
       project_link: "https://rotemgat.github.io/CopyTransformPaste/",
@@ -740,6 +745,19 @@ const LAB_DATA = {
       github_link: "TBD",
       abstract: [
         "Text-to-motion generation has progressed rapidly in recent years, offering an expressive interface for animation and human–computer interaction. However, current models remain brittle when handling prompts that describe multiple actions occurring at the same time. Rather than realizing all components of a composite description, models frequently prioritize a single dominant action and neglect the rest, leading to incomplete or ambiguous motion. We present MultiAct, an unpaired, inference-time framework for compositional text-to-motion synthesis that operates directly on pretrained motion generators without retraining or architectural modification. Our method counteracts semantic collapse by adaptively reinforcing cross-attention associated with underrepresented prompt components. Since effective intervention depends on prompt-specific choices, such as which tokens, layers, and optimization settings to target, we introduce a lightweight auxiliary MLP that evaluates candidate parameterizations for a given prompt, enabling the ranking of attention-strengthening configurations and selecting the most effective one. Extensive evaluations demonstrate that MultiAct consistently outperforms existing baselines on composite prompts, achieving improved semantic coverage while preserving motion realism. Our code and data will be shared.",
+      ],
+    },
+    {
+      title: "Colorful-Noise: Training-Free Low-Frequency Noise Manipulation for Color-Based Conditional Image Generation",
+      authors: ["Nadav Z. Cohen", "Ofir Abramovich", "Ariel Shamir",],
+      conference: "SIGGRAPH",
+      date: "26-04-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/colorful_noise/colorful-noise_website.jpg",
+      paper_link: "https://arxiv.org/abs/TBD",
+      project_link: "TBD",
+      github_link: "TBD",
+      abstract: [
+        "Text-to-image diffusion models generate images by gradually converting white Gaussian noise into a natural image. White Gaussian noise is well suited for producing diverse outputs from a single text prompt due to its absence of structure. However, this very property limits control over, and predictability of, specific visual attributes, as the noise is not human-interpretable. In this work, we investigate the characteristics of the input noise in diffusion models. We show that, although all frequencies in white Gaussian noise have comparable statistical energy, low-frequency components primarily determine the image’s global structure and color composition, while high-frequency components control finer details. Building on this observation, we demonstrate that simple manipulations of the low-frequency noise using low-frequency image priors can effectively condition the generation process to reconstruct these low-frequency visual cues. This allows us to define a simple, training-free method with minimal overhead that steers overall image structure and color, while letting high-frequency components freely emerge as fine details, enabling variability across generated outputs.",
       ],
     },
   ],
