@@ -281,7 +281,7 @@ const LAB_DATA = {
   news: [
     {
       title: "Three papers accepted to SIGGRAPH 2026! &#127909; &#127796; &#129361;",
-      date: "21-02-2026",
+      date: "13-04-2026",
       content: [],
     },
     {
