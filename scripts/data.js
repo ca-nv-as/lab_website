@@ -105,15 +105,6 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/shimonmalnick/",
     },
     {
-      name: "Idan Dov Vidra",
-      degree: "M.Sc.",
-      advisor: "Ariel Shamir",
-      image: "images/people/idan_vidra.jpg",
-      description: "My research is on AI and human collaboration and co-creativity.",
-      website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
-      linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
-    },
-    {
       name: "Rotem Gatenyo",
       degree: "M.Sc.",
       advisor: "Ohad Fried",
@@ -273,6 +264,16 @@ const LAB_DATA = {
       degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
       linkedin: "https://www.linkedin.com/in/moab-arar-36597196/",
+    },
+    {
+      name: "Idan Dov Vidra",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir",
+      image: "images/people/idan_vidra.jpg",
+      description: "My research is on AI and human collaboration and co-creativity.",
+      website: "https://scholar.google.com/citations?user=ApJun1YAAAAJ&hl=en",
+      year: "2026",
+      linkedin: "https://www.linkedin.com/in/idan-vidra-a7b742180/",
     },
   ],
 
