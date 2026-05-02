@@ -82,7 +82,7 @@ const LAB_DATA = {
       advisor: "Ohad Fried & Amit Bermano",
       image: "images/people/rotem_shalev.jpeg",
       description: "My main research topic is visual content synthesis, with a focus on low-resource challenges.\n" +
-          "In particular, I am interested in Sign Language Production, image and video editing and generation.",
+        "In particular, I am interested in Sign Language Production, image and video editing and generation.",
       website: "https://rotem-shalev.github.io/rotemshalevarkushin/",
       linkedin: "https://www.linkedin.com/in/rotem-shalev/",
     },
@@ -93,7 +93,7 @@ const LAB_DATA = {
       image: "images/people/oron.jpg",
       description: "My PhD research advances semantic video analytics, spanning tasks such as animated character recognition, video retrieval, synthesis, and multi-object tracking with re-identification. At its core, I explore how vision–language models can unlock richer, more meaningful understanding of video across domains.",
       website: "https://scholar.google.com/citations?user=f4v5HMgAAAAJ&hl=en", // optional
-      linkedin: "https://www.linkedin.com/in/oronnir/", 
+      linkedin: "https://www.linkedin.com/in/oronnir/",
     },
     {
       name: "Shimon Malnick",
@@ -139,17 +139,17 @@ const LAB_DATA = {
       description: "My research focuses on text-to-image models, currently working on ways to improve attention to high-detail areas.",
       website: "",
       linkedin: "https://www.linkedin.com/in/raz-cohen-3a4251230/",
-    },	 
-	{
+    },
+    {
       name: "Almog Friedlander",
       degree: "M.Sc.",
       advisor: "Ohad Fried & Ariel Shamir",
-      image: "images/people/almog_fridlander.jpeg", 
+      image: "images/people/almog_fridlander.jpeg",
       description: "Focuses on 3D change detection and generative models.",
       website: "",
       linkedin: "https://www.linkedin.com/in/mogy/",
     },
-	{
+    {
       name: "Dan Botchan",
       degree: "M.Sc.",
       advisor: "Yacov Hel-Or & Ohad Fried",
@@ -158,18 +158,26 @@ const LAB_DATA = {
       website: "",
       linkedin: "https://www.linkedin.com/in/dan-botchan-b7a184141/",
     },
-      {
-          name: "Nadav Benedek",
-          degree: "Ph.D.",
-          advisor: "Ohad Fried",
-          image: "images/people/Nadav_Benedek.png",
-          description: "My research focuses on NLP/LLMs, images, videos and RL.",
-          website: "https://nadavb.com",
-          linkedin: "https://www.linkedin.com/in/nadavbenedek/",
-      },
+    {
+      name: "Nadav Benedek",
+      degree: "Ph.D.",
+      advisor: "Ohad Fried",
+      image: "images/people/Nadav_Benedek.png",
+      description: "My research focuses on NLP/LLMs, images, videos and RL.",
+      website: "https://nadavb.com",
+      linkedin: "https://www.linkedin.com/in/nadavbenedek/",
+    },
   ],
   // Alumni
   alumni: [
+    {
+      name: "Tomer Koren",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir & Doron Friedman",
+      image: "images/people/tomer_koren.jpg",
+      year: "2026",
+      linkedin: "https://www.linkedin.com/in/tomerkoren10/",
+    },
     {
       name: "Omri Avrahami",
       image: "https://omriavrahami.com/static/images/profile.jpg",
@@ -196,7 +204,7 @@ const LAB_DATA = {
       year: "2024",
       linkedin: "https://www.linkedin.com/in/galalmog/",
     },
-	{
+    {
       name: "Yarin Moshe",
       image: "images/people/yarin_moshe.jpeg",
       advisor: "Ariel Shamir & Yael Moses",
@@ -249,9 +257,9 @@ const LAB_DATA = {
       year: "2022",
       linkedin: "https://www.linkedin.com/in/gili-knafo-1b591b240/",
     },
-	{
+    {
       name: "Yael Vinker",
-      image:"images/people/yael_vinker.jpeg",
+      image: "images/people/yael_vinker.jpeg",
       advisor: "Ariel Shamir & Daniel Cohen-Or",
       degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
@@ -259,7 +267,7 @@ const LAB_DATA = {
     },
     {
       name: "Moab Arar",
-      image:"images/people/moab_arar.jpeg",
+      image: "images/people/moab_arar.jpeg",
       advisor: "Ariel Shamir & Amit Bermano",
       degree: "Ph.D. (Tel Aviv U.)",
       year: "2025",
@@ -424,17 +432,17 @@ const LAB_DATA = {
     },
     {
       title:
-          "Memories of Forgotten Concepts",
+        "Memories of Forgotten Concepts",
       authors: ["Matan Rusanovsky", "Shimon Malnick", "Amir Jevnisek", "Ohad Fried", "Shai Avidan"],
       conference: "CVPR",
       date: "13-06-2025", // format: DD-MM-YYYY
       image_link:
-          "https://www.malnick.net/assets/img/publication_preview/memories_forgotten_concepts/sphere.png",
+        "https://www.malnick.net/assets/img/publication_preview/memories_forgotten_concepts/sphere.png",
       paper_link: "https://arxiv.org/abs/2412.00782",
       project_link:
-          "https://matanr.github.io/Memories_of_Forgotten_Concepts/",
+        "https://matanr.github.io/Memories_of_Forgotten_Concepts/",
       github_link:
-          "https://github.com/matanr/Memories_of_Forgotten_Concepts/",
+        "https://github.com/matanr/Memories_of_Forgotten_Concepts/",
       abstract: [
         "Diffusion models dominate the space of text-to-image generation, yet they may produce undesirable outputs, including explicit content or private data. To mitigate this, concept ablation techniques have been explored to limit the generation of certain concepts. In this paper, we reveal that the erased concept information persists in the model and that erased concept images can be generated using the right latent. Utilizing inversion methods, we show that there exist latent seeds capable of generating high quality images of erased concepts. Moreover, we show that these latents have likelihoods that overlap with those of images outside the erased concept. We extend this to demonstrate that for every image from the erased concept set, we can generate many seeds that generate the erased concept. Given the vast space of latents capable of generating ablated concept images, our results suggest that fully erasing concept information may be intractable, highlighting possible vulnerabilities in current concept ablation techniques.",
       ],
@@ -556,12 +564,12 @@ const LAB_DATA = {
       conference: "WACV",
       date: "01-01-2024", // format: DD-MM-YYYY
       image_link:
-          "images/papers/taming/taming-1920.avif",
+        "images/papers/taming/taming-1920.avif",
       paper_link: "https://arxiv.org/abs/2211.16488",
       project_link:
-          "https://www.malnick.net/taming_norm_flows",
+        "https://www.malnick.net/taming_norm_flows",
       github_link:
-          "https://github.com/ShimonMalnick/taming_norm_flows",
+        "https://github.com/ShimonMalnick/taming_norm_flows",
       abstract: [
         "We propose an algorithm for taming Normalizing Flow models - changing the probability that the model will produce a specific image or image category. We focus on Normalizing Flows because they can calculate the exact generation probability likelihood for a given image. We demonstrate taming using models that generate human faces, a subdomain with many interesting privacy and bias considerations. Our method can be used in the context of privacy, e.g., removing a specific person from the output of a model, and also in the context of debiasing by forcing a model to output specific image categories according to a given target distribution. Taming is achieved with a fast fine-tuning process without retraining the model from scratch, achieving the goal in a matter of minutes. We evaluate our method qualitatively and quantitatively, showing that the generation quality remains intact, while the desired changes are applied.",
       ],
@@ -572,29 +580,29 @@ const LAB_DATA = {
       conference: "ICCC",
       date: "23-06-2025", // format: DD-MM-YYYY
       image_link:
-          "images/teasers/yes_and_paper_teaser.png",
+        "images/teasers/yes_and_paper_teaser.png",
       paper_link: "https://idanvidra.github.io/playing_along_paper_site/papers/Playing%20Along%20-%20Building%20AI%20Agents%20for%20Co-Creation%20of%20Improvised%20Stories%20-%20Paper.pdf",
       project_link:
-          "https://idanvidra.github.io/playing_along_paper_site/",
+        "https://idanvidra.github.io/playing_along_paper_site/",
       github_link:
-          "https://github.com/idanvidra/Yes-And-Game-Paper",
+        "https://github.com/idanvidra/Yes-And-Game-Paper",
       abstract: [
         "This work focuses on human-agent co-creation of improvised stories, investigating whether Large Language Models can effectively engage in an improvisational practice known as the 'Yes! and…' game. We demonstrate how AI systems can participate successfully in improvisational co-creation, moving beyond response generation to collaborative story-telling. We provide a systematic framework for evaluating creative AI outputs in improvisational contexts, combining human evaluation with computational metrics. Our evaluations show that stories co-created with an AI agent are indistinguishable from stories co-created with a human in terms of novelty, value, and surprise. This shows how 'hallucinations' - typically considered problematic in AI systems - can serve as creative assets in collaborative storytelling. More generally, our approach presents the 'Yes! and…' game as a novel model-system for studying improvised co-creativity in a well-defined and measurable setup"
       ],
     },
     {
       title:
-          "Tiled Diffusion",
+        "Tiled Diffusion",
       authors: ["Or Madar", "Ohad Fried"],
       conference: "CVPR",
       date: "13-06-2025", // format: DD-MM-YYYY
       image_link:
-          "https://madaror.github.io/tiled-diffusion.github.io/images/optimized/teaser.webp",
+        "https://madaror.github.io/tiled-diffusion.github.io/images/optimized/teaser.webp",
       paper_link: "https://arxiv.org/abs/2412.15185",
       project_link:
-          "https://madaror.github.io/tiled-diffusion.github.io/",
+        "https://madaror.github.io/tiled-diffusion.github.io/",
       github_link:
-          "https://github.com/madaror/tiled-diffusion",
+        "https://github.com/madaror/tiled-diffusion",
       abstract: [
         "Image tiling—the seamless connection of disparate images to create a coherent visual field—is crucial for applications such as texture creation, video game asset development, and digital art. Traditionally, tiles have been constructed manually, a method that poses significant limitations in scalability and flexibility. Recent research has attempted to automate this process using generative models. However, current approaches primarily focus on tiling textures and manipulating models for single-image generation, without inherently supporting the creation of multiple interconnected tiles across diverse domains. This paper presents Tiled Diffusion, a novel approach that extends the capabilities of diffusion models to accommodate the generation of cohesive tiling patterns across various domains of image synthesis that require tiling. Our method supports a wide range of tiling scenarios, from self-tiling to complex many-to-many connections, enabling seamless integration of multiple images. Tiled Diffusion automates the tiling process, eliminating the need for manual intervention and enhancing creative possibilities in various applications, such as seamlessly tiling of existing images, tiled texture creation, and 360° synthesis.",
       ],
@@ -638,7 +646,7 @@ const LAB_DATA = {
       project_link: "https://github.com/oronnir/CAST", // optional project URL
       abstract: [
         "Cartoons and animation domain videos have very different characteristics compared to real-life images and videos. In addition, this domain carries a large variability in styles. Current computer vision and deep-learning solutions often fail on animated content because they were trained on natural images. In this paper we present a method to refine a semantic representation suitable for specific animated content.",
-  	    "We first train a neural network on a large-scale set of animation videos and use the mapping to deep features as an embedding space. Next, we use self-supervision to refine the representation for any specific animation style by gathering many examples of animated characters in this style, using a multi-object tracking. These examples are used to define triplets for contrastive loss training. The refined semantic space allows better clustering of animated characters even when they have diverse manifestations. Using this space we can build dictionaries of characters in an animation videos, and define specialized classifiers for specific stylistic content (e.g., characters in a specific animation series) with very little user effort. These classifiers are the basis for automatically labeling characters in animation videos. We present results on a collection of characters in a variety of animation styles."
+        "We first train a neural network on a large-scale set of animation videos and use the mapping to deep features as an embedding space. Next, we use self-supervision to refine the representation for any specific animation style by gathering many examples of animated characters in this style, using a multi-object tracking. These examples are used to define triplets for contrastive loss training. The refined semantic space allows better clustering of animated characters even when they have diverse manifestations. Using this space we can build dictionaries of characters in an animation videos, and define specialized classifiers for specific stylistic content (e.g., characters in a specific animation series) with very little user effort. These classifiers are the basis for automatically labeling characters in animation videos. We present results on a collection of characters in a variety of animation styles."
       ],
     },
     {
@@ -651,7 +659,7 @@ const LAB_DATA = {
       project_link: "https://citylifesim.github.io/", // optional project URL
       abstract: [
         "Simulations are a powerful tools particularly in the case of safety critical scenarios. However, simulating complex temporal events in multi-agent scenarios with vehicles and pedestrians, such as those that exist in urban environments, is challenging. We present CityLifeSim, a simulation for the research community that focuses on rich pedestrian behavior, such as the one that arises when different personalities, environmental events, and group goals are simulated. In our simulations we can see cases of people jay walking a red light, sitting on a bench, waiting for the bus, or calling on the phone, but also more complex creation and management of crowds that might even line up or just keep moving while observing interpersonal distances.",
-	      "CityLifeSim is configurable and can create unlimited scenarios with detailed logging capabilities. As a demonstration we have run CityLifeSim to create a demo dataset for training setups that includes 17 different cameras, views from a moving vehicle in the street under different weather conditions (rain, snow, sun), and from a drone with frontal and downward views. All content is released with the corresponding original configuration files, ground truth pedestrian segmentation, and RGB-D frames. We evaluate our dataset on a pedestrian detection and identification task with state of the art Multi-Object Tracker (MOT), showing the limitations and opportunities for synthetic data in this use case."
+        "CityLifeSim is configurable and can create unlimited scenarios with detailed logging capabilities. As a demonstration we have run CityLifeSim to create a demo dataset for training setups that includes 17 different cameras, views from a moving vehicle in the street under different weather conditions (rain, snow, sun), and from a drone with frontal and downward views. All content is released with the corresponding original configuration files, ground truth pedestrian segmentation, and RGB-D frames. We evaluate our dataset on a pedestrian detection and identification task with state of the art Multi-Object Tracker (MOT), showing the limitations and opportunities for synthetic data in this use case."
       ],
     },
     {
@@ -662,7 +670,7 @@ const LAB_DATA = {
       image_link: "https://nadavc220.github.io/ssiap/static/new_images/teaser.png",
       paper_link: "https://arxiv.org/abs/2203.03238",
       project_link: "https://nadavc220.github.io/ssiap/", // optional project URL
-	    github_link: "https://github.com/Nadavc220/SemanticSegmentationInArtPaintings",
+      github_link: "https://github.com/Nadavc220/SemanticSegmentationInArtPaintings",
       abstract: [
         "Semantic segmentation is a difficult task even when trained in a supervised manner on photographs. In this paper, we tackle the problem of semantic segmentation of artistic paintings, an even more challenging task because of a much larger diversity in colors, textures, and shapes and because there are no ground truth annotations available for segmentation. We propose an unsupervised method for semantic segmentation of paintings using domain adaptation. Our approach creates a training set of pseudo-paintings in specific artistic styles by using style-transfer on the PASCAL VOC 2012 dataset, and then applies domain confusion between PASCAL VOC 2012 and real paintings. These two steps build on a new dataset we gathered called DRAM (Diverse Realism in Art Movements) composed of figurative art paintings from four movements, which are highly diverse in pattern, color, and geometry. To segment new paintings, we present a composite multi-domain adaptation method that trains on each sub-domain separately and composes their solutions during inference time. Our method provides better segmentation results not only on the specific artistic movements of DRAM, but also on other, unseen ones. We compare our approach to alternative methods and show applications of semantic segmentation in art paintings"
       ],
@@ -697,11 +705,11 @@ const LAB_DATA = {
       date: "01-01-2026",
       image_link: "https://benvr.github.io/CLIP-UP/static/images/clip_up_results_demo.jpg",
       paper_link: "https://arxiv.org/abs/2501.01371",
-	    project_link: "https://benvr.github.io/CLIP-UP",
-	    github_link: "https://github.com/BenVr/CLIP-UP",
+      project_link: "https://benvr.github.io/CLIP-UP",
+      github_link: "https://github.com/BenVr/CLIP-UP",
       abstract: [
         "Vision-Language Models (VLMs) demonstrate remarkable capabilities in visual understanding and reasoning, such as in Visual Question Answering (VQA), where the model is asked a question related to a visual input. Still, these models can make distinctly unnatural errors, for example, providing (wrong) answers to unanswerable VQA questions, such as questions asking about objects that do not appear in the image.",
-	      "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged. Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."
+        "To address this issue, we propose CLIP-UP: CLIP-based Unanswerable Problem detection, a novel lightweight method for equipping VLMs with the ability to withhold answers to unanswerable questions. CLIP-UP leverages CLIP-based similarity measures to extract question-image alignment information to detect unanswerability, requiring efficient training of only a few additional layers, while keeping the original VLMs' weights unchanged. Tested across several models, CLIP-UP achieves significant improvements on benchmarks assessing unanswerability in both multiple-choice and open-ended VQA, surpassing other methods, while preserving original performance on other tasks."
       ],
     },
     {
@@ -770,6 +778,19 @@ const LAB_DATA = {
       paper_link: "",
       abstract: [
         "In this work, we show that Latent Flow-Matching (LFM) models are robust to different types of perturbations, including data reduction and model capacity shrinkage. We characterize this stability by their tendency to generate similar outputs under identical noise seeds. We provide a perspective relating this phenomenon to flow matching theory, which indicates that this stability is inherent to the FM objective. We further exploit this stability to derive practical algorithms for more efficient training and inference. Concretely, first, we show that by training LFM models on significantly reduced datasets, the performance does not degrade perceptually or quantitatively. This yields multiple advantages, such as reducing training time by converging faster under limited compute budget, and alleviating annotation effort when training conditional models. Second, LFM stability under architectural shrinkage gives rise to a two-model coarse-to-fine approach, one using a light-weight architecture for the first phase of the FM trajectory, and one with higher capacity for the second, thereby reducing the inference cost substantially. To determine which samples are informative, we introduce three sample-scoring criteria and evaluate them under standard metrics for generative models. Our results are thoroughly evaluated on multiple datasets, demonstrating the practical advantage of this stability, including data saving and a more than two-fold inference speedup while generating comparable outputs.",
+      ],
+    },
+    {
+      title: "Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures",
+      authors: ["Tomer Koren", "Adi Rosenthal", "Doron Friedman", "Ariel Shamir",],
+      conference: "Eurographics",
+      date: "15-04-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/CGM/cgm_teaser.jpg",
+      paper_link: "https://arxiv.org/abs/TBD",
+      project_link: "https://tomerkoren1.github.io/CGM/",
+      github_link: "TBD",
+      abstract: [
+        "In this work we extend speaker-centric audio-driven gesture synthesis toward a unified conversational model that jointly captures both speaking and listening behaviors. Existing speaker-centric models effectively generate gestures aligned with speech but overlook the bidirectional dynamics that characterize natural dialogue. To address this limitation, we propose the Conversational Gesture Model (CGM), a cross-attention-based model capable of synthesizing gestures conditioned on interlocutor conversational cues such as gestures, tone, and textual semantics. By leveraging cross-attention mechanisms, CGM fuses interlocutor audio and text features with character gesture encodings, enabling a single system to seamlessly alternate between speaking and listening roles of the same character. Experiments demonstrate that this approach preserves the quality of speaker-driven gestures while significantly improving the realism, coherence, and responsiveness of full conversational interactions.",
       ],
     },
   ],
