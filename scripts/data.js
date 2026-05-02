@@ -785,7 +785,7 @@ const LAB_DATA = {
       authors: ["Tomer Koren", "Adi Rosenthal", "Doron Friedman", "Ariel Shamir",],
       conference: "Eurographics",
       date: "15-04-2026", // format: DD-MM-YYYY
-      image_link: "images/papers/CGM/cgm_teaser.png",
+      image_link: "images/papers/CGM/cgm_teaser.jpg",
       paper_link: "https://arxiv.org/abs/TBD",
       project_link: "https://tomerkoren1.github.io/CGM/",
       github_link: "TBD",
