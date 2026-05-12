@@ -782,7 +782,7 @@ const LAB_DATA = {
     },
     {
       title: "Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures",
-      authors: ["Tomer Koren", "Adi Rosenthal", "Doron Friedman", "Ariel Shamir",],
+      authors: ["Tomer Koren", "Adi Rosenthal", "Doron Friedman", "Ariel Shamir"],
       conference: "Eurographics",
       date: "15-04-2026", // format: DD-MM-YYYY
       image_link: "images/papers/CGM/cgm_teaser.png",
@@ -791,6 +791,18 @@ const LAB_DATA = {
       github_link: "TBD",
       abstract: [
         "In this work we extend speaker-centric audio-driven gesture synthesis toward a unified conversational model that jointly captures both speaking and listening behaviors. Existing speaker-centric models effectively generate gestures aligned with speech but overlook the bidirectional dynamics that characterize natural dialogue. To address this limitation, we propose the Conversational Gesture Model (CGM), a cross-attention-based model capable of synthesizing gestures conditioned on interlocutor conversational cues such as gestures, tone, and textual semantics. By leveraging cross-attention mechanisms, CGM fuses interlocutor audio and text features with character gesture encodings, enabling a single system to seamlessly alternate between speaking and listening roles of the same character. Experiments demonstrate that this approach preserves the quality of speaker-driven gestures while significantly improving the realism, coherence, and responsiveness of full conversational interactions.",
+      ],
+    },
+    {
+      title: "Progressive Photorealistic Simplification",
+      authors: ["Adi Rosenthal", "Dana Berman", "Yedid Hoshen", "Ariel Shamir"],
+      conference: "SIGGRAPH",
+      date: "11-05-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/ProgressivePhotoSimp/teaser4.jpg",
+      paper_link: "https://arxiv.org/abs/2605.10409",
+      project_link: "https://adirosenthal540.github.io/Progressive_Photorealistic_Simplification/",
+      abstract: [
+        "Existing image simplification techniques often rely on Non-Photorealistic Rendering (NPR), transforming photographs into stylized sketches, cartoons, or paintings. While effective at reducing visual complexity, such approaches typically sacrifice photographic realism. In this work, we explore a complementary direction: simplifying images while preserving their photorealistic appearance. We introduce progressive semantic image simplification, a framework that iteratively reduces scene complexity by removing and inpainting elements in a controlled manner. At each step, the resulting image remains a plausible natural photograph. Our method combines semantic understanding with generative editing, leveraging Vision-Language Models (VLMs) to identify and prioritize elements for removal, and a learned verifier to ensure photorealism and coherence throughout the process. This is implemented via an iterative Select–Remove–Verify pipeline that produces high-quality simplification trajectories. To improve efficiency, we further distill this process into an image-to-video generation model that directly predicts coherent simplification sequences from a single input image. Beyond generating cleaner and more focused compositions, our approach enables applications such as content-aware decluttering, semantic layer decomposition, and interactive editing. More broadly, our work suggests that simplification through structured content removal can serve as a practical mechanism for guiding visual interpretation within the photorealistic domain, complementing traditional abstraction methods.",
       ],
     },
   ],
