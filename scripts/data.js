@@ -762,9 +762,9 @@ const LAB_DATA = {
       conference: "SIGGRAPH",
       date: "26-04-2026", // format: DD-MM-YYYY
       image_link: "images/papers/colorful_noise/colorful-noise_website.jpg",
-      paper_link: "https://arxiv.org/abs/TBD",
-      project_link: "TBD",
-      github_link: "TBD",
+      paper_link: "https://arxiv.org/abs/2605.00548",
+      project_link: "https://nadavc220.github.io/colorful-noise/",
+      github_link: "https://github.com/Nadavc220/colorful_noise",
       abstract: [
         "Text-to-image diffusion models generate images by gradually converting white Gaussian noise into a natural image. White Gaussian noise is well suited for producing diverse outputs from a single text prompt due to its absence of structure. However, this very property limits control over, and predictability of, specific visual attributes, as the noise is not human-interpretable. In this work, we investigate the characteristics of the input noise in diffusion models. We show that, although all frequencies in white Gaussian noise have comparable statistical energy, low-frequency components primarily determine the image’s global structure and color composition, while high-frequency components control finer details. Building on this observation, we demonstrate that simple manipulations of the low-frequency noise using low-frequency image priors can effectively condition the generation process to reconstruct these low-frequency visual cues. This allows us to define a simple, training-free method with minimal overhead that steers overall image structure and color, while letting high-frequency components freely emerge as fine details, enabling variability across generated outputs.",
       ],
@@ -785,7 +785,7 @@ const LAB_DATA = {
       title: "Conversational Gesture Model (CGM): Extending Speaker-Centric Audio-Driven Motion Generation to Full Conversation Gestures",
       authors: ["Tomer Koren", "Adi Rosenthal", "Doron Friedman", "Ariel Shamir"],
       conference: "Eurographics",
-      date: "15-04-2026", // format: DD-MM-YYYY
+      date: "12-04-2026", // format: DD-MM-YYYY
       image_link: "images/papers/CGM/cgm_teaser.png",
       paper_link: "https://arxiv.org/abs/TBD",
       project_link: "https://tomerkoren1.github.io/CGM/",
