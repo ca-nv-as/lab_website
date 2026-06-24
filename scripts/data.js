@@ -115,11 +115,11 @@ const LAB_DATA = {
     },
     {
       name: "Adi Rosenthal",
-      degree: "M.Sc.",
-      advisor: "Ariel Shamir & Doron Friedman",
+      degree: "Ph.D.",
+      advisor: "Ariel Shamir",
       image: "images/people/adirosenthal.jpg",
-      description: "I work on co-speech gesture synthesis and semantic motion editing. Using audio and text cues, I generate and control gestures that are natural, personalized, and aligned with meaning.",
-      website: "https://github.com/Adirosenthal540",
+      description: "My research focuses on human motion generation, image processing, and 3D scene understanding, with an emphasis on generative models for creating and editing visual and motion content.",
+      website: "https://scholar.google.com/citations?hl=iw&user=gHyhr2MAAAAJ",
       linkedin: "https://www.linkedin.com/in/adi-rosenthal-24a3291aa/",
     },
     {
@@ -804,6 +804,18 @@ const LAB_DATA = {
       project_link: "https://adirosenthal540.github.io/Progressive_Photorealistic_Simplification/",
       abstract: [
         "Existing image simplification techniques often rely on Non-Photorealistic Rendering (NPR), transforming photographs into stylized sketches, cartoons, or paintings. While effective at reducing visual complexity, such approaches typically sacrifice photographic realism. In this work, we explore a complementary direction: simplifying images while preserving their photorealistic appearance. We introduce progressive semantic image simplification, a framework that iteratively reduces scene complexity by removing and inpainting elements in a controlled manner. At each step, the resulting image remains a plausible natural photograph. Our method combines semantic understanding with generative editing, leveraging Vision-Language Models (VLMs) to identify and prioritize elements for removal, and a learned verifier to ensure photorealism and coherence throughout the process. This is implemented via an iterative Select–Remove–Verify pipeline that produces high-quality simplification trajectories. To improve efficiency, we further distill this process into an image-to-video generation model that directly predicts coherent simplification sequences from a single input image. Beyond generating cleaner and more focused compositions, our approach enables applications such as content-aware decluttering, semantic layer decomposition, and interactive editing. More broadly, our work suggests that simplification through structured content removal can serve as a practical mechanism for guiding visual interpretation within the photorealistic domain, complementing traditional abstraction methods.",
+      ],
+    },
+    {
+      title: "SiGnature: Explicit Motion Diffusion for Stylized Semantic Gesture Generation",
+      authors: ["Adi Rosenthal", "Tomer Koren", "Nadav Shaked", "Doron Friedman*", "Ariel Shamir"],
+      conference: "SCA",
+      date: "14-06-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/signature/signature_teaser.jpg",
+      paper_link: "https://arxiv.org/abs/2605.10409",
+      project_link: "https://adirosenthal540.github.io/SiGnature_web/",
+      abstract: [
+        "While recent advances in co-speech gesture generation have achieved impressive rhythmic synchronization, synthesizing gestures that are both semantically meaningful and faithful to a speaker's unique non-verbal style remains an open challenge. Semantic gestures, such as iconic shapes or deictic pointing, are statistically sparse, making them difficult to learn effectively within standard generative models. We present SiGnature, a framework for Stylized and Semantic Gesture generation that reconciles precise semantic control with high-fidelity style preservation. Unlike prevalent methods that rely on entangled latent representations, SiGnature operates in an explicit joint-rotation space. This design enables our core contribution, Joint Motion Integration (JMI), a training-free inference mechanism capable of injecting any external motion sequence, particularly in-the-wild semantic gestures, directly into the diffusion process. JMI automatically identifies the specific "active joints" conveying a semantic action and injects them into the generation, while relying on the diffusion backbone to synthesize the remaining body dynamics, including posture and flow, in accordance with the pre-learned style of the target speaker. This allows for the plug-and-play integration of arbitrary motions, including complex semantic gestures, without retraining or introducing the 'Frankenstein/' artifacts typical of cut-and-paste methods. Extensive experiments and perceptual studies demonstrate that SiGnature offers superior semantic motion control while maintaining smooth and natural co-speech gesture generation and preserving the distinct characteristics of the speaker, thereby outperforming state-of-the-art baselines.",
       ],
     },
   ],
