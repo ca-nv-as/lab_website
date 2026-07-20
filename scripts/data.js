@@ -167,6 +167,14 @@ const LAB_DATA = {
       website: "https://nadavb.com",
       linkedin: "https://www.linkedin.com/in/nadavbenedek/",
     },
+    {
+      name: "Zvika Guttman",
+      degree: "M.Sc.", 
+      advisor: "Ohad Fried",
+      image: "images/people/zvika_guttman.jpg",
+      description: "My research focuses on text-to-image generative models, currently working on model editing techniques for implicit concept binding.",
+      linkedin: "https://www.linkedin.com/in/zvika-guttman-194588148/", 
+    },
   ],
   // Alumni
   alumni: [
