@@ -105,15 +105,6 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/shimonmalnick/",
     },
     {
-      name: "Rotem Gatenyo",
-      degree: "M.Sc.",
-      advisor: "Ohad Fried",
-      image: "images/people/rotem_gatenyo.jpg",
-      description: "My research focuses on generative 3D graphics, with an emphasis on creating and manipulating 3D meshes and textured shapes.",
-      website: "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
-      linkedin: "https://www.linkedin.com/in/rotem-g8",
-    },
-    {
       name: "Adi Rosenthal",
       degree: "Ph.D.",
       advisor: "Ariel Shamir",
@@ -178,6 +169,14 @@ const LAB_DATA = {
   ],
   // Alumni
   alumni: [
+      {
+      name: "Rotem Gatenyo",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried",
+      image: "images/people/rotem_gatenyo.jpg",
+      linkedin: "https://www.linkedin.com/in/rotem-g8",
+      year: "2026",
+    },
     {
       name: "Tomer Koren",
       degree: "M.Sc.",
