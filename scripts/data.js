@@ -296,6 +296,11 @@ const LAB_DATA = {
   // News items
   news: [
     {
+      title: '"NIV" has been accepted to NeurIPS 2026! &#128292; &#129432; &#127462;&#127482;',
+      date: "30-09-2026",
+      content: [],
+    },
+    {
       title: "Three papers accepted to SIGGRAPH 2026! &#127909; &#127796; &#129361;",
       date: "13-04-2026",
       content: [],
@@ -823,6 +828,19 @@ const LAB_DATA = {
       project_link: "https://adirosenthal540.github.io/SiGnature_web/",
       abstract: [
         "While recent advances in co-speech gesture generation have achieved impressive rhythmic synchronization, synthesizing gestures that are both semantically meaningful and faithful to a speaker's unique non-verbal style remains an open challenge. Semantic gestures, such as iconic shapes or deictic pointing, are statistically sparse, making them difficult to learn effectively within standard generative models. We present SiGnature, a framework for Stylized and Semantic Gesture generation that reconciles precise semantic control with high-fidelity style preservation. Unlike prevalent methods that rely on entangled latent representations, SiGnature operates in an explicit joint-rotation space. This design enables our core contribution, Joint Motion Integration (JMI), a training-free inference mechanism capable of injecting any external motion sequence, particularly in-the-wild semantic gestures, directly into the diffusion process. JMI automatically identifies the specific 'active joints' conveying a semantic action and injects them into the generation, while relying on the diffusion backbone to synthesize the remaining body dynamics, including posture and flow, in accordance with the pre-learned style of the target speaker. This allows for the plug-and-play integration of arbitrary motions, including complex semantic gestures, without retraining or introducing the 'Frankenstein/' artifacts typical of cut-and-paste methods. Extensive experiments and perceptual studies demonstrate that SiGnature offers superior semantic motion control while maintaining smooth and natural co-speech gesture generation and preserving the distinct characteristics of the speaker, thereby outperforming state-of-the-art baselines.",
+      ],
+    },
+    {
+      title: "NIV: Neural Axis Variations for Variable Font Generation",
+      authors: ["Nadav Benedek", "Ariel Shamir", "Ohad Fried"],
+      conference: "NeurIPS",
+      date: "06-12-2026", // format: DD-MM-YYYY
+      image_link: "images/papers/niv/niv_method.png",
+      paper_link: "https://arxiv.org/abs/2606.05261",
+      project_link: "https://ndvbd.github.io/NIV/",
+      github_link: "https://github.com/ndvbd/NIV",
+      abstract: [
+        "Variable fonts enable continuous variation of glyph geometry along semantic design axes such as weight, width, slant, and optical size. However, constructing a variable font from a static font remains a labor-intensive process requiring expert typographic design and manual specification of glyph variation data. We introduce NIV (Neural Axis Variations), a method that automatically converts a static font into a fully functional variable font. Given glyph outlines and a set of desired design axes, NIV predicts per-point displacements. The model operates directly on vector glyph geometry and employs a novel Property Embedding mechanism that captures interactions between multiple axes, enabling consistent multi-axis variation within a unified framework. We train NIV on a newly constructed dataset derived from variable Google Fonts, comprising over one million variation tuples. The resulting model generalizes across unseen code points, unseen font styles, high-complexity CJK glyphs, and even out-of-distribution handwriting inputs. The generated outputs are standard variable font files supporting continuous interpolation via existing rendering engines. To facilitate research, we release the dataset, the complete training and inference implementation, and trained models at https://github.com/ndvbd/NIV. Beyond typography, our approach demonstrates how structured geometric objects with continuous parametric variation can be synthesized using neural deformations.",
       ],
     },
   ],
