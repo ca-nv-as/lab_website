@@ -2,6 +2,7 @@
 
 A modern, responsive website for the Canvas Lab at Reichman University, showcasing team members, publications, and news.
 
+
 ## Table of Contents
 
 - [Task list](#task-list) - Task list for the website
