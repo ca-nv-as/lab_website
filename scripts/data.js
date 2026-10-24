@@ -345,6 +345,18 @@ const LAB_DATA = {
   // Publications
   publications: [
     {
+    title: "MINER: Modeling Inter- and Intra-Person Variance for Reidentification",
+    authors: ["Oron Nir", "Eliyahu Strugo", "Ariel Shamir"],
+    conference: "WACV", // e.g., "CVPR", "SIGGRAPH"
+    date: "04-01-2027", // format: DD-MM-YYYY
+    image_link: "images/papers/MINER/MinerTeaser.png", // or local path
+    paper_link: "https://arxiv.org/abs/2610.28941", // paper URL
+    project_link: "https://oronnir.github.io/MINER/", // optional project URL
+    abstract: [
+      "We present MINER, a simple model-agnostic framework that suppresses garment bias in clothes-changing reidentification (CC-ReID) by contrasting hard examples and adaptively balancing dataset-dependent intra- and inter-person variance."
+    ],
+  },
+    {
       title: "Stable Flow: Vital Layers for Training-Free Image Editing",
       authors: ["Omri Avrahami", "Or Patashnik", "Ohad Fried", "Egor Nemchinov", "Kfir Aberman", "Dani Lischinski", "Daniel Cohen-Or"],
       conference: "CVPR",
