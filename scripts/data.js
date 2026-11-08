@@ -186,6 +186,14 @@ const LAB_DATA = {
       linkedin: "https://www.linkedin.com/in/tomerkoren10/",
     },
     {
+      name: "Eyal Michaeli",
+      degree: "M.Sc.",
+      advisor: "Ohad Fried",
+      image: "images/people/eyal_michaeli.jpg",
+      year: "2025",
+      linkedin: "https://www.linkedin.com/in/eyal-michaeli-807b75151/",
+    },
+    {
       name: "Omri Avrahami",
       image: "https://omriavrahami.com/static/images/profile.jpg",
       advisor: "Ohad Fried & Dani Lischinski",
