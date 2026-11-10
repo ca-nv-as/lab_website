@@ -166,6 +166,15 @@ const LAB_DATA = {
       description: "My research focuses on text-to-image generative models, currently working on model editing techniques for implicit concept binding.",
       linkedin: "https://www.linkedin.com/in/zvika-guttman-194588148/", 
     },
+    {
+      name: "Nadav Shaked",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir & Nadav Z. Cohen",
+      image: "images/people/nadav_shaked.jpeg",
+      description: "My research focuses on iterative image generation for 2D content creation. My work explores vector-based representations for creating structured, editable visual content.",
+      website: "https://nadavshaked.com",
+      linkedin: "https://www.linkedin.com/in/nadav-shaked/",
+    },
   ],
   // Alumni
   alumni: [
