@@ -175,6 +175,14 @@ const LAB_DATA = {
       website: "https://nadavshaked.com",
       linkedin: "https://www.linkedin.com/in/nadav-shaked/",
     },
+    {
+      name: "Roey Ripstein",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir",
+      image: "images/people/roey_ripstein.jpeg",
+      description: "My research focuses on visual information extraction, currently working on composition techniques in image generative models.",
+      linkedin: "https://www.linkedin.com/in/roey-ripstein/",
+    },
   ],
   // Alumni
   alumni: [
