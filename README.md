@@ -43,7 +43,7 @@ students: [
     name: "New Student Name",
     degree: "M.Sc.", // or "Ph.D."
     advisor: "Advisor Name",
-    image: "images/people/student_photo.jpg", // or full URL for external image - can be from linkedin or other website
+    image: "images/people/student_photo.jpg", // Please do not use URL links (like a linkedin image link)
     description: "Brief description of research focus and interests.",
     website: "https://student-website.com", // optional
     linkedin: "https://linkedin.com/in/student-profile", // optional
