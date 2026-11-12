@@ -183,6 +183,14 @@ const LAB_DATA = {
       description: "My research focuses on visual information extraction, currently working on composition techniques in image generative models.",
       linkedin: "https://www.linkedin.com/in/roey-ripstein/",
     },
+    {
+      name: "Yuval Sheinin",
+      degree: "M.Sc.",
+      advisor: "Ariel Shamir",
+      image: "images/people/yuval_sheinin.jpg",
+      description: "My research focuses on vision-language models and reinforcement learning, with an emphasis on active visual reasoning and fine-grained object and part grounding.",
+      linkedin: "https://www.linkedin.com/in/yuval-sheinin/",
+    },
   ],
   // Alumni
   alumni: [
