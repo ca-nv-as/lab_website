@@ -191,6 +191,14 @@ const LAB_DATA = {
       description: "My research focuses on vision-language models and reinforcement learning, with an emphasis on active visual reasoning and fine-grained object and part grounding.",
       linkedin: "https://www.linkedin.com/in/yuval-sheinin/",
     },
+    {
+      name: "Ella Bar Yaacov",
+      degree: "M.Sc.", 
+      advisor: "Ariel Shamir",
+      image: "images/people/ella_bar_yaacov.jpeg",
+      description: "My research focuses on vision-language models, with an emphasis on visual reasoning, spatial understanding, and planning. I explore how these models interpret visual information to solve complex tasks and generalize to new scenarios.",
+      linkedin: "https://www.linkedin.com/in/ella-bar-yaacov-539704229/", // optional
+    },
   ],
   // Alumni
   alumni: [
